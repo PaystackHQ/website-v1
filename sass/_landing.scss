@@ -4,15 +4,10 @@
         background: $midnight-blue;
         height: 90vh;
     }
-    &__central {
+    &__left {
         color: white;
-        left: 0;
-        margin: auto;
+        float: left;
         position: absolute;
-        right: 0;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        text-align: center;
         top: 50%;
         width: 450px;
     }
