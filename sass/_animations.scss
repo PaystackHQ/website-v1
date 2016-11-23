@@ -1,0 +1,53 @@
+.slide-in {
+    overflow: hidden;
+    &--from-bottom {
+        @keyframes bottom-to-top {
+            0%,
+            85% {
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+        .slide-in__element {
+            -webkit-animation: bottom-to-top 1s ease-in-out;
+            animation: bottom-to-top 1s ease-in-out;
+        }
+    }
+    .slide-in__element {
+        display: block;
+        &--2s {
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+        }
+    }
+}
+
+.fade-in {
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    animation: fade-in 1s linear;
+    -webkit-animation: fade-in 1s linear;
+    &--3s {
+        @keyframes fade-in-3s {
+            0%,
+            85% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        -webkit-animation: fade-in-3s 3s linear;
+        animation: fade-in-3s 3s linear;
+    }
+}

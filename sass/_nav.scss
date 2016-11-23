@@ -1,0 +1,26 @@
+.global-nav {
+    height: 65px;
+    left: 0;
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 10;
+
+    &__logo {
+        float: left
+    }
+
+    &__right {
+        float: right
+    }
+
+    &__menu {
+        left: 0;
+        line-height: 25px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

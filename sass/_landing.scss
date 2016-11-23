@@ -1,0 +1,22 @@
+.home-section {
+    position: relative;
+    &--hero {
+        background: $midnight-blue;
+        height: 90vh;
+    }
+    &__central {
+        color: white;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        top: 50%;
+        width: 450px;
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+}

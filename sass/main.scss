@@ -1,5 +1,15 @@
+// Core
 @import 'variables';
+@import 'layout';
 @import 'fonts';
 
-@import 'base';
+// Utilities
 @import 'animations';
+@import 'text';
+
+// Components
+@import 'nav';
+@import 'buttons';
+
+// Modules
+@import 'landing';
