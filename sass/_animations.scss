@@ -1,3 +1,29 @@
+.fade-in {
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    animation: fade-in 1s linear;
+    -webkit-animation: fade-in 1s linear;
+    &--3s {
+        @keyframes fade-in-3s {
+            0%,
+            85% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        -webkit-animation: fade-in-3s 3s linear;
+        animation: fade-in-3s 3s linear;
+    }
+}
+
 .slide-in {
     overflow: hidden;
     &--from-bottom {
@@ -23,31 +49,5 @@
             -webkit-animation-duration: 2s;
             animation-duration: 2s;
         }
-    }
-}
-
-.fade-in {
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    animation: fade-in 1s linear;
-    -webkit-animation: fade-in 1s linear;
-    &--3s {
-        @keyframes fade-in-3s {
-            0%,
-            85% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        -webkit-animation: fade-in-3s 3s linear;
-        animation: fade-in-3s 3s linear;
     }
 }
