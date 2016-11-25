@@ -31,8 +31,43 @@
     }
 
     &__item{
+        position: relative;
         display: inline-block;
-        padding: 0 10px;
+        padding: 0 15px;
         color: white;
+    }
+
+    &__menu--dropdown{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        width: 150px;
+        padding-top: 15px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,.15);
+
+        .global-nav__item:hover &{
+            opacity: 1;
+            display: block;
+        }
+    }
+
+    &__item--dropdown{
+        color: $midnight-blue;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        background-color: white;
+
+        &:first-child{
+            border-top-left-radius: $button-default-radius;
+            border-top-right-radius: $button-default-radius;
+        }
+
+        &:last-child{
+            border-bottom: none;
+            border-bottom-left-radius: $button-default-radius;
+            border-bottom-right-radius: $button-default-radius;
+        }
     }
 }
