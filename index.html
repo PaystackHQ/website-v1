@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paystack</title>
     <meta name="description" content="Accept payments online with Paystack">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
     <nav class="global-nav global-nav--transparent">
         <div class="container">
-            <a class="global-nav__logo"><img src="images/logo.svg" alt="Paystack"></a>
-            <ul class="global-nav__menu"></ul>
-            <div class="global-nav__right"></div>
+            <div class="global-nav__left">
+                <a class="global-nav__logo">
+                    <img src="images/logo.svg" alt="Paystack">
+                </a>
+            </div>
+            <div class="global-nav__right">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item">
+                        <a href="#">Features</a>
+                        <ul class="global-nav__menu global-nav__menu--dropdown">
+                            <li class="global-nav__item global-nav__item--dropdown">
+                                <a href="#">Payments</a>
+                            </li>
+                            <li class="global-nav__item global-nav__item--dropdown">
+                                <a href="#">Business Tools</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__item"><a href="#">Pricing</a></li>
+                    <li class="global-nav__item"><a href="#">Developers</a></li>
+                    <li class="global-nav__item"><a href="#">Company</a></li>
+                    <li class="global-nav__item">
+                        <a href="#" class="button button--default button--rounded">Log In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <section class="hero-section">
