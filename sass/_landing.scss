@@ -1,17 +1,88 @@
-.home-section {
+.hero-section {
     position: relative;
-    &--hero {
-        background: $midnight-blue;
-        height: 90vh;
-    }
+    background: $dark-blue;
+    height: 90vh;
     &__left {
         color: white;
         float: left;
         position: absolute;
-        top: 50%;
-        width: 450px;
+        bottom: 20%;
+        width: 580px;
+    }
+    &__primary-title {
+        h1 {
+            font-family: $bold-font;
+            font-size: 45px;
+            margin: 0;
+        }
+    }
+    &__secondary-title {
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 1.3;
+        }
     }
     &__call-to-action {
         margin-top: 40px;
+    }
+}
+
+.home-section {
+    position: relative;
+    &--features {
+        padding-bottom: 150px;
+        padding-top: 100px;
+        background: whitesmoke;
+    }
+}
+
+.home-section-header {
+    margin: 0 auto;
+    width: 500px;
+    &--centered {
+        text-align: center;
+    }
+    &__primary-title {
+        color: $dark-blue;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+}
+
+.setup-step {
+    padding-left: 60px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::last-child {
+        margin-bottom: 0;
+    }
+
+    &__number {
+        position: absolute;
+        left: 0;
+        top: 5px;
+
+        span {
+            background: $green;
+            border-radius: 6px;
+            display: block;
+            height: 3px;
+            margin-bottom: 3px;
+            width: 20px;
+        }
+    }
+
+    &__title {
+        color: $dark-blue;
+        margin-bottom: 10px;
+    }
+
+    &__message {
+        line-height: 1.5;
+        margin-top: 10px;
     }
 }
