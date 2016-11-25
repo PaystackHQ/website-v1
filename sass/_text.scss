@@ -6,6 +6,7 @@ a{
 body {
     -webkit-font-smoothing: antialiased;
     font-family: $regular-font;
+    font-size: 1.6rem;
 }
 
 .font-thin {
@@ -18,6 +19,14 @@ body {
 
 .font-bold {
     font-weight: bold;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include screen(small) {
+        font-size: 58%;
+    }
 }
 
 .text-center {
