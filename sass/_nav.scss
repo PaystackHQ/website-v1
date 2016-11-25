@@ -13,7 +13,7 @@
     
     &__logo{
         display: inline-block;
-        margin-top: 12px;
+        margin-top: 10px;
     }
 
     &__right {
@@ -27,6 +27,8 @@
         // position: absolute;
         // right: 0;
         // top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     &__item {
@@ -39,39 +41,40 @@
             padding-right: 0;
         }
     }
+}
 
-    &__menu--dropdown {
-        -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.15);
-        box-shadow: 0px 5px 10px rgba(0,0,0,.15);
-        display: none;
-        left: 0px;
-        padding-top: 15px;
-        position: absolute;
-        top: 100%;
-        width: 150px;
+.global-dropdown-menu {
+    -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.15);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.15);
+    display: none;
+    padding-left: 0;
+    left: 0px;
+    padding-top: 15px;
+    position: absolute;
+    top: 100%;
+    width: 150px;
 
-        .global-nav__item:hover &{
-            display: block;
-            opacity: 1;
-        }
+    .global-nav__item:hover &{
+        display: block;
+        opacity: 1;
+    }
+}
+
+.global-dropdown-menu__item {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    color: $dark-blue;
+    padding: 15px;
+    width: 100%;
+
+    &:first-child{
+        border-top-left-radius: $button-default-radius;
+        border-top-right-radius: $button-default-radius;
     }
 
-    &__item--dropdown {
-        background-color: white;
-        border-bottom: 1px solid #ddd;
-        color: $dark-blue;
-        padding: 15px;
-        width: 100%;
-
-        &:first-child{
-            border-top-left-radius: $button-default-radius;
-            border-top-right-radius: $button-default-radius;
-        }
-
-        &:last-child{
-            border-bottom: none;
-            border-bottom-left-radius: $button-default-radius;
-            border-bottom-right-radius: $button-default-radius;
-        }
+    &:last-child{
+        border-bottom: none;
+        border-bottom-left-radius: $button-default-radius;
+        border-bottom-right-radius: $button-default-radius;
     }
 }
