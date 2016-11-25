@@ -1,0 +1,56 @@
+button,
+.button {
+    background-color: $cerulean-blue;
+    border-color: $cerulean-blue;
+    border-radius: $button-default-radius;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    // height: $button-height; //this offsets the vertical alignment for some reason
+    line-height: $button-height;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition-duration: 350ms;
+    transition-duration: 350ms;
+    -webkit-transition-property: background, box-shadow, color;
+    transition-property: background, box-shadow, color;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    //Styling
+    &--rounded {
+        border-radius: 100px;
+    }
+    // Colors
+    &--default {
+        background-color: transparent;
+        border-color: #4b7291; //change to variable
+        color: rgba(255, 255, 255, 0.88);
+        position: relative;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+    &--green {
+        background-color: $green;
+        border-color: $green;
+    }
+    //Sizes
+    &--small {
+        height: $button-height-sm;
+        line-height: $button-height-sm;
+    }
+    &--large {
+        height: $button-height-lg;
+        line-height: $button-height-lg;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

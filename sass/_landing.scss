@@ -1,0 +1,17 @@
+.home-section {
+    position: relative;
+    &--hero {
+        background: $midnight-blue;
+        height: 90vh;
+    }
+    &__left {
+        color: white;
+        float: left;
+        position: absolute;
+        top: 50%;
+        width: 450px;
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+}

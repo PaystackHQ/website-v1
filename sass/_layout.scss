@@ -1,0 +1,14 @@
+.container,
+.container-lg {
+    max-width: 1040px;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-wide,
+.container-xl {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
