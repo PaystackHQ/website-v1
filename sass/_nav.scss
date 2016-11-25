@@ -1,26 +1,38 @@
 .global-nav {
     height: 65px;
     left: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     position: absolute;
     right: 0;
     top: 20px;
     z-index: 10;
 
-    &__logo {
-        float: left
+    &__left {
+        float: left;
+    }
+    
+    &__logo{
+        display: inline-block;
+        margin-top: 10px;
     }
 
+
     &__right {
-        float: right
+        float: right;
     }
 
     &__menu {
-        left: 0;
-        line-height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
+        // left: 0;
+        // line-height: 25px;
+        // margin: auto;
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+    }
+
+    &__item{
+        display: inline-block;
+        padding: 0 10px;
+        color: white;
     }
 }

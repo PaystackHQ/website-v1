@@ -8,7 +8,7 @@ button,
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     height: $button-height;
     line-height: $button-height;
@@ -33,7 +33,7 @@ button,
     // Colors
     &--default {
         background-color: transparent;
-        border-color: #4b7291;
+        border-color: #4b7291; //change to variable
         color: rgba(255, 255, 255, 0.88);
         position: relative;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
