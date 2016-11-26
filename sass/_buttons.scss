@@ -30,11 +30,14 @@ button,
         border-radius: 100px;
     }
     // Colors
-    &--default {
+    &--default, &--default-white {
         background-color: transparent;
-        border-color: #4b7291; //change to variable
-        color: rgba(255, 255, 255, 0.88);
+        border-color: $dark-blue;
+        color: $dark-blue;
         position: relative;
+    }
+    &--default-white {
+        color: rgba(255, 255, 255, 0.88);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
     &--green {
