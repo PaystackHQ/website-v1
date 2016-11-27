@@ -47,6 +47,10 @@
     &--1 {
         width: 100% * 1 / 12;
     }
+    &--centered {
+        float: none;
+        margin: 0 auto;
+    }
     .grid--with-gutters & {
         padding-left: 8px;
         padding-right: 8px;

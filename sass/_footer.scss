@@ -1,0 +1,40 @@
+.global-footer {
+    // border-top: solid 1px rgba(0,0,0,0.05);
+    background: $dark-blue;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 50px 0;
+    &__menu {
+        a {
+            line-height: 1.6;
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+    &__divider {
+        border-color: rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+    }
+    &__contact {
+        border-top: solid 1px rgba(255,255,255,0.2);
+        color: $light-blue;
+        display: block;
+        padding-top: 15px;
+        margin-top: 5px;
+        &:hover {
+            background: rgba(255,255,255,0.02);
+        }
+    }
+    &__menu-header {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    &__address {
+        line-height: 1.3;
+    }
+    &__copyright {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.3rem;
+        margin-top: 40px;
+        text-align: center;
+    }
+}

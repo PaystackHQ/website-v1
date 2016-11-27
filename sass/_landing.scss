@@ -13,8 +13,7 @@
         text-align: center;
         width: 580px;
     }
-    &__background {
-    }
+    &__background {}
     &__primary-title {
         h1 {
             font-family: $bold-font;
@@ -61,7 +60,6 @@
 }
 
 .setup-step {
-    padding-left: 60px;
     position: relative;
     margin-bottom: 50px;
     &::last-child {
@@ -69,7 +67,7 @@
     }
     &__number {
         position: absolute;
-        left: 0;
+        left: -40px;
         top: 5px;
         span {
             background: $green;
@@ -128,5 +126,26 @@
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         @include triangle(bottom, 8px, $light-blue);
+    }
+}
+
+.signup-section {
+    padding: 100px 0;
+    text-align: center;
+    &__primary-title {
+        color: $light-blue;
+        font-family: $bold-font;
+        font-size: 28px;
+    }
+    &__secondary-title {
+        line-height: 1.2;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    &__call-to-action {}
+    &__button {
+        display: inline-block;
+        margin: 0 5px;
     }
 }
