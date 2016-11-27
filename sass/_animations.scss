@@ -51,3 +51,23 @@
         }
     }
 }
+
+@include keyframes(hero-section-bill--bottom-right) {
+    0%,
+    30% {
+        transform: translateX(100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@include keyframes(hero-section-bill--top-left) {
+    0%,
+    30% {
+        transform: translateY(-100%) rotate(-90deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}

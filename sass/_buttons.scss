@@ -15,28 +15,35 @@ button,
     padding-right: 1.5em;
     position: relative;
     text-decoration: none;
-    -webkit-transition-duration: 350ms;
-    transition-duration: 350ms;
-    -webkit-transition-property: background, box-shadow, color;
-    transition-property: background, box-shadow, color;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-property: background, box-shadow, color, transform;
+    transition-property: background, box-shadow, color, transform;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    &:hover {
+        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
     //Styling
     &--rounded {
         border-radius: 100px;
     }
     // Colors
-    &--default, &--default-white {
+    &--default,
+    &--default-white {
         background-color: transparent;
         border-color: $dark-blue;
         color: $dark-blue;
         position: relative;
     }
     &--default-white {
+        border-color: rgba(255, 255, 255, 0.2);
         color: rgba(255, 255, 255, 0.88);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }

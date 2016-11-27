@@ -1,6 +1,6 @@
 .hero-section {
     background: $dark-blue;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     &__content {
         bottom: 20%;
@@ -12,6 +12,26 @@
         right: 0;
         text-align: center;
         width: 580px;
+    }
+    &__background {
+        .hero-section-bill {
+            // opacity: 0.2;
+            position: absolute;
+            &--bottom-right {
+                -webkit-animation: hero-section-bill--bottom-right 6s ease-in-out;
+                animation: hero-section-bill--bottom-right 6s ease-in-out;
+                bottom: -200px;
+                right: -300px;
+            }
+            &--top-left {
+                -webkit-animation: hero-section-bill--top-left 6s ease-in-out;
+                animation: hero-section-bill--top-left 6s ease-in-out;
+                bottom: 100px;
+                left: 0;
+                opacity: 0.2;
+                width: 500px;
+            }
+        }
     }
     &__primary-title {
         h1 {
@@ -35,7 +55,7 @@
 .home-section {
     position: relative;
     &--features {
-        background: whitesmoke;
+        // background: whitesmoke;
         padding-bottom: 150px;
         padding-top: 100px;
     }
