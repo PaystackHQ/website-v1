@@ -1,3 +1,51 @@
+.customers-section{
+    padding: 100px 0;   
+    background-color: #f3f5f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+
+    &__image{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: $light-blue;
+    }
+
+    &__logo{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 32%;
+        height: 90px;
+        display: inline-block;
+        padding-right: 30px;
+        line-height: 100px;
+    }
+
+    &__logo-img{
+        max-width: 100%;
+        height: auto;   
+    }
+
+    &__logos{
+        margin: 30px 0;
+    }
+
+    &__message {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        font-weight: normal;
+    }
+
+    &__primary-title {
+        color: $dark-blue;
+        font-family: $bold-font;
+        font-size: 3.5rem;
+    }
+}
+
+
 .hero-section {
     background: $dark-blue;
     height: 100vh;
@@ -135,11 +183,11 @@
     &__primary-title {
         color: $light-blue;
         font-family: $bold-font;
-        font-size: 28px;
+        font-size: 2.8rem;
     }
     &__secondary-title {
         line-height: 1.2;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: normal;
         margin-bottom: 30px;
     }
