@@ -10,7 +10,7 @@
     animation: fade-in 1s linear;
     -webkit-animation: fade-in 1s linear;
     &--3s {
-        @keyframes fade-in-3s {
+        @include keyframes(fade-in-3s) {
             0%,
             85% {
                 opacity: 0;
@@ -27,7 +27,7 @@
 .slide-in {
     overflow: hidden;
     &--from-bottom {
-        @keyframes bottom-to-top {
+        @include keyframes(bottom-to-top) {
             0%,
             85% {
                 -webkit-transform: translateY(100%);

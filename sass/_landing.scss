@@ -1,14 +1,67 @@
-.hero-section {
+.customers-section{
+    padding: 100px 0;   
+    background-color: #f3f5f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     position: relative;
+
+    &__image{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: $light-blue;
+    }
+
+    &__logo{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 32%;
+        height: 90px;
+        display: inline-block;
+        padding-right: 30px;
+        line-height: 100px;
+    }
+
+    &__logo-img{
+        max-width: 100%;
+        height: auto;   
+    }
+
+    &__logos{
+        margin: 30px 0;
+    }
+
+    &__message {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        font-weight: normal;
+    }
+
+    &__primary-title {
+        color: $dark-blue;
+        font-family: $bold-font;
+        font-size: 3.2rem;
+    }
+}
+
+
+.hero-section {
     background: $dark-blue;
-    height: 90vh;
-    &__left {
+    height: 100vh;
+    position: relative;
+    &__content {
+        bottom: 20%;
         color: white;
         float: left;
+        left: 0;
+        margin: 0 auto;
         position: absolute;
-        bottom: 20%;
+        right: 0;
+        text-align: center;
         width: 580px;
     }
+    &__background {}
     &__primary-title {
         h1 {
             font-family: $bold-font;
@@ -31,41 +84,39 @@
 .home-section {
     position: relative;
     &--features {
+        // background: whitesmoke;
         padding-bottom: 150px;
         padding-top: 100px;
-        background: whitesmoke;
     }
 }
 
 .home-section-header {
-    margin: 0 auto;
-    width: 500px;
+    max-width: 100%;
+    width: 700px;
     &--centered {
         text-align: center;
     }
     &__primary-title {
         color: $dark-blue;
+        font-family: $bold-font;
         font-weight: bold;
-        font-size: 3rem;
-        margin-bottom: 80px;
-        margin-top: 40px;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 40px;
+        margin-top: 80px;
     }
 }
 
 .setup-step {
-    padding-left: 60px;
     position: relative;
     margin-bottom: 50px;
-
     &::last-child {
         margin-bottom: 0;
     }
-
     &__number {
         position: absolute;
-        left: 0;
+        left: -40px;
         top: 5px;
-
         span {
             background: $green;
             border-radius: 6px;
@@ -75,14 +126,74 @@
             width: 20px;
         }
     }
-
     &__title {
         color: $dark-blue;
         margin-bottom: 10px;
     }
-
     &__message {
         line-height: 1.5;
         margin-top: 10px;
+    }
+}
+
+.features-illustration {
+    position: relative;
+}
+
+.features-animation {
+    background: $light-blue;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 1.5px 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 1.5px 3px rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    color: white;
+    height: 40px;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 180px;
+    &__list {
+        height: 40px;
+        overflow: hidden;
+        ul {
+            -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1);
+            -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+            -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+            -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+            transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        }
+        li {
+            line-height: 40px;
+        }
+    }
+    &__arrow {
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        @include triangle(bottom, 8px, $light-blue);
+    }
+}
+
+.signup-section {
+    padding: 100px 0;
+    text-align: center;
+    &__primary-title {
+        color: $light-blue;
+        font-family: $bold-font;
+        font-size: 2.8rem;
+    }
+    &__secondary-title {
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    &__call-to-action {}
+    &__button {
+        display: inline-block;
+        margin: 0 5px;
     }
 }
