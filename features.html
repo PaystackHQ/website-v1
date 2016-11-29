@@ -92,13 +92,25 @@
                     </div>
                 </div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" onmouseenter="runAnimation.business()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
-                        <h3 class="feature-card__name">Developer Tools</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident delectus fugiat quae veniam porro in.</h4>
+                        <h3 class="feature-card__name">Business Tools</h3>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque unde sint quae quia ea fugit?</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation">
+                            <div class="stack-animation stack-animation__business" id="stack-animation__business">
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,8 +118,8 @@
             <div class="feature-card">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
-                        <h3 class="feature-card__name">Business Tools</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque unde sint quae quia ea fugit?</h4>
+                        <h3 class="feature-card__name">Developer Tools</h3>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident delectus fugiat quae veniam porro in.</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
                         </div>
@@ -147,8 +159,8 @@
                         <ul class="global-footer__menu">
                             <li><a href="">Payments</a></li>
                             <li><a href="">Subscriptions</a></li>
-                            <li><a href="">Developers</a></li>
                             <li><a href="">Business Tools</a></li>
+                            <li><a href="">Developer Tools</a></li>
                         </ul>
                     </div>
                 </div>
@@ -190,12 +202,12 @@
             var leftBoxes = document.getElementById("stack-animation__payments-left").querySelectorAll("div");
             var rightBoxes = document.getElementById("stack-animation__payments-right").querySelectorAll("div");
 
-            for (i = 1; i < leftBoxes.length; i++) {
+            for (i = 0; i < leftBoxes.length; i++) {
                 var box = leftBoxes[i];
-                var origin = -300 / i;
+                var origin = -300;
                 var _translate = [origin, 0];
-                var _rotate = ["-5deg", 0];
-                var _duration = 200 + ((rightBoxes.length - i) * 100);
+                var _rotate = ["-25deg", 0];
+                var _duration = 300 + ((rightBoxes.length - i) * 200);
 
                 animate({
                     el: box,
@@ -207,16 +219,32 @@
             }
             for (i = 0; i < rightBoxes.length; i++) {
                 var box = rightBoxes[i];
-                var origin = -300 / (i + 1);
+                var origin = -300;
                 var _translate = [origin, 0];
-                var _rotate = ["5deg", 0];
-                var _duration = 100 + ((rightBoxes.length - i) * 200);
+                var _rotate = ["25deg", 0];
+                var _duration = 300 + ((rightBoxes.length - i) * 200);
 
                 animate({
                     el: box,
                     translateY: _translate,
                     rotate: _rotate,
                     duration: _duration,
+                    easing: "linear"
+                });
+            }
+        },
+
+        business: function() {
+            var boxes = document.getElementById("stack-animation__business").querySelectorAll("div");
+            for (i = 0; i < boxes.length; i++) {
+                boxes[i].style.transform = "translateY(100%)";
+                boxes[i].style.webkitTransform = "translateY(100%)";
+
+                animate({
+                    el: boxes[i],
+                    translateY: ["100%", 0],
+                    duration: 200,
+                    delay: 100 * i,
                     easing: "linear"
                 });
             }
