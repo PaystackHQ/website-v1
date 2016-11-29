@@ -1,0 +1,56 @@
+.hero-section {
+    background: $dark-blue;
+    height: 100vh;
+    position: relative;
+    &__content {
+        bottom: 20%;
+        color: white;
+        float: left;
+        left: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 580px;
+    }
+    &__background {}
+    &__primary-title {
+        font-family: $bold-font;
+        font-size: 4.5rem;
+        margin: 0;
+    }
+    &__secondary-title {
+        font-size: 2.2rem;
+        font-weight: normal;
+        line-height: 1.3;
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+}
+
+.signup-section {
+    padding: 100px 0;
+    text-align: center;
+    &--dark {
+        background: $dark-blue;
+        color: white;
+    }
+    &__primary-title {
+        color: $light-blue;
+        font-family: $bold-font;
+        font-size: 2.8rem;
+    }
+    &__secondary-title {
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    &__call-to-action {}
+    &__button {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
