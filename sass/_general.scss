@@ -42,10 +42,7 @@
     // background: $lighter-gray;
     padding: 150px 0;
     text-align: center;
-    &--dark {
-        background: $dark-blue;
-        color: white;
-    }
+    
     &__primary-title {
         color: $dark-blue;
         font-family: $bold-font;
@@ -62,5 +59,12 @@
     &__button {
         display: inline-block;
         margin: 0 5px;
+    }
+    &--dark {
+        background: $dark-blue;
+        color: white;
+        .global-signup__primary-title {
+            color: $light-blue;
+        }
     }
 }
