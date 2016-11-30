@@ -40,15 +40,29 @@
     width: 100%;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity .3s, transform .45s;
+    transition: opacity .3s, transform .45s, background-color .3s;
 
     .global-nav__item:hover &{
         opacity: 1;
         transform: translateY(0px);
 
         &:first-child{
-            transition: opacity .3s, transform .3s;
+            transition: opacity .3s, transform .3s, background-color .3s;
         }
+    }
+
+    &:hover{
+        background-color: whitesmoke;
+    }
+
+    &:first-child{
+        border-top-right-radius: $button-default-radius;
+        border-top-left-radius: $button-default-radius;
+    }
+
+    &:last-child{
+        border-bottom-right-radius: $button-default-radius; 
+        border-bottom-left-radius: $button-default-radius; 
     }
 }
 
