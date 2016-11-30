@@ -20,7 +20,7 @@
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
                     <li class="global-nav__item">
-                        <a href="#">Solutions</a>
+                        <a href="#">Features</a>
                         <ul class="global-dropdown-menu">
                             <li class="global-dropdown-menu__item">
                                 <a href="#">Payments</a>
@@ -46,17 +46,24 @@
         <div class="hero-section__background">
         </div>
         <div class="hero-section__content">
+            <figure class="hero-section__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                    <path d="M0 0h72v72H0V0z" fill="#87bbfd"></path>
+                    <path d="M39.55 44.65V45H0V12h49.45c.85 0 1.55.7 1.55 1.55V33.5h-.3c-6.15 0-11.15 5-11.15 11.15zM21.5 19c-5.25 0-9.5 4.25-9.5 9.5s4.25 9.5 9.5 9.5 9.5-4.25 9.5-9.5-4.25-9.5-9.5-9.5z" fill="#43458b"></path>
+                    <path d="M72 60H22.55c-.85 0-1.55-.7-1.55-1.55v-29.9c0-.85.7-1.55 1.55-1.55H72v33zM50.5 34c-5.25 0-9.5 4.25-9.5 9.5s4.25 9.5 9.5 9.5 9.5-4.25 9.5-9.5-4.25-9.5-9.5-9.5z" fill="#FFF"></path>
+                </svg>
+            </figure>
             <h1 class="hero-section__primary-title">Features</h1>
-            <h2 class="hero-section__secondary-title">A complete set of features you need to run payments for your business</h2>
+            <h2 class="hero-section__secondary-title">We know how hard getting paid used to be. Recurring payments didn't work. No one could track their growth. And those problematic APIs! So, we fixed it all. </h2>
         </div>
     </section>
     <section class="section-features">
         <div class="container">
-            <div class="feature-card" onmouseenter="runAnimation.payments()">
+            <div class="feature-card" onmouseenter="runAnimation.payments()" onmouseleave="endAnimation.payments()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
                         <h3 class="feature-card__name">Payments</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat veniam necessitatibus ipsum quasi, rerum rem.</h4>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quasi, rerum rem.</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
                         </div>
@@ -81,22 +88,36 @@
                     </div>
                 </div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" onmouseenter="runAnimation.subscriptions()" onmouseleave="endAnimation.subscriptions()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
                         <h3 class="feature-card__name">Subscriptions</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus enim ipsum eos, aliquam asperiores corporis.</h4>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corporis.</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
                         </div>
                     </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation">
+                            <div class="stack-animation stack-animation__subscriptions" id="stack-animation__subscriptions">
+                                <div class="stack-animation__column" id="stack-animation__subscriptions-left">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                                <div class="stack-animation__column" id="stack-animation__subscriptions-right">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="feature-card" onmouseenter="runAnimation.business()">
+            <div class="feature-card" onmouseenter="runAnimation.business()" onmouseleave="endAnimation.business()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
                         <h3 class="feature-card__name">Business Tools</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque unde sint quae quia ea fugit?</h4>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quae quia ea fugit?</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
                         </div>
@@ -119,7 +140,7 @@
                 <div class="grid">
                     <div class="grid__column grid__column--6">
                         <h3 class="feature-card__name">Developer Tools</h3>
-                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident delectus fugiat quae veniam porro in.</h4>
+                        <h4 class="feature-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident delectus.</h4>
                         <div class="feature-card__call-to-action">
                             <a href="#" class="button button--green">Learn More</a>
                         </div>
@@ -197,6 +218,7 @@
     </footer>
     <script src="js/animate.min.js"></script>
     <script>
+    var animationLoop;
     var runAnimation = {
         payments: function() {
             var leftBoxes = document.getElementById("stack-animation__payments-left").querySelectorAll("div");
@@ -237,17 +259,57 @@
         business: function() {
             var boxes = document.getElementById("stack-animation__business").querySelectorAll("div");
             for (i = 0; i < boxes.length; i++) {
-                boxes[i].style.transform = "translateY(100%)";
-                boxes[i].style.webkitTransform = "translateY(100%)";
-
                 animate({
                     el: boxes[i],
-                    translateY: ["100%", 0],
-                    duration: 200,
-                    delay: 100 * i,
+                    translateY: ["400px", 0],
+                    duration: 500,
                     easing: "linear"
                 });
             }
+        },
+
+        subscriptions: function() {
+            var leftBoxes = document.getElementById("stack-animation__subscriptions-left").querySelectorAll("div");
+            var rightBoxes = document.getElementById("stack-animation__subscriptions-right").querySelectorAll("div");
+
+            function animateThis() {
+                leftBoxes[0].style.transform = "translateY(-400px)";
+                leftBoxes[0].style.webkitTransform = "translateY(-400px)";
+
+                animate({
+                    el: leftBoxes[0],
+                    translateY: ["-400px", "55px"],
+                    duration: 500,
+                    delay: 500,
+                    easing: "linear",
+                });
+
+                leftBoxes[1].style.transform = "translateY(0)";
+                leftBoxes[1].style.webkitTransform = "translateY(0)";
+
+                animate({
+                    el: leftBoxes[1],
+                    translateY: [0, "400px"],
+                    duration: 500,
+                    delay: 500,
+                    easing: "linear"
+                });
+            }
+
+            animateThis();
+            animationLoop = setInterval(animateThis, 2000);
+        }
+    }
+
+    var endAnimation = {
+        stop: function(id) {
+            var boxes = document.getElementById(id).querySelectorAll("div");
+            animate.stop(boxes);
+        },
+        payments: function() {},
+        business: function() {},
+        subscriptions: function() {
+            window.clearInterval(animationLoop);
         }
     }
     </script>

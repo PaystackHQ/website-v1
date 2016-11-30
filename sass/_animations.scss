@@ -53,21 +53,27 @@
 }
 
 .stack-animation {
+    position: relative;
     width: 300px;
     &__column {
         float: left;
-        padding: 0 10px;
+        padding: 0 5px 0 0;
         position: relative;
         width: 50%;
     }
     &__box {
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        border: solid 1px;
+        // border-color: $light-blue;
+        // background: $light-blue;
+        border-color: $green;
+        background: whitesmoke;
+        border-radius: 5px;
         height: 50px;
         margin-bottom: 5px;
         width: 100%;
         &--clear {
             background: none;
+            border-color: transparent;
         }
     }
 }
@@ -82,11 +88,11 @@
         width: 40px;
         &:nth-child(1) {
             left: 0;
-            height: #{$height * 3/4}px;
+            height: #{$height / 2}px;
         }
         &:nth-child(2) {
             left: 50px;
-            height: #{$height}px;
+            height: #{$height * 2/3}px;
         }
         &:nth-child(3) {
             left: 100px;
@@ -107,6 +113,15 @@
         &:nth-child(7) {
             left: 300px;
             height: #{$height}px;
+        }
+    }
+}
+
+.stack-animation__subscriptions {
+    .stack-animation__box {
+        &:nth-child(2) {
+            left: auto;
+            right: 0;
         }
     }
 }

@@ -28,6 +28,14 @@
     &__call-to-action {
         margin-top: 40px;
     }
+    &__icon {
+        border-radius: 50%;
+        height: 72px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        overflow: hidden;
+        width: 72px;
+    }
 }
 
 .signup-section {
