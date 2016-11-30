@@ -1,6 +1,6 @@
 .hero-section {
     background: $dark-blue;
-    height: 100vh;
+    height: 700px;
     position: relative;
     &__content {
         bottom: 20%;
@@ -38,17 +38,19 @@
     }
 }
 
-.signup-section {
-    padding: 100px 0;
+.global-signup {
+    // background: $lighter-gray;
+    padding: 150px 0;
     text-align: center;
     &--dark {
         background: $dark-blue;
         color: white;
     }
     &__primary-title {
-        color: $light-blue;
+        color: $dark-blue;
         font-family: $bold-font;
-        font-size: 2.8rem;
+        font-size: 3.5rem;
+        margin-top: 0;
     }
     &__secondary-title {
         line-height: 1.2;
