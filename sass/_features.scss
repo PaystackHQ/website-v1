@@ -16,11 +16,9 @@
 
 $features: 4;
 .feature-card {
-    // background: darken($light-blue, 10%);
     background: white;
     border-radius: 5px;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
-    // color: white;
     color: $dark-blue;
     margin: 0 auto;
     overflow: hidden;
@@ -48,8 +46,6 @@ $features: 4;
     &__animation {
         background: #FFFFFF;
         border-radius: 50%;
-        // box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.08);
-        // box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
         height: 150px;
         margin-top: -75px;
         mix-blend-mode: normal;
@@ -59,6 +55,10 @@ $features: 4;
         text-align: center;
         top: 50%;
         width: 150px;
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
         z-index: 10;
         > div {
             opacity: 0;
@@ -78,9 +78,6 @@ $features: 4;
         top: 0;
         width: 500px;
         z-index: 0;
-    }
-    &:after {
-        // background-image: url('/images/feature-cards/slant-right.svg');
     }
     @for $i from 1 through $features {
         $subtract: 0.2% * ($features - $i);
@@ -110,6 +107,10 @@ $features: 4;
             opacity: 1;
         }
         .feature-card__animation {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
             > div {
                 opacity: 1;
             }
@@ -119,8 +120,9 @@ $features: 4;
 
 .stack-animation {
     bottom: 0;
+    left: 30px;
     position: absolute;
-    width: 150px;
+    width: 100px;
     &__column {
         float: left;
         padding: 0 5px 0 0;
@@ -128,13 +130,10 @@ $features: 4;
         width: 50%;
     }
     &__box {
-        // border: solid 1px;
-        // border-color: $light-blue;
-        background: $light-blue;
-        // border-color: $green;
-        // background: $green;
+        // background: $light-blue;
+        background: $green;
         border-radius: 3px;
-        height: 20px;
+        height: 2px;
         margin-bottom: 5px;
         width: 100%;
         &--clear {
@@ -151,7 +150,7 @@ $features: 4;
         float: left;
         margin-right: 10px;
         position: absolute;
-        width: 10px;
+        width: 2px;
         &:nth-child(1) {
             height: #{$height / 2}px;
         }
@@ -175,7 +174,7 @@ $features: 4;
         }
         @for $i from 1 through 7 {
             &:nth-child(#{$i}) {
-                left: #{20 * $i}px;
+                left: #{10 * $i}px;
             }
         }
     }
