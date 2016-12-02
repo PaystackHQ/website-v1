@@ -1,0 +1,12 @@
+/* Webfont: ChronicaPro-SemiLight */@font-face {
+    font-family: 'ChronicaProBook';
+    src: url('ChronicaPro-SemiLight.eot'); /* IE9 Compat Modes */
+    src: url('ChronicaPro-SemiLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ChronicaPro-SemiLight.woff') format('woff'), /* Modern Browsers */
+         url('ChronicaPro-SemiLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ChronicaPro-SemiLight.svg#ChronicaPro-SemiLight') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
