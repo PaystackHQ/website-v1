@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paystack</title>
+    <meta name="description" content="Accept payments online with Paystack">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <nav class="global-nav global-nav--transparent">
+        <div class="container">
+            <div class="global-nav__left">
+                <a href="/" class="global-nav__logo">
+                    <img src="images/logo.svg" alt="Paystack">
+                </a>
+            </div>
+            <div class="global-nav__right">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item">
+                        <a href="#">Product</a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="#">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="#">Business Tools</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__item"><a href="#">Pricing</a></li>
+                    <li class="global-nav__item"><a href="#">Developers</a></li>
+                    <li class="global-nav__item"><a href="#">Company</a></li>
+                    <li class="global-nav__item">
+                        <a href="#" class="button button--default-white button--rounded">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section hero-section--features">
+        <div class="hero-section__background">
+        </div>
+        <div class="hero-section__content">
+            <figure class="hero-section__icon">
+                <img src="/images/hero-icons/features.svg" alt="Magic Wand">
+            </figure>
+            <h1 class="hero-section__primary-title">Product Overview</h1>
+            <h2 class="hero-section__secondary-title">Building the features you need to grow your business.</h2>
+        </div>
+    </section>
+    <section class="section-features">
+        <div class="container">
+            <div class="feature-card" onmouseenter="runAnimation.payments()" onmouseleave="endAnimation.payments()">
+                <div class="grid">
+                    <div class="grid__column grid__column--6">
+                        <h3 class="feature-card__name">Payments</h3>
+                        <h4 class="feature-card__description">Multiple secure payment channels created for whatever type of business you run.</h4>
+                        <div class="feature-card__call-to-action">
+                            <a href="#" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation">
+                            <div class="stack-animation stack-animation__payments">
+                                <div class="stack-animation__column" id="stack-animation__payments-left">
+                                    <div class="stack-animation__box stack-animation__box--clear"></div>
+                                    <div class="stack-animation__box stack-animation__box--clear"></div>
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                                <div class="stack-animation__column" id="stack-animation__payments-right">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card" onmouseenter="runAnimation.subscriptions()" onmouseleave="endAnimation.subscriptions()">
+                <div class="grid">
+                    <div class="grid__column grid__column--6">
+                        <h3 class="feature-card__name">Subscriptions</h3>
+                        <h4 class="feature-card__description">A simple, user friendly way to manage your subscriptions and recurring payments. </h4>
+                        <div class="feature-card__call-to-action">
+                            <a href="#" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation">
+                            <div class="stack-animation stack-animation__subscriptions" id="stack-animation__subscriptions">
+                                <div class="stack-animation__column" id="stack-animation__subscriptions-left">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                                <div class="stack-animation__column" id="stack-animation__subscriptions-right">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card" onmouseenter="runAnimation.business()" onmouseleave="endAnimation.business()">
+                <div class="grid">
+                    <div class="grid__column grid__column--6">
+                        <h3 class="feature-card__name">Dashboard & Reports</h3>
+                        <h4 class="feature-card__description">Get a clear overview of your business, from growth to customers to every single transaction.</h4>
+                        <div class="feature-card__call-to-action">
+                            <a href="#" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation">
+                            <div class="stack-animation stack-animation__business" id="stack-animation__business">
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="grid">
+                    <div class="grid__column grid__column--6">
+                        <h3 class="feature-card__name">For Developers</h3>
+                        <h4 class="feature-card__description">Work with great, well documented APIs and belong to a community of devs who also use Paystack.</h4>
+                        <div class="feature-card__call-to-action">
+                            <a href="#" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="global-signup global-signup--dark">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--6 grid__column--centered">
+                    <h2 class="global-signup__primary-title">
+                        Signup. Go Live. Get Paid.
+                    </h2>
+                    <h3 class="global-signup__secondary-title">
+                        Paystack is an easy to setup, complete payments solution for your business. Ready to try it out?
+                    </h3>
+                    <ul class="global-signup__call-to-action">
+                        <li class="global-signup__button">
+                            <a class="button button--green" href="/">Create Account</a>
+                        </li>
+                        <li class="global-signup__button">
+                            <a class="button button--default" href="/">Try a demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="global-footer">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--3">
+                    <div class="global-footer__menu-container">
+                        <h4 class="global-footer__menu-header">Solutions</h4>
+                        <ul class="global-footer__menu">
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Subscriptions</a></li>
+                            <li><a href="">Business Tools</a></li>
+                            <li><a href="">Developer Tools</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <h4 class="global-footer__menu-header">Resources</h4>
+                    <ul class="global-footer__menu">
+                        <li><a href="">Demo</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">API Documentation</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--6">
+                        <h4 class="global-footer__menu-header">San Francisco</h4>
+                        <p class="global-footer__address">1281 Lawrence Station Road, Sunnyvale, California.</p>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <h4 class="global-footer__menu-header">Lagos</h4>
+                        <p class="global-footer__address">22A, Olatunbosun Str, Shonibare Estate, Ikeja. Lagos</p>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <a href="" class="global-footer__contact">hello@paystack.com</a>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <a href="" class="global-footer__contact">+234 908 566 2909</a>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--12">
+                    <div class="global-footer__copyright">© 2016, Paystack Payments Limited</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/animate.min.js"></script>
+    <script>
+    var animationLoop;
+    var runAnimation = {
+        payments: function() {
+            var leftBoxes = document.getElementById("stack-animation__payments-left").querySelectorAll("div");
+            var rightBoxes = document.getElementById("stack-animation__payments-right").querySelectorAll("div");
+
+            for (i = 0; i < leftBoxes.length; i++) {
+                var box = leftBoxes[i];
+                var origin = -300;
+                var _translate = [origin, 0];
+                var _rotate = ["-25deg", 0];
+                var _duration = 300 + ((rightBoxes.length - i) * 200);
+
+                animate({
+                    el: box,
+                    translateY: _translate,
+                    rotate: _rotate,
+                    duration: _duration,
+                    easing: "linear"
+                });
+            }
+            for (i = 0; i < rightBoxes.length; i++) {
+                var box = rightBoxes[i];
+                var origin = -300;
+                var _translate = [origin, 0];
+                var _rotate = ["25deg", 0];
+                var _duration = 300 + ((rightBoxes.length - i) * 200);
+
+                animate({
+                    el: box,
+                    translateY: _translate,
+                    rotate: _rotate,
+                    duration: _duration,
+                    easing: "linear"
+                });
+            }
+        },
+
+        business: function() {
+            var boxes = document.getElementById("stack-animation__business").querySelectorAll("div");
+            for (i = 0; i < boxes.length; i++) {
+                animate({
+                    el: boxes[i],
+                    translateY: ["400px", 0],
+                    duration: 500,
+                    easing: "linear"
+                });
+            }
+        },
+
+        subscriptions: function() {
+            var leftBoxes = document.getElementById("stack-animation__subscriptions-left").querySelectorAll("div");
+            var rightBoxes = document.getElementById("stack-animation__subscriptions-right").querySelectorAll("div");
+
+            function animateThis() {
+                leftBoxes[0].style.transform = "translateY(-400px)";
+                leftBoxes[0].style.webkitTransform = "translateY(-400px)";
+
+                animate({
+                    el: leftBoxes[0],
+                    translateY: ["-400px", "55px"],
+                    duration: 500,
+                    delay: 500,
+                    easing: "linear",
+                });
+
+                leftBoxes[1].style.transform = "translateY(0)";
+                leftBoxes[1].style.webkitTransform = "translateY(0)";
+
+                animate({
+                    el: leftBoxes[1],
+                    translateY: [0, "400px"],
+                    duration: 500,
+                    delay: 500,
+                    easing: "linear"
+                });
+            }
+
+            animateThis();
+            animationLoop = setInterval(animateThis, 2000);
+        }
+    }
+
+    var endAnimation = {
+        stop: function(id) {
+            var boxes = document.getElementById(id).querySelectorAll("div");
+            animate.stop(boxes);
+        },
+        payments: function() {},
+        business: function() {},
+        subscriptions: function() {
+            window.clearInterval(animationLoop);
+        }
+    }
+    </script>
+</body>
+
+</html>

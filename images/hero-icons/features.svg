@@ -1,0 +1,37 @@
+<svg width="462" height="461" viewBox="0 0 462 461" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>features</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(442 104)" figma:type="canvas">
+<rect x="-442" y="-104" width="462" height="461" fill="#E5E5E5"/>
+<g id="features" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="base" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-441 -104)" fill="#09A5DB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="wand" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-441.5 94.8168)" fill="#00509A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-285.999 -46)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(-139.841 76.2626)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(-330.502 50.0142)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_fill" transform="translate(-186.378 174.586)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 460.501 0L 460.501 461L 0 461L 0 0Z"/>
+<path id="path1_fill" d="M 0 262.183L 79.4137 262.183L 288.877 51.9459C 294.353 46.4697 287.586 30.8286 273.769 17.0099C 259.952 3.19121 244.312 -3.57659 238.846 1.89958L 0 243.183L 0 262.183ZM 238.837 26.9271C 241.597 24.1669 249.416 27.5464 256.334 34.4558C 263.251 41.3651 266.612 49.1945 263.861 51.9547L 171.6 144.227L 146.585 119.208L 238.837 26.9271Z"/>
+<path id="path2_fill" d="M 146.158 98.2347C 82.3095 83.3102 75.454 86.6543 47.935 146.167C 62.8489 82.3193 59.4964 75.4542 -8.0985e-07 47.9319C 63.8308 62.8564 70.695 59.5123 98.2229 -1.34991e-06C 83.3002 63.8473 86.6439 70.7124 146.158 98.2347Z"/>
+<path id="path3_fill" d="M 95.41 7.92672C 58.5853 45.6052 58.0191 51.7183 87.4842 95.4038C 49.8014 58.5746 43.6979 58.0172 -1.13379e-05 87.477C 36.8336 49.7986 37.3998 43.6943 7.92579 -4.04974e-06C 45.6086 36.8292 51.7298 37.3865 95.41 7.92672Z"/>
+<path id="path4_fill" d="M 59.859 59.8662C 32.0304 37.1919 27.8464 37.1919 1.48473e-05 59.8662C 22.6716 32.0254 22.6716 27.8408 1.48473e-05 4.31972e-06C 27.8375 22.6743 32.0215 22.6743 59.859 4.31972e-06C 37.1697 27.8408 37.1697 32.0254 59.859 59.8662Z"/>
+<path id="path5_fill" d="M 65.8918 27.8054C 38.532 34.989 36.5948 37.6519 38.0808 65.9174C 30.9069 38.5454 28.2532 36.608 -2.53753e-05 38.1031C 27.3598 30.9195 29.2971 28.2567 27.8021 1.5659e-05C 34.9937 27.372 37.6474 29.3183 65.8918 27.8054Z"/>
+</defs>
+</svg>
