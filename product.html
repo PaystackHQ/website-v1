@@ -100,14 +100,11 @@
                     <div class="grid__column grid__column--6">
                         <div class="feature-card__animation">
                             <div class="stack-animation stack-animation__subscriptions" id="stack-animation__subscriptions">
-                                <div class="stack-animation__column" id="stack-animation__subscriptions-left">
-                                    <div class="stack-animation__box"></div>
-                                    <div class="stack-animation__box"></div>
-                                </div>
-                                <div class="stack-animation__column" id="stack-animation__subscriptions-right">
-                                    <div class="stack-animation__box"></div>
-                                    <div class="stack-animation__box"></div>
-                                </div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
+                                <div class="stack-animation__box"></div>
                             </div>
                         </div>
                     </div>
@@ -270,35 +267,43 @@
         },
 
         subscriptions: function() {
-            var leftBoxes = document.getElementById("stack-animation__subscriptions-left").querySelectorAll("div");
-            var rightBoxes = document.getElementById("stack-animation__subscriptions-right").querySelectorAll("div");
+            var boxes = document.getElementById("stack-animation__subscriptions").querySelectorAll("div");
 
             function animateThis() {
-                leftBoxes[0].style.transform = "translateY(-400px)";
-                leftBoxes[0].style.webkitTransform = "translateY(-400px)";
+                for (i = 0; i < boxes.length; i++) {
+                    boxes[i].style.transform = "translateY(0)";
+                    boxes[i].style.webkitTransform = "translateY(0)";
+                }
+
+                boxes[0].style.transform = "translateY(-300px)";
+                boxes[0].style.webkitTransform = "translateY(-300px)";
 
                 animate({
-                    el: leftBoxes[0],
-                    translateY: ["-400px", "55px"],
-                    duration: 500,
-                    delay: 500,
-                    easing: "linear",
+                    el: boxes[0],
+                    translateY: ["-300px", 0],
+                    duration: 300,
+                    easing: "linear"
                 });
 
-                leftBoxes[1].style.transform = "translateY(0)";
-                leftBoxes[1].style.webkitTransform = "translateY(0)";
+                animate({
+                    el: boxes[boxes.length - 1],
+                    translateY: [0, "200px"],
+                    duration: 200,
+                    delay: 800,
+                    easing: "linear"
+                });
 
                 animate({
-                    el: leftBoxes[1],
-                    translateY: [0, "400px"],
-                    duration: 500,
-                    delay: 500,
+                    el: boxes,
+                    translateY: [0, "7px"],
+                    duration: 200,
+                    delay: 1000,
                     easing: "linear"
                 });
             }
 
             animateThis();
-            animationLoop = setInterval(animateThis, 2000);
+            animationLoop = setInterval(animateThis, 2500);
         }
     }
 

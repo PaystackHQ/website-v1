@@ -181,10 +181,8 @@ $features: 4;
 }
 
 .stack-animation__subscriptions {
+    left: 50px;
     .stack-animation__box {
-        &:nth-child(2) {
-            left: auto;
-            right: 0;
-        }
+        width: 50%;
     }
 }
