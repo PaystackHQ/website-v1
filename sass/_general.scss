@@ -3,7 +3,7 @@
     height: 700px;
     position: relative;
     &__content {
-        bottom: 20%;
+        bottom: 25%;
         color: white;
         float: left;
         left: 0;
@@ -50,14 +50,15 @@
     &__primary-title {
         color: $dark-blue;
         font-family: $bold-font;
-        font-size: 3.5rem;
+        font-size: 3.6rem;
         margin-top: 0;
     }
     &__secondary-title {
-        line-height: 1.2;
-        font-size: 2rem;
+        line-height: 1.6;
+        font-size: 1.8rem;
         font-weight: normal;
         margin-bottom: 30px;
+        color: $stack-gray;
     }
     &__call-to-action {}
     &__button {
