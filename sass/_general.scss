@@ -16,11 +16,13 @@
     }
     &__background {}
     &__primary-title {
+        color: white;
         font-family: $bold-font;
         font-size: 4.5rem;
         margin: 0;
     }
     &__secondary-title {
+        color: white;
         font-size: 2.2rem;
         font-weight: normal;
         line-height: 1.3;
@@ -48,7 +50,7 @@
     text-align: center;
     
     &__primary-title {
-        color: $dark-blue;
+        // color: $dark-blue;
         font-family: $bold-font;
         font-size: 3.5rem;
         margin-top: 0;
@@ -65,10 +67,13 @@
         margin: 0 5px;
     }
     &--dark {
-        background: $dark-blue;
-        color: white;
-        .global-signup__primary-title {
-            color: $light-blue;
-        }
+        // background: $dark-blue;
+        // color: white;
+        // .global-signup__primary-title {
+        //     color: $light-blue;
+        // }
+        // .global-signup__secondary-title {
+        //     color: white;
+        // }
     }
 }

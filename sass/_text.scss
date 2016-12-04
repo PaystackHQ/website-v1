@@ -3,10 +3,24 @@ a{
 	text-decoration: none;
 }
 
+html {
+    font-size: 62.5%;
+
+    @include screen(small) {
+        font-size: 58%;
+    }
+}
+
 body {
+    color: $body-text-color;
     -webkit-font-smoothing: antialiased;
     font-family: $regular-font;
     font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+    // color: #0e304b;
+    color: #003767;
 }
 
 .font-thin {
@@ -20,15 +34,6 @@ body {
 .font-bold {
     font-weight: bold;
 }
-
-html {
-    font-size: 62.5%;
-
-    @include screen(small) {
-        font-size: 58%;
-    }
-}
-
 .text-center {
     text-align: center;
 }
