@@ -41,6 +41,14 @@ h5 {
     text-align: center;
 }
 
+.global-u-text-left {
+    text-align: left;
+}
+
+.global-u-text-right {
+    text-align: right;
+}
+
 .global-u-body-title {
     font-size: 1.7rem;
 }
@@ -53,4 +61,12 @@ h5 {
 .global-u-body-excerpt {
     font-size: 1.7rem;
     line-height: 1.3;
+}
+
+.global-u-link-inverted {
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

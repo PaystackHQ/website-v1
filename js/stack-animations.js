@@ -53,17 +53,17 @@ var runAnimation = {
         var boxes = document.getElementById("stack-animation__subscriptions").querySelectorAll("div");
 
         function animateThis() {
-            for (i = 0; i < boxes.length; i++) {
+            boxes[0].style.transform = "translateY(-150px)";
+            boxes[0].style.webkitTransform = "translateY(-150px)";
+
+            for (i = 1; i < boxes.length; i++) {
                 boxes[i].style.transform = "translateY(0)";
                 boxes[i].style.webkitTransform = "translateY(0)";
             }
 
-            boxes[0].style.transform = "translateY(-200px)";
-            boxes[0].style.webkitTransform = "translateY(-200px)";
-
             animate({
                 el: boxes[0],
-                translateY: ["-200px", 0],
+                translateY: ["-150px", 0],
                 delay: 200,
                 duration: 300,
                 easing: "linear"
@@ -72,18 +72,20 @@ var runAnimation = {
             animate({
                 el: boxes[boxes.length - 1],
                 translateY: [0, "200px"],
-                duration: 200,
+                duration: 700,
                 delay: 1000,
                 easing: "linear"
             });
 
-            animate({
-                el: boxes,
-                translateY: [0, "7px"],
-                duration: 200,
-                delay: 1200,
-                easing: "linear"
-            });
+            for (j = 0; j < boxes.length - 1; j++) {
+                animate({
+                    el: boxes[j],
+                    translateY: [0, "7px"],
+                    duration: 200,
+                    delay: 1100,
+                    easing: "linear"
+                });
+            }
         }
 
         animateThis();
