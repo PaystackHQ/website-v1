@@ -7,28 +7,65 @@
 }
 
 @font-face {
-    font-family: 'Chronica';
-    src: url('/fonts/chronica/ChronicaPro-SemiLight.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/chronica/ChronicaPro-SemiLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/chronica/ChronicaPro-SemiLight.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/chronica/ChronicaPro-SemiLight.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/chronica/ChronicaPro-SemiLight.svg#Graphik-SemiLight') format('svg'); /* Legacy iOS */
+    font-family: 'Graphik';
+    src: url('/fonts/graphik/Graphik-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/graphik/Graphik-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/graphik/Graphik-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/graphik/Graphik-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/graphik/Graphik-Regular.svg#Graphik-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: 'Graphik';
+    src: url('/fonts/graphik/Graphik-Light.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/graphik/Graphik-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/graphik/Graphik-Light.woff') format('woff'), Modern Browsers
+         url('/fonts/graphik/Graphik-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/graphik/Graphik-Light.svg#Graphik-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
 
 @font-face {
-    font-family: 'Chronica';
-    src: url('/fonts/chronica/ChronicaPro-Medium.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/chronica/ChronicaPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/chronica/ChronicaPro-Medium.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/chronica/ChronicaPro-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/chronica/ChronicaPro-Medium.svg#Graphik-Medium') format('svg'); /* Legacy iOS */
+    font-family: 'Graphik';
+    src: url('/fonts/graphik/Graphik-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/graphik/Graphik-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/graphik/Graphik-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/graphik/Graphik-Semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/graphik/Graphik-Semibold.svg#Graphik-Semibold') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
 }
+
+// @font-face {
+//     font-family: 'Chronica';
+//     src: url('/fonts/chronica/ChronicaPro-SemiLight.eot'); /* IE9 Compat Modes */
+//     src: url('/fonts/chronica/ChronicaPro-SemiLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('/fonts/chronica/ChronicaPro-SemiLight.woff') format('woff'), /* Modern Browsers */
+//          url('/fonts/chronica/ChronicaPro-SemiLight.ttf') format('truetype'), /* Safari, Android, iOS */
+//          url('/fonts/chronica/ChronicaPro-SemiLight.svg#Graphik-SemiLight') format('svg'); /* Legacy iOS */
+//     font-style: normal;
+//     font-weight: normal;
+//     text-rendering: optimizeLegibility;
+// }
+
+
+// @font-face {
+//     font-family: 'Chronica';
+//     src: url('/fonts/chronica/ChronicaPro-Medium.eot'); /* IE9 Compat Modes */
+//     src: url('/fonts/chronica/ChronicaPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('/fonts/chronica/ChronicaPro-Medium.woff') format('woff'), /* Modern Browsers */
+//          url('/fonts/chronica/ChronicaPro-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+//          url('/fonts/chronica/ChronicaPro-Medium.svg#Graphik-Medium') format('svg'); /* Legacy iOS */
+//     font-style: normal;
+//     font-weight: bold;
+//     text-rendering: optimizeLegibility;
+// }
 
 
