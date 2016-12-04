@@ -1,15 +1,15 @@
 .hero-section {
     &--features {
-        height: 500px;
+        height: 400px;
         .hero-section__content {
             bottom: auto;
-            top: 30%;
+            top: 40%;
             width: 400px;
         }
     }
 }
 
-.section-features {
+.features-list-section {
     background: lighten($light-gray, 40%);
     padding-bottom: 100px;
 }
@@ -17,7 +17,7 @@
 $features: 4;
 .feature-card {
     background: white;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
     color: $dark-blue;
     margin: 0 auto;
@@ -49,6 +49,7 @@ $features: 4;
         height: 150px;
         margin-top: -75px;
         mix-blend-mode: normal;
+        opacity: 0;
         overflow: hidden;
         position: absolute;
         right: 50px;
@@ -94,9 +95,9 @@ $features: 4;
     &:hover {
         @for $i from 1 through ($features - 1) {
             &:nth-child(#{$i}) {
-                -webkit-transform: translateY(-80px);
+                -webkit-transform: translateY(-95px);
                 ;
-                transform: translateY(-80px);
+                transform: translateY(-95px);
             }
         }
         .feature-card__name {
@@ -107,6 +108,7 @@ $features: 4;
             opacity: 1;
         }
         .feature-card__animation {
+            opacity: 1;
             -webkit-transform: translateY(0);
             transform: translateY(0);
             -webkit-transition: all 300ms;
@@ -130,7 +132,6 @@ $features: 4;
         width: 50%;
     }
     &__box {
-        // background: $light-blue;
         background: $green;
         border-radius: 3px;
         height: 2px;
@@ -141,10 +142,17 @@ $features: 4;
             border-color: transparent;
         }
     }
+    &--full-page {
+        bottom: auto;
+        top: 50%;
+        left: auto;
+        right: 0;
+        transform: translateY(-50%);
+    }
 }
 
 .stack-animation__business {
-    $height: 150;
+    $height: 120;
     .stack-animation__box {
         bottom: -40px;
         float: left;
@@ -152,27 +160,30 @@ $features: 4;
         position: absolute;
         width: 2px;
         &:nth-child(1) {
-            height: #{$height / 2}px;
+            height: #{$height * 2/3}px;
         }
         &:nth-child(2) {
-            height: #{$height * 2/3}px;
+            height: #{$height * 7/8}px;
         }
         &:nth-child(3) {
             height: #{$height}px;
         }
         &:nth-child(4) {
-            height: #{$height * 2/3}px;
+            height: #{$height * 7/8}px;
         }
         &:nth-child(5) {
             height: #{$height * 5/6}px;
         }
         &:nth-child(6) {
-            height: #{$height * 3/4}px;
+            height: #{$height * 6/7}px;
         }
         &:nth-child(7) {
             height: #{$height}px;
         }
-        @for $i from 1 through 7 {
+        &:nth-child(8) {
+            height: #{$height}px;
+        }
+        @for $i from 1 through 8 {
             &:nth-child(#{$i}) {
                 left: #{10 * $i}px;
             }
@@ -184,5 +195,122 @@ $features: 4;
     left: 50px;
     .stack-animation__box {
         width: 50%;
+    }
+}
+
+.stack-animation__developers {
+    padding: 0 20px;
+    .stack-animation__divider {
+        background: $green;
+        border-radius: 3px;
+        bottom: 50px;
+        height: 50px;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        -webkit-transform: translateX(-2px) rotate(20deg);
+        transform: translateX(-2px) rotate(20deg);
+        width: 2px;
+    }
+}
+
+
+/* ==================================
+Styles for a single feature page
+===================================== */
+
+.feature-header {
+    background: linear-gradient(130deg, $dark-blue, darken($dark-blue, 2%));
+    padding: 150px 0 50px;
+    position: relative;
+    &__primary-title {
+        color: $green;
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 0;
+        vertical-align: baseline;
+    }
+    &__secondary-title {
+        color: rgb(93, 124, 152);
+        font-weight: normal;
+        margin: 5px 0 0;
+        max-width: 400px;
+    }
+}
+
+$feature-nav-height: 60px;
+.feature-nav {
+    box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
+    height: $feature-nav-height;
+    position: relative;
+    z-index: 10;
+}
+
+.feature-nav-menu {
+    &__item {
+        font-size: 1.2rem;
+        float: left;
+        letter-spacing: 1px;
+        line-height: $feature-nav-height;
+        margin-right: 50px;
+        text-transform: uppercase;
+    }
+    &__item--action {
+        color: $green;
+        font-weight: bold;
+        float: right;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+}
+
+.feature-section {
+    position: relative;
+    border-bottom: solid 1px whitesmoke;
+    &--light {
+        background: #FAFAFA;
+    }
+    &--dark {
+        background: $dark-blue;
+        color: white;
+    }
+    &--has-padding {
+        padding: 100px 0;
+    }
+}
+
+.feature-section-header {
+    &__label {
+        font-family: $bold-font;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    &__primary-title {
+        font-size: 2.4rem;
+        font-weight: normal;
+        line-height: 1.3;
+        margin: 1.67em 0;
+    }
+    .feature-section--dark & {
+        &__label {
+            color: $light-blue;
+        }
+        &__primary-title {
+            color: white;
+        }
+    }
+}
+
+.breakdown-card {
+    padding: 0 20px 0 0;
+    &__icon {
+        margin: 0;
+    }
+    &--no-padding {
+        padding: 0;
     }
 }

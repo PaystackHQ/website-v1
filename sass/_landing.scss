@@ -1,7 +1,6 @@
-.container--features{
-    padding: 120px 0 90px;
+.container--features {
     background-color: lighten($stack-gray, 52%);
-    background-color: #f5f4f2;
+    padding: 120px 0 90px;
 }
 
 .customers-section__message {
@@ -21,54 +20,48 @@
 }
 
 .feature-item {
-    margin-bottom: 30px;
-    box-shadow: 0 3px 12px -2px rgba(0,0,0,.08);
-    border-radius: $button-default-radius;
     background-color: white;
+    border-radius: $button-default-radius;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, .08);
     margin: 10px;
+    margin-bottom: 30px;
     padding: 30px 25px 25px;
     text-align: center;
-
-    &__icon{
-        height: 40px;
-        width: 40px;
-        margin: 0 auto;
-        border-radius: 50px;
+    &__icon {
         border: 2px solid $green;
+        border-radius: 50px;
+        height: 40px;
+        margin: 0 auto;
+        width: 40px;
     }
-
     &__title {
+        color: $dark-blue;
         font-size: 1.6rem;
         margin-bottom: 0;
-        font-family: $bold-font;
-        color: $dark-blue;
-
-        small{
+        margin-top: 20px;
+        small {
             color: $green;
         }
     }
     &__description {
         font-size: 1.3rem;
-        line-height: 1.6;
-        color: $stack-gray;
+        line-height: 1.3;
+        margin-bottom: 0;
         margin-top: 10px;
     }
 }
 
-
 .home-section {
     position: relative;
-
     &--customers {
         padding: 30px 0 50px;
         position: relative;
     }
-
-    &--customer-logos{
+    &--customer-logos {
         background-color: $dark-blue;
-        height: 480px;
-        background-size: cover;
         background-position: center;
+        background-size: cover;
+        height: 480px;
     }
     &__divider {
         background: darken($lighter-gray, 5%);
@@ -77,8 +70,7 @@
         margin-bottom: 100px;
         width: 100%;
     }
-    &--features {
-    }
+    &--features {}
     &__feature-items {
         margin: 50px 0;
     }
@@ -96,8 +88,8 @@
     max-width: 100%;
     width: 600px;
     &--centered {
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
     }
     &__primary-title {
         color: $dark-blue;
@@ -109,70 +101,59 @@
     }
     &__secondary-title {
         font-size: 1.8rem;
-        line-height: 1.6;
         font-weight: normal;
-        color: $stack-gray;
+        line-height: 1.6;
     }
 }
 
 .home-section-footer {
     margin-top: 50px;
     text-align: center;
-
-    &--features{
+    &--features {
         margin-top: 90px;
     }
 }
 
 .paystack-customers {
-
     &__logo {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        width: 24%;
-        height: 100px;
         display: inline-block;
-        padding: 30px;
-        padding-left: 0; 
+        height: 100px;
         line-height: 90px;
         margin-bottom: 0px;
+        padding: 30px;
+        padding-left: 0;
+        width: 24%;
     }
-
     &__logo-img {
-        width: 100%;
         height: 100%;
         object-fit: contain;
         object-position: center;
-        filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 100%;
     }
-    &__logos {
-    }
+    &__logos {}
 }
 
+.setup-steps-container {
+    margin-top: 30px;
+}
 
 .setup-step {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     &::last-child {
         margin-bottom: 0;
     }
     &__number {
-        position: absolute;
         left: -25px;
-        
-        &--one{
-            top: 6px;
-        }
-
-        &--two{
-            top: 4px;
-        }
-
-        &--three{
-            top: 1px;
-        }
-
+        position: absolute;
+        top: 10px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
         span {
             background: $green;
             border-radius: 6px;
@@ -183,16 +164,15 @@
         }
     }
     &__title {
-        font-size: 1.8rem;
-        margin-bottom: 5px;
-        color: $dark-blue;
-        font-weight: bold;
-        font-family: $bold-font;
+        font-size: 1.6rem;
+        margin: 0;
     }
     &__message {
-        color: $stack-gray;
         font-size: 1.6rem;
         line-height: 1.6;
         margin-top: 5px;
+    }
+    &--list {
+        margin-bottom: 12px;
     }
 }
