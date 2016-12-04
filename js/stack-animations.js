@@ -36,8 +36,8 @@ var runAnimation = {
         }
     },
 
-    business: function() {
-        var boxes = document.getElementById("stack-animation__business").querySelectorAll("div");
+    dashboard: function() {
+        var boxes = document.getElementById("stack-animation__dashboard").querySelectorAll("div");
         for (i = 0; i < boxes.length; i++) {
             animate({
                 el: boxes[i],
@@ -53,8 +53,8 @@ var runAnimation = {
         var boxes = document.getElementById("stack-animation__subscriptions").querySelectorAll("div");
 
         function animateThis() {
-            boxes[0].style.transform = "translateY(-150px)";
-            boxes[0].style.webkitTransform = "translateY(-150px)";
+            boxes[0].style.transform = "translateY(-180px)";
+            boxes[0].style.webkitTransform = "translateY(-180px)";
 
             for (i = 1; i < boxes.length; i++) {
                 boxes[i].style.transform = "translateY(0)";
@@ -63,7 +63,7 @@ var runAnimation = {
 
             animate({
                 el: boxes[0],
-                translateY: ["-150px", 0],
+                translateY: ["-180px", 0],
                 delay: 200,
                 duration: 300,
                 easing: "linear"
@@ -160,7 +160,7 @@ var endAnimation = {
         animate.stop(boxes);
     },
     payments: function() {},
-    business: function() {},
+    dashboard: function() {},
     subscriptions: function() {
         window.clearInterval(animationLoop);
     },

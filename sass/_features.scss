@@ -144,41 +144,29 @@ $features: 4;
     }
 }
 
-.stack-animation__business {
-    $height: 120;
+.stack-animation__dashboard {
     .stack-animation__box {
         bottom: -40px;
         float: left;
         margin-right: 10px;
         position: absolute;
         width: 2px;
-        &:nth-child(1) {
-            height: #{$height * 2/3}px;
-        }
-        &:nth-child(2) {
-            height: #{$height * 7/8}px;
-        }
-        &:nth-child(3) {
-            height: #{$height}px;
-        }
-        &:nth-child(4) {
-            height: #{$height * 7/8}px;
-        }
-        &:nth-child(5) {
-            height: #{$height * 5/6}px;
-        }
-        &:nth-child(6) {
-            height: #{$height * 6/7}px;
-        }
-        &:nth-child(7) {
-            height: #{$height}px;
-        }
-        &:nth-child(8) {
-            height: #{$height}px;
-        }
         @for $i from 1 through 8 {
             &:nth-child(#{$i}) {
                 left: #{10 * $i}px;
+                height: random(50) + 70 + px;
+            }
+        }
+    }
+    &.stack-animation--full-page {
+        height: 50px;
+        overflow: hidden;
+        .stack-animation__box {
+            bottom: 0;
+            @for $i from 1 through 8 {
+                &:nth-child(#{$i}) {
+                    height: random(30) + 20 + px;
+                }
             }
         }
     }
@@ -245,6 +233,7 @@ Styles for a single feature page
 $feature-nav-height: 60px;
 .feature-nav {
     box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
+    font-family: $bold-font;
     height: $feature-nav-height;
     position: relative;
     z-index: 10;
@@ -293,6 +282,7 @@ $feature-nav-height: 60px;
 }
 
 .feature-section-header {
+    position: relative;
     &__label {
         font-family: $bold-font;
         font-size: 1.3rem;
@@ -333,5 +323,14 @@ $feature-nav-height: 60px;
     }
     &--no-padding {
         padding: 0;
+    }
+    &--inline {
+        display: flex;
+        .breakdown-card__icon {
+            padding-top: 10px;
+            margin-right: 20px;
+        }
+        .breakdown-card__content {
+        }
     }
 }
