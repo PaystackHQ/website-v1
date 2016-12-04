@@ -233,7 +233,7 @@
     &__logo {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        width: 32%;
+        width: 24%;
         height: 100px;
         display: inline-block;
         padding: 30px;
@@ -247,10 +247,10 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: left;
+        object-position: center;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
-        opacity: .5 ;
+        // opacity:  ;
     }
     &__logos {
         // margin-left: 75px;

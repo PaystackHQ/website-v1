@@ -5,7 +5,7 @@
     left: 0px;
     top: 100%;
     position: absolute;
-    width: 180px;
+    width: 170px;
     border-radius: $button-default-radius;
     background-color: white;
     opacity: 0;
@@ -22,12 +22,12 @@
 
     &:before{
         z-index: 3;
-        top: -10px;
+        top: -11px;
         left: 15px;
         border-color: transparent;
         border-bottom-color: white;
         border-style: solid;
-        border-width: 5px;
+        border-width: 6px;
         content: '';
         height: 0;
         position: absolute;
@@ -40,30 +40,15 @@
 .global-dropdown-menu__divider{
     height: 1px;
     width: 100%;
-    opacity: 0;
-    background-color: #efefef;
-    transition: opacity .3s;
-    transition-delay: 0s;
-    
-    .global-nav__item.active &{
-        opacity: 1;
-        transition-delay: .2s;
-    }
+    background-color: lighten($stack-lighter-gray, 30%);
+
 }
 
 .global-dropdown-menu__item {
-    // background-color: white;
-    color: $stack-gray;   
+    color: $stack-lighter-gray;   
     padding: 20px;
     width: 100%;
-    // opacity: 0;
-    // transform: scale(0);
-    // transition: opacity .3s, transform .45s, color .3s;
-
-    // .global-nav__item.active &{
-    //     opacity: 1;
-    //     transform: scale(1);
-    // }
+    transition: color .3s;
 
     &:hover{
         color: $dark-blue;
