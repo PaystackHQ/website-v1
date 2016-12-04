@@ -19,8 +19,10 @@
             </div>
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
-                    <li class="global-nav__item">
-                        <a href="#">Product</a>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="#">
+                            Product <i class="icon icon--navigation-chevron"></i>
+                        </a>
                         <ul class="global-dropdown-menu">
                             <li class="global-dropdown-menu__item">
                                 <a href="#">Payments</a>
@@ -321,32 +323,19 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
     <script>
-    (function() {
-        var list = document.getElementById('features-list');
-        var active_item = 1;
-        var direction = "down";
-        var offset = 0;
+        $(function(){
+            $('.global-nav__item--has-dropdown').click(function(event){
+                event.stopPropagation();
+                $(this).toggleClass('active');
+            });
 
-        setInterval(function() {
-            if (direction === "down") {
-                offset -= 40;
-                active_item++;
-            } else {
-                offset += 40;
-                active_item--;
-            }
-
-            list.style.transform = "translateY(" + offset + "px)";
-            list.style.webkitTransform = "translateY(" + offset + "px)";
-
-            if (active_item === 8) {
-                direction = "up";
-            } else if (active_item === 1) {
-                direction = "down";
-            }
-        }, 1500);
-    })();
+            $('html').click(function() {
+              $('.global-nav__item--has-dropdown').removeClass('active');
+            });
+        });
     </script>
 </body>
 
