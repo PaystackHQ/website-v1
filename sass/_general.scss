@@ -3,7 +3,7 @@
     height: 700px;
     position: relative;
     &__content {
-        bottom: 20%;
+        bottom: 25%;
         color: white;
         float: left;
         left: 0;
@@ -45,19 +45,18 @@
 }
 
 .global-signup {
-    // background: $lighter-gray;
     padding: 150px 0;
     text-align: center;
     
     &__primary-title {
-        // color: $dark-blue;
         font-family: $bold-font;
-        font-size: 3.5rem;
-        margin-top: 0;
+        font-size: 3.6rem;
+        margin: 0;
+        line-height: 1.2;
     }
     &__secondary-title {
-        line-height: 1.2;
-        font-size: 2rem;
+        line-height: 1.6;
+        font-size: 1.8rem;
         font-weight: normal;
         margin-bottom: 30px;
     }
@@ -67,13 +66,13 @@
         margin: 0 5px;
     }
     &--dark {
-        // background: $dark-blue;
-        // color: white;
-        // .global-signup__primary-title {
-        //     color: $light-blue;
-        // }
-        // .global-signup__secondary-title {
-        //     color: white;
-        // }
+        background: $dark-blue;
+        color: white;
+        .global-signup__primary-title {
+            color: $light-blue;
+        }
+        .global-signup__secondary-title {
+            color: white;
+        }
     }
 }

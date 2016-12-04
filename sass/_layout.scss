@@ -11,6 +11,10 @@
     &--md {
     	max-width: 960px;
     }
+
+    &--lg{
+        max-width: 1240px;
+    }
 }
 
 .grid {
@@ -64,6 +68,10 @@
     .grid--with-gutters & {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    &--offset-3{
+        margin-left: 25%;
     }
 }
 
