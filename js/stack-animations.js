@@ -105,7 +105,7 @@ var runAnimation = {
         animate({
             el: leftBoxes[0],
             translateX: [0, "-10px"],
-            translateY: [0, "-60px"],
+            translateY: [0, "-70px"],
             rotate: [0, "-45deg"],
             duration: 300,
             delay: 500,
@@ -115,7 +115,7 @@ var runAnimation = {
         animate({
             el: leftBoxes[1],
             translateX: [0, "-10px"],
-            translateY: [0, "-50px"],
+            translateY: [0, "-60px"],
             rotate: [0, "45deg"],
             duration: 300,
             delay: 600,
@@ -125,7 +125,7 @@ var runAnimation = {
         animate({
             el: rightBoxes[0],
             translateX: [0, "10px"],
-            translateY: [0, "-60px"],
+            translateY: [0, "-70px"],
             rotate: [0, "45deg"],
             duration: 300,
             delay: 700,
@@ -135,7 +135,7 @@ var runAnimation = {
         animate({
             el: rightBoxes[1],
             translateX: [0, "10px"],
-            translateY: [0, "-50px"],
+            translateY: [0, "-60px"],
             rotate: [0, "-45deg"],
             duration: 300,
             delay: 800,
