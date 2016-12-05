@@ -215,7 +215,9 @@ Styles for a single feature page
 ===================================== */
 
 .feature-header {
-    background: linear-gradient(130deg, $dark-blue, darken($dark-blue, 2%));
+    background: $dark-blue;
+    background-image: url(../images/landing/background.svg);
+    background-size: cover;
     padding: 150px 0 50px;
     position: relative;
     overflow: hidden;

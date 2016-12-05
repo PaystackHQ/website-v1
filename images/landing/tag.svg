@@ -1,0 +1,18 @@
+<svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <g style="mix-blend-mode:normal" figma:type="frame" fill="#3BB75E">
+        <use xlink:href="#a" transform="rotate(45 -21.791 34.493)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#b" transform="rotate(45 -23.913 39.618)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#a" transform="rotate(45 -28.158 49.864)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#a" transform="rotate(45 -30.28 54.989)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#c" transform="rotate(45 17.258 41.664)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#d" transform="rotate(45 5.017 53.102)" style="mix-blend-mode:normal" figma:type="vector"/>
+        <use xlink:href="#e" transform="rotate(45 -.235 55.428)" style="mix-blend-mode:normal" figma:type="vector"/>
+    </g>
+    <defs>
+        <path id="a" d="M2.122 0H0v12.734h2.122V0z"/>
+        <path id="b" d="M4.245 0H0v12.734h4.245V0z"/>
+        <path id="c" fill-rule="evenodd" d="M0 46.704a2.13 2.13 0 0 0 2.119 2.109h27.597a2.11 2.11 0 0 0 2.118-2.109V13.805c0-.815-.405-1.912-.946-2.542l-8.665-10.09C21.642.498 20.558 0 19.663 0h-7.484c-.907 0-1.976.492-2.562 1.173l-8.67 10.09C.403 11.895 0 12.972 0 13.804v32.9zm2.557-34.058l8.67-10.09c.183-.212.664-.434.952-.434h7.483c.278 0 .773.227.951.434l8.665 10.09c.21.244.434.851.434 1.16v32.898L2.12 46.69l.003-32.885c0-.322.22-.909.435-1.16z"/>
+        <path id="d" fill-rule="evenodd" d="M0 4.245a4.245 4.245 0 1 1 8.49 0 4.245 4.245 0 0 1-8.49 0zm6.367 0a2.122 2.122 0 1 0-4.245 0 2.122 2.122 0 0 0 4.245 0z"/>
+        <path id="e" fill-rule="evenodd" d="M16.801 15.725c3.232-.647 4.777-2.751 4.297-5.315-.401-2.144-2.195-4.136-4.251-4.643a1.061 1.061 0 0 0-.508 2.06c1.228.303 2.421 1.628 2.673 2.973.26 1.384-.5 2.418-2.628 2.844C9.798 14.964 3.332 7.99 2.107.881a1.061 1.061 0 1 0-2.091.36C1.417 9.378 8.789 17.331 16.8 15.725z"/>
+    </defs>
+</svg>

@@ -3,6 +3,13 @@
     height: 700px;
     position: relative;
     overflow: hidden;
+    &__background {
+        background: url(../images/landing/background.svg);
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
     &__content {
         bottom: 25%;
         color: white;
@@ -15,18 +22,16 @@
         text-align: center;
         width: 580px;
     }
-    &__background {
-        background: url(../images/landing/background.svg);
-        background-size: cover;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
     &__primary-title {
         color: white;
         font-family: $bold-font;
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin: 0;
+        overflow: hidden;
+
+        span {
+            display: block;
+        }
     }
     &__secondary-title {
         color: white;
