@@ -1,0 +1,30 @@
+<svg width="1280" height="700" viewBox="0 0 1280 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        background
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g style="mix-blend-mode:normal" figma:type="frame">
+        <use xlink:href="#a" fill="url(#b)" style="mix-blend-mode:normal" figma:type="rounded-rectangle"/>
+        <use xlink:href="#c" transform="translate(14 37)" fill="url(#d)" style="mix-blend-mode:normal" figma:type="ellipse"/>
+        <use xlink:href="#c" transform="translate(589 14)" fill="url(#e)" style="mix-blend-mode:normal" figma:type="ellipse"/>
+    </g>
+    <defs>
+        <linearGradient id="b" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-204 654.5 -1196.8 -373.029 1381.4 339.514)">
+            <stop offset="0" stop-color="#0D2A45"/>
+            <stop offset=".955" stop-color="#041626"/>
+        </linearGradient>
+        <radialGradient id="d" cx=".5" cy=".5" r=".5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 626 -626 0 626 0)">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".03"/>
+            <stop offset="1" stop-color="#011B33" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="e" cx=".5" cy=".5" r=".5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 626 -626 0 626 0)">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".03"/>
+            <stop offset=".49" stop-color="#FFF" stop-opacity=".02"/>
+            <stop offset="1" stop-color="#011B33" stop-opacity="0"/>
+        </radialGradient>
+        <path id="a" d="M0 0h1280v700H0V0z"/>
+        <path id="c" d="M626 313c0 172.865-140.135 313-313 313S0 485.865 0 313 140.135 0 313 0s313 140.135 313 313z"/>
+    </defs>
+</svg>

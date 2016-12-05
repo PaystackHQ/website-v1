@@ -2,6 +2,7 @@
     background: $dark-blue;
     height: 700px;
     position: relative;
+    overflow: hidden;
     &__content {
         bottom: 25%;
         color: white;
@@ -14,11 +15,17 @@
         text-align: center;
         width: 580px;
     }
-    &__background {}
+    &__background {
+        background: url(../images/landing/background.svg);
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
     &__primary-title {
         color: white;
         font-family: $bold-font;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin: 0;
     }
     &__secondary-title {
@@ -37,7 +44,6 @@
         margin-bottom: 30px;
         overflow: hidden;
         width: 72px;
-
         img {
             width: 100%;
         }
@@ -47,7 +53,6 @@
 .global-signup {
     padding: 150px 0;
     text-align: center;
-    
     &__primary-title {
         font-family: $bold-font;
         font-size: 3.6rem;
