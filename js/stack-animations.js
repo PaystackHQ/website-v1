@@ -19,6 +19,7 @@ var runAnimation = {
                 easing: "linear"
             });
         }
+
         for (i = 0; i < rightBoxes.length; i++) {
             var box = rightBoxes[i];
             var origin = -300;

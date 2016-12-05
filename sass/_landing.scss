@@ -84,7 +84,7 @@
         padding: 50px 0;
     }
     &__setup-steps {
-        margin: 60px 0;
+        margin: 40px 0;
     }
 }
 
@@ -101,7 +101,7 @@
         color: $dark-blue;
         font-family: $bold-font;
         font-weight: bold;
-        font-size: 3.6rem;
+        font-size: 3rem;
         line-height: 1.2;
         margin: 0;
     }
@@ -149,7 +149,7 @@
 
 .setup-step {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 20px;
     &::last-child {
         margin-bottom: 0;
@@ -180,5 +180,83 @@
     }
     &--list {
         margin-bottom: 12px;
+    }
+}
+
+.slide {
+    top: 50%;
+    color: white;
+    float: left;
+    left: 0;
+    margin: 0 auto;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    width: 850px;
+    &--one,
+    &--four {
+        width: 550px;
+    }
+    &__image {
+        background: #112E48;
+        border-radius: 2px;
+        box-shadow: 0px 14px 45px rgba(0, 0, 0, 0.18);
+        height: 300px;
+        mix-blend-mode: normal;
+        opacity: 1;
+        overflow: hidden;
+        width: 95%;
+        img {
+            width: 100%;
+        }
+    }
+    &__image--right {
+        float: right;
+    }
+    &__icon {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    &__primary-title {
+        color: $green;
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin: 0;
+    }
+    &__secondary-title {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 1.3;
+        margin: 10px 0;
+    }
+    &__footer {
+        bottom: -50px;
+        left: 0;
+        margin: 50px auto 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 400px;
+    }
+    &__logo-box {
+        background: $dark-blue;
+        border-radius: 50%;
+        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+        height: 80px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 200px;
+        width: 80px;
+        z-index: 10;
+        img {
+            margin-top: 25px;
+            width: 30px;
+        }
     }
 }

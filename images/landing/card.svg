@@ -1,0 +1,18 @@
+<svg width="41" height="30" viewBox="0 0 41 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <g style="mix-blend-mode:normal" figma:type="vector" fill="#3BB75E">
+        <use xlink:href="#a1" style="mix-blend-mode:normal"/>
+        <use xlink:href="#b1" style="mix-blend-mode:normal"/>
+        <use xlink:href="#c1" style="mix-blend-mode:normal"/>
+        <use xlink:href="#d1" style="mix-blend-mode:normal"/>
+        <use xlink:href="#e1" style="mix-blend-mode:normal"/>
+        <use xlink:href="#f1" style="mix-blend-mode:normal"/>
+    </g>
+    <defs>
+        <path id="a1" fill-rule="evenodd" d="M37.5 28.636H3.41a2.048 2.048 0 0 1-2.046-2.045V10.909h38.181v15.682a2.048 2.048 0 0 1-2.045 2.045zM1.364 9.546h38.181V5.454H1.364v4.09zm2.045-8.182H37.5c1.128 0 2.045.917 2.045 2.045v.682H1.364v-.682c0-1.128.917-2.045 2.045-2.045zM37.5 0H3.41C1.53 0 0 1.53 0 3.41v23.18C0 28.47 1.53 30 3.41 30H37.5c1.88 0 3.41-1.53 3.41-3.41V3.41C40.91 1.53 39.38 0 37.5 0z"/>
+        <path id="b1" fill-rule="evenodd" d="M24.546 24.546h10.909V19.09h-10.91v5.454zm11.59-6.819H23.864a.681.681 0 0 0-.682.682v6.818c0 .377.305.682.682.682h12.272a.681.681 0 0 0 .682-.682V18.41a.681.681 0 0 0-.682-.682z"/>
+        <path id="c1" fill-rule="evenodd" d="M4.09 15.682h6.13a.681.681 0 1 0 0-1.364H4.09a.681.681 0 1 0 0 1.364z"/>
+        <path id="d1" fill-rule="evenodd" d="M19.09 14.318h-6.127a.681.681 0 1 0 0 1.364h6.128a.681.681 0 1 0 0-1.364z"/>
+        <path id="e1" fill-rule="evenodd" d="M14.318 17.046H4.091a.681.681 0 1 0 0 1.363h10.227a.681.681 0 1 0 0-1.363z"/>
+        <path id="f1" fill-rule="evenodd" d="M19.09 17.046h-2.044a.681.681 0 1 0 0 1.363h2.045a.681.681 0 1 0 0-1.363z"/>
+    </defs>
+</svg>
