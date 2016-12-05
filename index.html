@@ -19,7 +19,29 @@
             </div>
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
-                    <li class="global-nav__item"><a href="product.html">Product</a></li>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="product.html">
+                            Product
+                        </a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_payments.html">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Developers</a>
+                            </li>
+                            <li class="global-dropdown-menu__divider"></li>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Product Home</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="global-nav__item"><a href="#">Pricing</a></li>
                     <li class="global-nav__item"><a href="#">Developers</a></li>
                     <li class="global-nav__item"><a href="#">Company</a></li>
@@ -82,7 +104,7 @@
                 </div>
                 <div class="grid__column grid__column--6">
                     <div class="features-illustration">
-                        <img src="images/intro-image.png" width="500px" style="margin-left: 100px; margin-top: 30px" alt="Sample">
+                        <img src="images/landing/intro-image.png" width="500px" style="margin-left: 100px; margin-top: 30px" alt="Sample">
                     </div>
                 </div>
             </div>
@@ -302,18 +324,6 @@
         </div>
     </footer>
     <script src="js/jquery.min.js"></script>
-    <script>
-    $(function() {
-        $('.global-nav__item--has-dropdown').click(function(event) {
-            event.stopPropagation();
-            $(this).toggleClass('active');
-        });
-
-        $('html').click(function() {
-            $('.global-nav__item--has-dropdown').removeClass('active');
-        });
-    });
-    </script>
 </body>
 
 </html>
