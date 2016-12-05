@@ -4,6 +4,12 @@
     background-color: #f5f4f2;
 }
 
+.container--customer-logos{
+    padding: 60px 0 75px;
+    background-color: $dark-blue;
+    border-radius: $button-default-radius;
+}
+
 .customers-section__message {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -65,8 +71,8 @@
     }
 
     &--customer-logos{
-        background-color: $dark-blue;
-        padding: 90px 0 100px;
+        // background-color: $dark-blue;
+        // padding: 90px 0 100px;
     }
     &__divider {
         background: darken($lighter-gray, 5%);
