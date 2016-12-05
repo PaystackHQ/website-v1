@@ -34,7 +34,7 @@
         width: 40px;
         margin: 0 auto;
         border-radius: 50px;
-        border: 2px solid $green;
+        border: 1px solid $green;
     }
 
     &__title {
@@ -138,7 +138,7 @@
         cursor: pointer;
 
         &:hover{
-            opacity: 1;
+            // opacity: .75;
         }
     }
 
