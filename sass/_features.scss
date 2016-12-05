@@ -195,6 +195,10 @@ $features: 4;
         transform: translateX(-2px) rotate(20deg);
         width: 2px;
     }
+    &.stack-animation--full-page {
+        top: auto;
+        bottom: -120%;
+    }
 }
 
 .stack-animation--full-page {
@@ -330,7 +334,6 @@ $feature-nav-height: 60px;
             padding-top: 10px;
             margin-right: 20px;
         }
-        .breakdown-card__content {
-        }
+        .breakdown-card__content {}
     }
 }
