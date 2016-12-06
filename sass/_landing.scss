@@ -119,6 +119,7 @@
         left: 50%;
         top: 0;
         height: 100%;
+        overflow: hidden;
 
         &:before, &:after{
             content: "";
