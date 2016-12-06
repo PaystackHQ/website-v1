@@ -62,11 +62,9 @@
         right: 0;
         text-align: center;
         width: 120px;
-
         &:hover {
             opacity: 1;
         }
-
         svg {
             margin-right: 5px;
         }
@@ -203,7 +201,7 @@
             background-size: contain;
             background-image: linear-gradient(to bottom, rgba(1, 27, 51, 0), rgba(1, 27, 51, 1) 90%);
             width: 100%;
-            height: 4em;
+            height: 50%;
         }
         &:before {
             top: 0;
@@ -216,29 +214,15 @@
         width: 100%;
         position: relative;
         background-image: url(../images/clients/clients.png);
+        background-size: 540px auto;
         background-repeat: repeat-y;
         opacity: .24;
         animation: scroll-customers 250s infinite;
         -webkit-animation: scroll-customers 250s infinite;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/clients/clients@2x.png);
+        }
     }
-    // &__logo {
-    //     box-sizing: border-box;
-    //     -moz-box-sizing: border-box;
-    //     display: inline-block;
-    //     height: 94px;
-    //     line-height: 90px;
-    //     margin-bottom: 30px;
-    //     padding: 30px;
-    //     width: 32%;
-    //     opacity: .4;
-    //     cursor: pointer;
-    // }
-    // &__logo-img {
-    //     height: 100%;
-    //     object-fit: contain;
-    //     object-position: center;
-    //     width: 100%;
-    // }
 }
 
 .setup-steps-container {
