@@ -20,20 +20,25 @@
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
                     <li class="global-nav__item global-nav__item--has-dropdown">
-                        <a href="#">
-                            Product <i class="icon icon--navigation-chevron"></i>
+                        <a href="product.html">
+                            Product
                         </a>
                         <ul class="global-dropdown-menu">
                             <li class="global-dropdown-menu__item">
-                                <a href="#">Payments</a>
+                                <a href="product_payments.html">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Developers</a>
                             </li>
                             <li class="global-dropdown-menu__divider"></li>
-                            <li class="global-dropdown-menu__item">
-                                <a href="#">Business Tools</a>
-                            </li>
-                            <li class="global-dropdown-menu__divider"></li>
-                            <li class="global-dropdown-menu__item">
-                                <a href="#">Developer Tools</a>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Product Home</a>
                             </li>
                         </ul>
                     </li>
@@ -50,70 +55,138 @@
         </div>
     </nav>
     <section class="hero-section">
-        <div class="hero-section__background">
-        </div>
-        <div class="hero-section__content">
-            <h1 class="hero-section__primary-title slide-in slide-in--from-bottom">
-                <div class="slide-in__element">Building a business is hard.</div>
-            </h1>
-            <h1 class="hero-section__primary-title slide-in slide-in--from-bottom">
-                <div class="slide-in__element slide-in__element--2s">Getting paid should not be.</div>
-            </h1>
-            <h2 class="hero-section__secondary-title fade-in fade-in--3s">Paystack helps Nigerian businesses accept payments online from anyone, anywhere in the world.</h2>
-            <div class="hero-section__call-to-action fade-in fade-in--3s">
-                <a class="button button--large button--green" href="/">Create a free account</a>
+        <div class="hero-section__background"> </div>
+        <div class="hero-section__slider">
+            <div class="slide slide--one global-u-text-center" style="display: none" id="slide--one">
+                <h1 class="hero-section__primary-title">
+                    <span class="hero-section__primary-text">Building a business is hard.</span></h1>
+                <h1 class="hero-section__primary-title">
+                    <span class="hero-section__primary-text">Getting paid should not be.</span>
+                </h1>
+                <h2 class="hero-section__secondary-title">Paystack helps Nigerian businesses accept payments online from anyone, anywhere in the world.</h2>
+                <div class="hero-section__call-to-action">
+                    <a class="button button--large button--green" href="/">Create a free account</a>
+                </div>
             </div>
-        </div>
+            <div class="slide slide--two" id="slide--two" style="display: none">
+                <div class="grid grid--with-gutters">
+                    <div class="grid__column grid__column--8">
+                        <div class="slide__image">
+                            <img src="images/landing/seller.jpg" alt="Seller" />
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--4 slide__content">
+                        <figure class="slide__icon">
+                            <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                                <g style="mix-blend-mode:normal" figma:type="frame" fill="#3BB75E">
+                                    <use xlink:href="#a" transform="rotate(45 -21.791 34.493)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#b" transform="rotate(45 -23.913 39.618)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#a" transform="rotate(45 -28.158 49.864)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#a" transform="rotate(45 -30.28 54.989)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#c" transform="rotate(45 17.258 41.664)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#d" transform="rotate(45 5.017 53.102)" style="mix-blend-mode:normal" figma:type="vector" />
+                                    <use xlink:href="#e" transform="rotate(45 -.235 55.428)" style="mix-blend-mode:normal" figma:type="vector" />
+                                </g>
+                                <defs>
+                                    <path id="a" d="M2.122 0H0v12.734h2.122V0z" />
+                                    <path id="b" d="M4.245 0H0v12.734h4.245V0z" />
+                                    <path id="c" fill-rule="evenodd" d="M0 46.704a2.13 2.13 0 0 0 2.119 2.109h27.597a2.11 2.11 0 0 0 2.118-2.109V13.805c0-.815-.405-1.912-.946-2.542l-8.665-10.09C21.642.498 20.558 0 19.663 0h-7.484c-.907 0-1.976.492-2.562 1.173l-8.67 10.09C.403 11.895 0 12.972 0 13.804v32.9zm2.557-34.058l8.67-10.09c.183-.212.664-.434.952-.434h7.483c.278 0 .773.227.951.434l8.665 10.09c.21.244.434.851.434 1.16v32.898L2.12 46.69l.003-32.885c0-.322.22-.909.435-1.16z" />
+                                    <path id="d" fill-rule="evenodd" d="M0 4.245a4.245 4.245 0 1 1 8.49 0 4.245 4.245 0 0 1-8.49 0zm6.367 0a2.122 2.122 0 1 0-4.245 0 2.122 2.122 0 0 0 4.245 0z" />
+                                    <path id="e" fill-rule="evenodd" d="M16.801 15.725c3.232-.647 4.777-2.751 4.297-5.315-.401-2.144-2.195-4.136-4.251-4.643a1.061 1.061 0 0 0-.508 2.06c1.228.303 2.421 1.628 2.673 2.973.26 1.384-.5 2.418-2.628 2.844C9.798 14.964 3.332 7.99 2.107.881a1.061 1.061 0 1 0-2.091.36C1.417 9.378 8.789 17.331 16.8 15.725z" />
+                                </defs>
+                            </svg>
+                        </figure>
+                        <h2 class="slide__primary-title">Modern Payments Infrastructure</h2>
+                        <h4 class="slide__secondary-title">We've built a product that is easy, secure and adaptable to your business case</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide--three" id="slide--three" style="display: none">
+                <div class="grid grid--with-gutters">
+                    <div class="grid__column grid__column--4 slide__content">
+                        <figure class="slide__icon">
+                            <svg width="41" height="30" viewBox="0 0 41 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                                <g style="mix-blend-mode:normal" figma:type="vector" fill="#3BB75E">
+                                    <use xlink:href="#a1" style="mix-blend-mode:normal" />
+                                    <use xlink:href="#b1" style="mix-blend-mode:normal" />
+                                    <use xlink:href="#c1" style="mix-blend-mode:normal" />
+                                    <use xlink:href="#d1" style="mix-blend-mode:normal" />
+                                    <use xlink:href="#e1" style="mix-blend-mode:normal" />
+                                    <use xlink:href="#f1" style="mix-blend-mode:normal" />
+                                </g>
+                                <defs>
+                                    <path id="a1" fill-rule="evenodd" d="M37.5 28.636H3.41a2.048 2.048 0 0 1-2.046-2.045V10.909h38.181v15.682a2.048 2.048 0 0 1-2.045 2.045zM1.364 9.546h38.181V5.454H1.364v4.09zm2.045-8.182H37.5c1.128 0 2.045.917 2.045 2.045v.682H1.364v-.682c0-1.128.917-2.045 2.045-2.045zM37.5 0H3.41C1.53 0 0 1.53 0 3.41v23.18C0 28.47 1.53 30 3.41 30H37.5c1.88 0 3.41-1.53 3.41-3.41V3.41C40.91 1.53 39.38 0 37.5 0z" />
+                                    <path id="b1" fill-rule="evenodd" d="M24.546 24.546h10.909V19.09h-10.91v5.454zm11.59-6.819H23.864a.681.681 0 0 0-.682.682v6.818c0 .377.305.682.682.682h12.272a.681.681 0 0 0 .682-.682V18.41a.681.681 0 0 0-.682-.682z" />
+                                    <path id="c1" fill-rule="evenodd" d="M4.09 15.682h6.13a.681.681 0 1 0 0-1.364H4.09a.681.681 0 1 0 0 1.364z" />
+                                    <path id="d1" fill-rule="evenodd" d="M19.09 14.318h-6.127a.681.681 0 1 0 0 1.364h6.128a.681.681 0 1 0 0-1.364z" />
+                                    <path id="e1" fill-rule="evenodd" d="M14.318 17.046H4.091a.681.681 0 1 0 0 1.363h10.227a.681.681 0 1 0 0-1.363z" />
+                                    <path id="f1" fill-rule="evenodd" d="M19.09 17.046h-2.044a.681.681 0 1 0 0 1.363h2.045a.681.681 0 1 0 0-1.363z" />
+                                </defs>
+                            </svg>
+                        </figure>
+                        <h2 class="slide__primary-title">Offering the best payment experience</h2>
+                        <h4 class="slide__secondary-title">Clean and easy interfaces encourage your customers to keep paying.</h4>
+                    </div>
+                    <div class="grid__column grid__column--8">
+                        <div class="slide__image slide__image--right">
+                            <img src="images/landing/seller.jpg" alt="Seller" />
+                        </div>
+                    </div>
+                    <div class="slide__logo-box" style="display: none;"><img src="images/logo_icon.svg" alt="Logo"></div>
+                    <div class="slide__footer" style="display: none;">
+                        <h2 class="slide__primary-title">Truly easy payments</h2>
+                        <h4 class="slide__secondary-title">Paystack aims to make the payments process seamless for you and your customers.</h4>
+                    </div>
+                </div>
+            </div>
+            </path>
     </section>
     <section class="home-section home-section--intro">
         <div class="container container--md">
             <div class="grid">
                 <div class="grid__column grid__column--6">
                     <div class="home-section-header">
-                        <h2 class="home-section-header__primary-title">A complete stack of payment solutions.</h2>
-                        <h3 class="home-section-header__secondary-title">We don’t believe people should be required to take on risky forms of debt, even just for a month, to get cash back on their spending. With Zero, there’s no more keeping up with credit card balances, bills, and due dates, all in the name of chasing down rewards.</h3>
+                        <h2 class="home-section-header__primary-title">Complete payment solution</h2>
+                        <h3 class="home-section-header__secondary-title">Whether you're a small or large business, Paystack is built in with a complete stack of powerful payment features that allows fast, flexible and seamless experiences.</h3>
                     </div>
                     <div class="home-section__setup-steps">
                         <div class="setup-step">
-                            <div class="setup-step__number setup-step__number--one">
+                            <div class="setup-step__number">
                                 <span></span>
                             </div>
                             <h3 class="setup-step__title">Easy and free to get started</h3>
-                            <p class="setup-step__message">You can setup Paystack on your site or app even without a developer in minutes. For free.</p>
+                            <p class="setup-step__message">You can setup Paystack on your site or app even without a developer in minutes.</p>
                         </div>
                         <div class="setup-step">
-                            <div class="setup-step__number setup-step__number--two">
+                            <div class="setup-step__number">
                                 <span></span> <span></span>
                             </div>
                             <h3 class="setup-step__title">We make sure you get paid</h3>
-                            <p class="setup-step__message">Card, bank transfer options and an intelligent payment engine make the best success rates .</p>
+                            <p class="setup-step__message">Whether its domestic or international, desktop or in-app, we make sure your services are paid for..</p>
                         </div>
                         <div class="setup-step">
-                            <div class="setup-step__number setup-step__number--three">
+                            <div class="setup-step__number">
                                 <span></span> <span></span> <span></span>
                             </div>
                             <h3 class="setup-step__title">We provide tools to help you grow</h3>
-                            <p class="setup-step__message">Get reliable support and business solutions to measure and improve your growth.</p>
+                            <p class="setup-step__message">Beyond payments, get reliable support and business solutions to measure and improve your growth.</p>
                         </div>
                     </div>
                 </div>
                 <div class="grid__column grid__column--6">
                     <div class="features-illustration">
-                        <img src="images/intro-image-v3.png" width="500px" style="margin-left: 100px; margin-top: 30px" alt="Sample">
+                        <img src="images/intro-image-v3.png" width="450px" style="margin-left: 100px;" alt="Intro Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="home-section home-section--features">
-        <div class="container container--lg container--features">
-            <div class="container container">
+        <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column--12">
-                    <!-- <div class="home-section__divider"></div> -->
                     <div class="home-section-header home-section-header--centered">
-                        <h2 class="home-section-header__primary-title">Features that make all the difference.</h2>
+                        <h2 class="home-section-header__primary-title">Features that make the difference.</h2>
                         <h3 class="home-section-header__secondary-title">Paystack has all the important product features and software tools you need to run on the internet. And we'll keep adding.</h3>
                     </div>
                 </div>
@@ -121,93 +194,88 @@
             <div class="home-section__feature-items grid">
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/pay.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Zero Setup Fees</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">No fees necessary to create your account.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/gears.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Easy Integration</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">It only takes minutes to get Paystack plugged in.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
-                        <h3 class="feature-item__title">Flexible Payments</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/people2.svg" class="icon"></object>
+                        </div>
+                        <h3 class="feature-item__title">Designed for people</h3>
+                        <p class="feature-item__description">Your customers get the best payment experience.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/pound-dollar.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Multicurrency</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">Charge for your products in multiple currencies.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/padlock.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Security</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">PCI-compliant, with fraud management built-in.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/recurring.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Recurring Payments</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">Conveniently run a subscription business.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/next-day.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Next Day Payouts</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="feature-item__description">Automatic to your account the next day. No delays.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
-                        <div class="feature-item__icon"></div>
+                        <div class="feature-item__icon">
+                            <object type="image/svg+xml" data="images/feature-icons/reporting.svg" class="icon"></object>
+                        </div>
                         <h3 class="feature-item__title">Reporting</h3>
-                        <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--6">
-                    <div class="feature-item">
-                        <div class="feature-item__icon"></div>
-                        <h3 class="feature-item__title">USSD <small>soon</small></h3>
-                        <div class="grid">
-                            <div class="grid__column grid__column--6 grid__column--centered">
-                                <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--6">
-                    <div class="feature-item">
-                        <div class="feature-item__icon"></div>
-                        <h3 class="feature-item__title">Mobile App <small>soon</small></h3>
-                        <div class="grid__column grid__column--6 grid__column--centered">
-                            <p class="feature-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
+                        <p class="feature-item__description">See your company growth and export at will.</p>
                     </div>
                 </div>
                 <div class="grid__column grid__column--12">
                     <div class="home-section-footer home-section-footer--features">
-                        <a href="" class="button button--green button--large">Explore our stack</a>
+                        <a href="product.html" class="button button--green">Explore our product</a>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
     </section>
-    <section class="home-section home-section--customers">
+    <section class="home-section home-section--dark home-section--customers">
         <div class="container container--md">
-            <div class="grid">
-                <div class="grid__column grid__column--6">
+            <div class="grid customers-section ">
+                <div class="grid__column grid__column--5">
                     <div class="home-section-header">
                         <h2 class="home-section-header__primary-title">
                             Paystack works for some of the best companies in Africa.
@@ -219,52 +287,46 @@
                 </div>
             </div>
         </div>
+        <ul class="customers-section__logos grid__column grid__column--5">
+            <li class="customers-section__logo">
+                <img src="images/clients-w/hotels.svg" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/jobberman.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/payporte.svg" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/irokotv.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/printivo.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/gigalayer.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/jmc.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/afritickets.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/suregifts.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/gingerbox.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/spinlet.png" alt="" class="customers-section__logo-img">
+            </li>
+            <li class="customers-section__logo">
+                <img src="images/clients-w/pushcv.png" alt="" class="customers-section__logo-img">
+            </li>
+           
+        </ul>
     </section>
-
-    <div class="home-section--customer-logos">
-        <div class="container container--lg container--customer-logos">
-            <ul class="paystack-customers__logos">
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/hotels.svg" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/jobberman.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/payporte.svg" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/irokotv.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/printivo.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/gigalayer.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/jmc.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/afritickets.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/suregifts.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/gingerbox.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/spinlet.png" alt="" class="paystack-customers__logo-img">
-                </li>
-                <li class="paystack-customers__logo">
-                    <img src="images/clients-w/pushcv.png" alt="" class="paystack-customers__logo-img">
-                </li>
-               
-            </ul>
-        </div> <!-- Haven't converted these images to white yet -->
-    </div>
-
     <section class="global-signup">
         <div class="container">
             <div class="grid">
@@ -277,10 +339,10 @@
                     </h3>
                     <ul class="global-signup__call-to-action">
                         <li class="global-signup__button">
-                            <a class="button button--green button--large" href="/">Create Account</a>
+                            <a class="button button--green" href="/">Create Account</a>
                         </li>
                         <li class="global-signup__button">
-                            <a class="button button--default button--large" href="/">Try a demo</a>
+                            <a class="button button--default" href="/">Try a demo</a>
                         </li>
                     </ul>
                 </div>
@@ -332,19 +394,258 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/jquery.min.js"></script>
+    <script src="js/vendor/animate.min.js"></script>
     <script>
-        $(function(){
-            $('.global-nav__item--has-dropdown').click(function(event){
-                event.stopPropagation();
-                $(this).toggleClass('active');
+    var Scene1 = {
+        div: document.getElementById("slide--one"),
+        primaryTitles: document.getElementById("slide--one").getElementsByClassName("hero-section__primary-text"),
+        secondaryTitle: document.getElementById("slide--one").getElementsByClassName("hero-section__secondary-title")[0],
+        callToAction: document.getElementById("slide--one").getElementsByClassName("hero-section__call-to-action")[0]
+    }
+
+    var Scene2 = {
+        div: document.getElementById("slide--two"),
+        image: document.getElementById("slide--two").getElementsByClassName("slide__image")[0],
+        content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0]
+    }
+
+    var Scene3 = {
+        div: document.getElementById("slide--three"),
+        image: document.getElementById("slide--three").getElementsByClassName("slide__image")[0],
+        content: document.getElementById("slide--three").getElementsByClassName("slide__content")[0],
+        footer: document.getElementById("slide--three").getElementsByClassName("slide__footer")[0],
+        logo: document.getElementById("slide--three").getElementsByClassName("slide__logo-box")[0]
+    }
+
+    var Enter = {
+        scene1: function(isLastSlide) {
+            Scene1.div.style.display = "";
+            Scene1.secondaryTitle.style.opacity = 0;
+            Scene1.callToAction.style.display = isLastSlide ? "" : "none";
+            Scene1.callToAction.style.opacity = 0;
+
+            for (i = 0; i < Scene1.primaryTitles.length; i++) {
+                var title = Scene1.primaryTitles[i];
+                title.style.opacity = 1;
+
+                title.style.transform = "translateY(100%)";
+                title.style.webkitTransform = "translateY(100%)";
+
+                animate({
+                    el: title,
+                    translateY: ["100%", 0],
+                    duration: 1000,
+                    delay: 700 + (i * 1000),
+                    easing: "easeOutExpo"
+                });
+            }
+
+            animate({
+                el: Scene1.secondaryTitle,
+                translateY: ["10px", 0],
+                opacity: [0, 1],
+                duration: 1000,
+                delay: 3000,
+                easing: "easeOutExpo",
+                complete: function() {
+                    if (isLastSlide) {
+                        animate({
+                            el: Scene1.callToAction,
+                            translateY: ["20px", 0],
+                            opacity: [0, 1]
+                        });
+                    } else {
+                        setTimeout(Enter.scene2, 2500);
+                        setTimeout(Exit.scene1, 1500);
+                    }
+                }
+            });
+        },
+
+        scene2: function() {
+            Scene2.image.style.opacity = 0;
+            Scene2.content.style.opacity = 0;
+            Scene2.div.style.display = "";
+
+            animate({
+                el: Scene2.image,
+                translateY: ["400px", 0],
+                opacity: [0, 1],
+                duration: 1500,
+                easing: "easeOutCubic 700"
             });
 
-            $('html').click(function() {
-              $('.global-nav__item--has-dropdown').removeClass('active');
+            animate({
+                el: Scene2.content,
+                translateX: ["100px", 0],
+                opacity: [0, 1],
+                duration: 1000,
+                delay: 500,
+                easing: "easeOutExpo",
+                complete: function() {
+                    setTimeout(Exit.scene2, 3000);
+                    setTimeout(Enter.scene3, 4000);
+                }
             });
-        });
+        },
+
+        scene3: function() {
+            Scene3.image.style.opacity = 0;
+            Scene3.content.style.opacity = 0;
+            Scene3.div.style.display = "";
+
+            animate({
+                el: Scene3.content,
+                translateX: ["-200px", 0],
+                opacity: [0, 1],
+                duration: 2000,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene3.image,
+                opacity: [0, 1],
+                duration: 1000,
+                delay: 2000,
+                easing: "easeOutExpo",
+                complete: function() {
+                    Scene2.div.style.display = "none";
+                    setTimeout(Enter.scene3b, 1000);
+                }
+            });
+        },
+
+        scene3b: function() {
+            animate({
+                el: Scene3.content,
+                translateX: [0, "-100%"],
+                opacity: [1, 0],
+                duration: 2000,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene3.image,
+                translateX: [0, "-30%"],
+                duration: 2000,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene3.image,
+                translateX: ["-30%", "-30%"],
+                translateY: [0, "-110px"],
+                opacity: [1, 0.2],
+                duration: 2000,
+                easing: "easeOutExpo",
+                delay: 2000
+            });
+
+            animate({
+                el: Scene3.logo,
+                translateY: [0, "-50px"],
+                scale: [0.5, 1],
+                delay: 3000,
+                begin: function() {
+                    Scene3.logo.style.display = "";
+                    Scene3.footer.style.opacity = "0";
+                    Scene3.footer.style.display = "";
+                },
+                complete: function() {
+                    animate({
+                        el: Scene3.footer,
+                        translateY: ["10%", 0],
+                        opacity: [0, 1],
+                        duration: 2000,
+                        easing: "easeOutExpo",
+                        complete: function() {
+                            Exit.scene3();
+                        }
+                    });
+                }
+            });
+
+        }
+    }
+
+    var Exit = {
+        scene1: function() {
+            for (i = 0; i < Scene1.primaryTitles.length; i++) {
+                var title = Scene1.primaryTitles[i];
+
+                animate({
+                    el: title,
+                    translateY: [0, "100%"],
+                    opacity: [1, 0],
+                    duration: 1000,
+                    delay: (i * 400),
+                    easing: "easeOutExpo"
+                });
+            }
+
+            animate({
+                el: Scene1.secondaryTitle,
+                opacity: [1, 0],
+                duration: 1000,
+                delay: 800,
+                easing: "easeOutExpo",
+                complete: function() {
+                    Scene1.div.style.display = "none";
+                }
+            });
+        },
+
+        scene2: function() {
+            animate({
+                el: Scene2.image,
+                translateX: [0, "59.5%"],
+                duration: 3000,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene2.content,
+                translateX: [0, "100%"],
+                opacity: [1, 0],
+                duration: 1000,
+                easing: "easeOutExpo"
+            });
+        },
+
+        scene3: function() {
+            animate({
+                el: Scene3.image,
+                translateX: ["-30%", "-30%"],
+                translateY: ["-110px", "-300px"],
+                opacity: [0.1, 0],
+                duration: 2000,
+                delay: 2000,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene3.logo,
+                translateY: ["-50px", "-300px"],
+                opacity: [1, 0],
+                delay: 2100,
+                easing: "easeOutExpo"
+            });
+
+            animate({
+                el: Scene3.footer,
+                translateY: [0, "-300px"],
+                opacity: [1, 0],
+                delay: 2200,
+                easing: "easeOutExpo",
+                complete: function() {
+                    Scene3.div.style.display = "none";
+                    Enter.scene1(true);
+                }
+            });
+        }
+    }
+
+    Enter.scene1();
     </script>
 </body>
 

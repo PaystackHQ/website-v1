@@ -13,20 +13,30 @@
     <nav class="global-nav global-nav--transparent">
         <div class="container">
             <div class="global-nav__left">
-                <a href="/" class="global-nav__logo">
+                <a href="index.html" class="global-nav__logo">
                     <img src="images/logo.svg" alt="Paystack">
                 </a>
             </div>
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
-                    <li class="global-nav__item">
-                        <a href="#">Product</a>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="product.html">Product</a>
                         <ul class="global-dropdown-menu">
                             <li class="global-dropdown-menu__item">
-                                <a href="#">Payments</a>
+                                <a href="product_payments.html">Payments</a>
                             </li>
                             <li class="global-dropdown-menu__item">
-                                <a href="#">Business Tools</a>
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Developers</a>
+                            </li>
+                            <li class="global-dropdown-menu__divider"></li>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Product Home</a>
                             </li>
                         </ul>
                     </li>
@@ -43,17 +53,24 @@
         </div>
     </nav>
     <section class="hero-section hero-section--features">
-        <div class="hero-section__background">
-        </div>
+        <div class="hero-section__background"></div>
         <div class="hero-section__content">
             <figure class="hero-section__icon">
-                <img src="/images/hero-icons/features.svg" alt="Magic Wand">
+                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                    <g style="mix-blend-mode:normal" figma:type="frame">
+                        <use xlink:href="#a" transform="translate(27.553 25.62)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector" />
+                        <use xlink:href="#b" transform="translate(1 1)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector" />
+                    </g>
+                    <defs>
+                        <path id="a" d="M16.852 1.852l-3.414 3.413 1.06 1.061 3.414-3.414-1.06-1.06zm-3.385 12.164l3.414 3.413 1.06-1.06-3.413-3.414-1.06 1.06zM2.364 2.912l3.413 3.414 1.061-1.06-3.414-3.414-1.06 1.06zm6.903 12.053v4.828h1.5v-4.827h-1.5zM9.267 0v4.828h1.5V0h-1.5zM0 10.526h4.828v-1.5H0v1.5zm15.448 0h4.828v-1.5h-4.828v1.5z" />
+                        <path id="b" d="M36.69 34.035l.383-.322-.31-.369-.38.296.307.395zm.81.965l.325.38.376-.322-.318-.38L37.5 35zm32 0c0 19.054-15.446 34.5-34.5 34.5v1c19.606 0 35.5-15.894 35.5-35.5h-1zM35 69.5C15.946 69.5.5 54.054.5 35h-1c0 19.606 15.894 35.5 35.5 35.5v-1zM.5 35C.5 15.946 15.946.5 35 .5v-1C15.394-.5-.5 15.394-.5 35h1zM35 .5C54.054.5 69.5 15.946 69.5 35h1C70.5 15.394 54.606-.5 35-.5v1zM8.226 56.814l28.77-22.385-.613-.79L7.61 56.026l.615.789zm2.12 3.043c4.924-4.698 11.791-10.815 17.432-15.761a1278.341 1278.341 0 0 1 9.847-8.545l.15-.128a52.2 52.2 0 0 0 .037-.032l.01-.008a.035.035 0 0 0 .002-.002c0-.001.001-.001-.324-.381l-.325-.38-.003.003-.01.008-.038.033-.15.128-.577.495a1282.359 1282.359 0 0 0-9.278 8.056c-5.644 4.95-12.527 11.08-17.464 15.79l.69.724zm27.537-25.178l-.81-.966-.766.643.81.965.766-.642z" />
+                    </defs>
+                </svg>
             </figure>
-            <h1 class="hero-section__primary-title">Product Overview</h1>
-            <h2 class="hero-section__secondary-title">Building the features you need to grow your business.</h2>
+            <h2 class="hero-section__secondary-title">We've built a stack of product features addressing the different aspects of running an online business.</h2>
         </div>
     </section>
-    <section class="section-features">
+    <section class="features-list-section">
         <div class="container">
             <div class="feature-card" onmouseenter="runAnimation.payments()" onmouseleave="endAnimation.payments()">
                 <div class="grid">
@@ -61,7 +78,7 @@
                         <h3 class="feature-card__name">Payments</h3>
                         <h4 class="feature-card__description">Multiple secure payment channels created for whatever type of business you run.</h4>
                         <div class="feature-card__call-to-action">
-                            <a href="#" class="button button--green">Learn More</a>
+                            <a href="product_payments.html" class="button button--green">Learn More</a>
                         </div>
                     </div>
                     <div class="grid__column grid__column--6">
@@ -94,7 +111,7 @@
                         <h3 class="feature-card__name">Subscriptions</h3>
                         <h4 class="feature-card__description">A simple, user friendly way to manage your subscriptions and recurring payments. </h4>
                         <div class="feature-card__call-to-action">
-                            <a href="#" class="button button--green">Learn More</a>
+                            <a href="product_subscriptions.html" class="button button--green">Learn More</a>
                         </div>
                     </div>
                     <div class="grid__column grid__column--6">
@@ -110,18 +127,19 @@
                     </div>
                 </div>
             </div>
-            <div class="feature-card" onmouseenter="runAnimation.business()" onmouseleave="endAnimation.business()">
+            <div class="feature-card" onmouseenter="runAnimation.dashboard()" onmouseleave="endAnimation.dashboard()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
-                        <h3 class="feature-card__name">Dashboard & Reports</h3>
+                        <h3 class="feature-card__name">Dashboard</h3>
                         <h4 class="feature-card__description">Get a clear overview of your business, from growth to customers to every single transaction.</h4>
                         <div class="feature-card__call-to-action">
-                            <a href="#" class="button button--green">Learn More</a>
+                            <a href="product_dashboard.html" class="button button--green">Learn More</a>
                         </div>
                     </div>
                     <div class="grid__column grid__column--6">
                         <div class="feature-card__animation">
-                            <div class="stack-animation stack-animation__business" id="stack-animation__business">
+                            <div class="stack-animation stack-animation__dashboard" id="stack-animation__dashboard">
+                                <div class="stack-animation__box"></div>
                                 <div class="stack-animation__box"></div>
                                 <div class="stack-animation__box"></div>
                                 <div class="stack-animation__box"></div>
@@ -134,20 +152,35 @@
                     </div>
                 </div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" onmouseenter="runAnimation.developers()" onmouseleave="endAnimation.developers()">
                 <div class="grid">
                     <div class="grid__column grid__column--6">
-                        <h3 class="feature-card__name">Developer Perks</h3>
+                        <h3 class="feature-card__name">Developer Tools</h3>
                         <h4 class="feature-card__description">Work with great, well documented APIs and belong to a community of devs who also use Paystack.</h4>
                         <div class="feature-card__call-to-action">
-                            <a href="#" class="button button--green">Learn More</a>
+                            <a href="product_developers.html" class="button button--green">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="grid__column grid__column--6">
+                        <div class="feature-card__animation" id="stack-animation__developers">
+                            <div class="stack-animation stack-animation__developers">
+                                <div class="stack-animation__column" id="stack-animation__developers-left">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                                <div class="stack-animation__column" id="stack-animation__developers-right">
+                                    <div class="stack-animation__box"></div>
+                                    <div class="stack-animation__box"></div>
+                                </div>
+                                <div class="stack-animation__divider" id="stack-animation__developers-divider"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="global-signup global-signup--dark">
+    <section class="global-signup">
         <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column--6 grid__column--centered">
@@ -214,111 +247,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/animate.min.js"></script>
-    <script>
-    var animationLoop;
-    var runAnimation = {
-        payments: function() {
-            var leftBoxes = document.getElementById("stack-animation__payments-left").querySelectorAll("div");
-            var rightBoxes = document.getElementById("stack-animation__payments-right").querySelectorAll("div");
-
-            for (i = 0; i < leftBoxes.length; i++) {
-                var box = leftBoxes[i];
-                var origin = -300;
-                var _translate = [origin, 0];
-                var _rotate = ["-25deg", 0];
-                var _duration = 300 + ((rightBoxes.length - i) * 200);
-
-                animate({
-                    el: box,
-                    translateY: _translate,
-                    rotate: _rotate,
-                    duration: _duration,
-                    easing: "linear"
-                });
-            }
-            for (i = 0; i < rightBoxes.length; i++) {
-                var box = rightBoxes[i];
-                var origin = -300;
-                var _translate = [origin, 0];
-                var _rotate = ["25deg", 0];
-                var _duration = 300 + ((rightBoxes.length - i) * 200);
-
-                animate({
-                    el: box,
-                    translateY: _translate,
-                    rotate: _rotate,
-                    duration: _duration,
-                    easing: "linear"
-                });
-            }
-        },
-
-        business: function() {
-            var boxes = document.getElementById("stack-animation__business").querySelectorAll("div");
-            for (i = 0; i < boxes.length; i++) {
-                animate({
-                    el: boxes[i],
-                    translateY: ["400px", 0],
-                    duration: 500,
-                    easing: "linear"
-                });
-            }
-        },
-
-        subscriptions: function() {
-            var boxes = document.getElementById("stack-animation__subscriptions").querySelectorAll("div");
-
-            function animateThis() {
-                for (i = 0; i < boxes.length; i++) {
-                    boxes[i].style.transform = "translateY(0)";
-                    boxes[i].style.webkitTransform = "translateY(0)";
-                }
-
-                boxes[0].style.transform = "translateY(-300px)";
-                boxes[0].style.webkitTransform = "translateY(-300px)";
-
-                animate({
-                    el: boxes[0],
-                    translateY: ["-300px", 0],
-                    duration: 300,
-                    easing: "linear"
-                });
-
-                animate({
-                    el: boxes[boxes.length - 1],
-                    translateY: [0, "200px"],
-                    duration: 200,
-                    delay: 800,
-                    easing: "linear"
-                });
-
-                animate({
-                    el: boxes,
-                    translateY: [0, "7px"],
-                    duration: 200,
-                    delay: 1000,
-                    easing: "linear"
-                });
-            }
-
-            animateThis();
-            animationLoop = setInterval(animateThis, 2500);
-        }
-    }
-
-    var endAnimation = {
-        stop: function(id) {
-            var boxes = document.getElementById(id).querySelectorAll("div");
-            animate.stop(boxes);
-        },
-        payments: function() {},
-        business: function() {},
-        subscriptions: function() {
-            window.clearInterval(animationLoop);
-        }
-    }
-    </script>
+    <script src="js/vendor/animate.min.js"></script>
+    <script src="js/stack-animations.js"></script>
 </body>
 
 </html>
