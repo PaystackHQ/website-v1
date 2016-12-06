@@ -1,3 +1,78 @@
+.hero-section {
+    background: $dark-blue;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    &__background {
+        background: url(../images/landing/background.svg);
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    &__content {
+        bottom: 25%;
+        color: white;
+        float: left;
+        left: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 580px;
+    }
+    &__primary-title {
+        color: white;
+        font-family: $bold-font;
+        font-size: 4rem;
+        margin: 0;
+        overflow: hidden;
+        span {
+            display: block;
+        }
+    }
+    &__secondary-title {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: normal;
+        line-height: 1.3;
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+    &__icon {
+        border-radius: 50%;
+        height: 72px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        overflow: hidden;
+        width: 72px;
+        img {
+            width: 100%;
+        }
+    }
+    &__play-again {
+        bottom: 30px;
+        color: white;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0.4;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 120px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
+
 .features-illustration {
     position: relative;
 }
@@ -45,7 +120,7 @@
         position: relative;
         background-color: $dark-blue;
     }
-    &--dark{
+    &--dark {
         background-color: $dark-blue;
     }
     &__divider {
@@ -67,7 +142,7 @@
         padding: 50px 0;
     }
     &__setup-steps {
-        margin: 40px 0;
+        margin: 40px 0 100px;
     }
 }
 
@@ -87,8 +162,7 @@
         font-size: 3rem;
         line-height: 1.2;
         margin: 0;
-
-        .home-section--dark &{
+        .home-section--dark & {
             color: white;
         }
     }
@@ -96,8 +170,7 @@
         font-size: 1.8rem;
         font-weight: normal;
         line-height: 1.6;
-
-        .home-section--dark &{
+        .home-section--dark & {
             color: #c4f0ff;
         }
     }
@@ -111,17 +184,16 @@
     }
 }
 
-.customers-section{
+.customers-section {
     padding: 45px 0 75px;
-
-    &__logos-wrapper{
+    &__logos-wrapper {
         position: absolute;
         left: 50%;
         top: 0;
         height: 100%;
         overflow: hidden;
-
-        &:before, &:after{
+        &:before,
+        &:after {
             content: "";
             position: absolute;
             z-index: 1;
@@ -129,19 +201,17 @@
             left: 0;
             pointer-events: none;
             background-size: contain;
-            background-image: linear-gradient(to bottom, rgba(1,27,51, 0), rgba(1,27,51, 1) 90%);
+            background-image: linear-gradient(to bottom, rgba(1, 27, 51, 0), rgba(1, 27, 51, 1) 90%);
             width: 100%;
             height: 4em;
         }
-
-        &:before{
+        &:before {
             top: 0;
             bottom: auto;
-            background-image: linear-gradient(to top, rgba(1,27,51, 0), rgba(1,27,51, 1) 90%);
+            background-image: linear-gradient(to top, rgba(1, 27, 51, 0), rgba(1, 27, 51, 1) 90%);
         }
     }
-
-    &__logos{
+    &__logos {
         height: 500%;
         width: 100%;
         position: relative;
@@ -172,7 +242,7 @@
 }
 
 .setup-steps-container {
-    margin-top: 30px;
+    margin: 30px 0 0;
 }
 
 .setup-step {

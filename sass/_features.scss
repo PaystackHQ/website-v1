@@ -134,7 +134,7 @@ $features: 4;
     &__box {
         background: $green;
         border-radius: 3px;
-        height: 2px;
+        height: 4px;
         margin-bottom: 5px;
         width: 100%;
         &--clear {
@@ -150,7 +150,7 @@ $features: 4;
         float: left;
         margin-right: 10px;
         position: absolute;
-        width: 2px;
+        width: 4px;
         @for $i from 1 through 8 {
             &:nth-child(#{$i}) {
                 left: #{10 * $i}px;
@@ -193,7 +193,7 @@ $features: 4;
         right: 0;
         -webkit-transform: translateX(-2px) rotate(20deg);
         transform: translateX(-2px) rotate(20deg);
-        width: 2px;
+        width: 4px;
     }
     &.stack-animation--full-page {
         top: auto;

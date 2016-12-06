@@ -139,7 +139,16 @@
                     </div>
                 </div>
             </div>
-            </path>
+            <a href="#" class="hero-section__play-again" style="display: none;" id="hero-section__play-again">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                    <use xlink:href="#replay_a" fill="#FFF" style="mix-blend-mode:normal" figma:type="vector" />
+                    <defs>
+                        <path id="replay_a" d="M6.02 0v1.138c2.672 0 4.846 2.181 4.846 4.862s-2.174 4.862-4.845 4.862c-2.672 0-4.846-2.18-4.846-4.862 0-.997.302-1.958.86-2.766l1.083 1.085L4.258.046 0 1.19l1.224 1.228A5.994 5.994 0 0 0 .04 6c0 3.309 2.683 6 5.98 6C9.318 12 12 9.309 12 6c0-3.308-2.682-6-5.98-6z" />
+                    </defs>
+                </svg>
+                Play Again
+            </a>
+        </div>
     </section>
     <section class="home-section home-section--intro">
         <div class="container container--md">
@@ -272,7 +281,7 @@
             </div>
         </div>
     </section>
-    <section class="home-section home-section--dark home-section--customers">
+    <section class="home-section home-section--customers home-section--dark">
         <div class="container container--md">
             <div class="grid customers-section ">
                 <div class="grid__column grid__column--5">
@@ -398,267 +407,7 @@
         </div>
     </footer>
     <script src="js/vendor/animate.min.js"></script>
-    <script>
-    var Scene1 = {
-        div: document.getElementById("slide--one"),
-        primaryTitles: document.getElementById("slide--one").getElementsByClassName("hero-section__primary-text"),
-        secondaryTitle: document.getElementById("slide--one").getElementsByClassName("hero-section__secondary-title")[0],
-        callToAction: document.getElementById("slide--one").getElementsByClassName("hero-section__call-to-action")[0]
-    }
-
-    var Scene2 = {
-        div: document.getElementById("slide--two"),
-        image: document.getElementById("slide--two").getElementsByClassName("slide__image")[0],
-        content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0]
-    }
-
-    var Scene3 = {
-        div: document.getElementById("slide--three"),
-        image: document.getElementById("slide--three").getElementsByClassName("slide__image")[0],
-        content: document.getElementById("slide--three").getElementsByClassName("slide__content")[0],
-        footer: document.getElementById("slide--three").getElementsByClassName("slide__footer")[0],
-        logo: document.getElementById("slide--three").getElementsByClassName("slide__logo-box")[0]
-    }
-
-    var Enter = {
-        scene1: function() {
-            Scene1.div.style.display = "";
-            Scene1.secondaryTitle.style.opacity = 0;
-            Scene1.callToAction.style.display = "none";
-            Scene1.callToAction.style.opacity = 0;
-
-            for (i = 0; i < Scene1.primaryTitles.length; i++) {
-                var title = Scene1.primaryTitles[i];
-                title.style.opacity = 1;
-
-                title.style.transform = "translateY(100%)";
-                title.style.webkitTransform = "translateY(100%)";
-
-                animate({
-                    el: title,
-                    translateY: ["100%", 0],
-                    duration: 1000,
-                    delay: 700 + (i * 1000),
-                    easing: "easeOutExpo"
-                });
-            }
-
-            animate({
-                el: Scene1.secondaryTitle,
-                translateY: ["10px", 0],
-                opacity: [0, 1],
-                duration: 1000,
-                delay: 3000,
-                easing: "easeOutExpo",
-                complete: function() {
-                    setTimeout(Enter.scene2, 2500);
-                    setTimeout(Exit.scene1, 1500);
-                }
-            });
-        },
-
-        scene1b: function() {
-            Scene1.div.style.opacity = "0";
-            Scene1.div.style.display = "";
-            Scene1.secondaryTitle.style.opacity = 1;
-            Scene1.callToAction.style.display = "";
-            Scene1.callToAction.style.opacity = 1;
-
-            animate({
-                el: Scene1.div,
-                opacity: [0, 1],
-                duration: 1000,
-                easing: "easeOutExpo"
-            });
-        },
-
-        scene2: function() {
-            Scene2.image.style.opacity = 0;
-            Scene2.content.style.opacity = 0;
-            Scene2.div.style.display = "";
-
-            animate({
-                el: Scene2.image,
-                translateY: ["400px", 0],
-                opacity: [0, 1],
-                duration: 1500,
-                easing: "easeOutCubic 700"
-            });
-
-            animate({
-                el: Scene2.content,
-                translateX: ["100px", 0],
-                opacity: [0, 1],
-                duration: 1000,
-                delay: 500,
-                easing: "easeOutExpo",
-                complete: function() {
-                    setTimeout(Exit.scene2, 3000);
-                    setTimeout(Enter.scene3, 4000);
-                }
-            });
-        },
-
-        scene3: function() {
-            Scene3.image.style.opacity = 0;
-            Scene3.content.style.opacity = 0;
-            Scene3.div.style.display = "";
-
-            animate({
-                el: Scene3.content,
-                translateX: ["-200px", 0],
-                opacity: [0, 1],
-                duration: 2000,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene3.image,
-                opacity: [0, 1],
-                duration: 1000,
-                delay: 2000,
-                easing: "easeOutExpo",
-                complete: function() {
-                    Scene2.div.style.display = "none";
-                    setTimeout(Enter.scene3b, 1000);
-                }
-            });
-        },
-
-        scene3b: function() {
-            animate({
-                el: Scene3.content,
-                translateX: [0, "-100%"],
-                opacity: [1, 0],
-                duration: 2000,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene3.image,
-                translateX: [0, "-30%"],
-                duration: 2000,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene3.image,
-                translateX: ["-30%", "-30%"],
-                translateY: [0, "-110px"],
-                opacity: [1, 0.2],
-                duration: 2000,
-                easing: "easeOutExpo",
-                delay: 2000
-            });
-
-            animate({
-                el: Scene3.logo,
-                translateY: [0, "-50px"],
-                scale: [0.5, 1],
-                delay: 3000,
-                begin: function() {
-                    Scene3.logo.style.display = "";
-                    Scene3.footer.style.opacity = "0";
-                    Scene3.footer.style.display = "";
-                },
-                complete: function() {
-                    animate({
-                        el: Scene3.footer,
-                        translateY: ["10%", 0],
-                        opacity: [0, 1],
-                        duration: 2000,
-                        easing: "easeOutExpo",
-                        complete: function() {
-                            Exit.scene3();
-                        }
-                    });
-                }
-            });
-
-        }
-    }
-
-    var Exit = {
-        scene1: function() {
-            for (i = 0; i < Scene1.primaryTitles.length; i++) {
-                var title = Scene1.primaryTitles[i];
-
-                animate({
-                    el: title,
-                    translateY: [0, "100%"],
-                    opacity: [1, 0],
-                    duration: 1000,
-                    delay: (i * 400),
-                    easing: "easeOutExpo"
-                });
-            }
-
-            animate({
-                el: Scene1.secondaryTitle,
-                opacity: [1, 0],
-                duration: 1000,
-                delay: 800,
-                easing: "easeOutExpo",
-                complete: function() {
-                    Scene1.div.style.display = "none";
-                }
-            });
-        },
-
-        scene2: function() {
-            animate({
-                el: Scene2.image,
-                translateX: [0, "59.5%"],
-                duration: 3000,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene2.content,
-                translateX: [0, "100%"],
-                opacity: [1, 0],
-                duration: 1000,
-                easing: "easeOutExpo"
-            });
-        },
-
-        scene3: function() {
-            animate({
-                el: Scene3.image,
-                translateX: ["-30%", "-30%"],
-                translateY: ["-110px", "-300px"],
-                opacity: [0.1, 0],
-                duration: 2000,
-                delay: 2000,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene3.logo,
-                translateY: ["-50px", "-300px"],
-                opacity: [1, 0],
-                duration: 2000,
-                delay: 2500,
-                easing: "easeOutExpo"
-            });
-
-            animate({
-                el: Scene3.footer,
-                translateY: [0, "-300px"],
-                opacity: [1, 0],
-                duration: 2000,
-                delay: 3000,
-                easing: "easeOutExpo",
-                complete: function() {
-                    Scene3.div.style.display = "none";
-                    Enter.scene1b();
-                }
-            });
-        }
-    }
-
-    Enter.scene3();
-    </script>
+    <script src="js/home-animations.js"></script>
 </body>
 
 </html>

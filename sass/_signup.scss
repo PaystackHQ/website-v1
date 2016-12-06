@@ -1,0 +1,31 @@
+.global-signup {
+    padding: 150px 0;
+    text-align: center;
+    &__primary-title {
+        font-family: $bold-font;
+        font-size: 3.6rem;
+        margin: 0;
+        line-height: 1.2;
+    }
+    &__secondary-title {
+        line-height: 1.6;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    &__call-to-action {}
+    &__button {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    &--dark {
+        background: $dark-blue;
+        color: white;
+        .global-signup__primary-title {
+            color: $light-blue;
+        }
+        .global-signup__secondary-title {
+            color: white;
+        }
+    }
+}
