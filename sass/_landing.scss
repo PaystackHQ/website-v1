@@ -141,14 +141,14 @@
     }
 
     &__logos{
-        height: 1000%;
+        height: 500%;
         width: 100%;
         position: relative;
         background-image: url(../images/clients/clients.png);
         background-repeat: repeat-y;
-        opacity: .25;
-        animation: scroll-customers 450s infinite;
-        -webkit-animation: scroll-customers 450s infinite;
+        opacity: .24;
+        animation: scroll-customers 250s infinite;
+        -webkit-animation: scroll-customers 250s infinite;
     }
     // &__logo {
     //     box-sizing: border-box;
