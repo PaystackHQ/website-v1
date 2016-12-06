@@ -12,10 +12,8 @@
     text-align: center;
     &__icon {
         margin: 0 auto;
-        border-radius: 50px;
         width: 45px;
-        // height: 40px;
-        // width: auto;
+        height: 45px;
     }
     &__title {
         color: $dark-blue;
