@@ -10,13 +10,15 @@ var Scene1 = {
 var Scene2 = {
     div: document.getElementById("slide--two"),
     image: document.getElementById("slide--two").getElementsByClassName("slide__image")[0],
-    content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0]
+    content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0],    
+    scroller: document.getElementById("slide--two").getElementsByClassName("slide__image-scroller")[0]
 }
 
 var Scene3 = {
     div: document.getElementById("slide--three"),
     image: document.getElementById("slide--three").getElementsByClassName("slide__image")[0],
     content: document.getElementById("slide--three").getElementsByClassName("slide__content")[0],
+    scroller: document.getElementById("slide--three").getElementsByClassName("slide__image-scroller")[0],
     footer: document.getElementById("slide--three").getElementsByClassName("slide__footer")[0],
     logo: document.getElementById("slide--three").getElementsByClassName("slide__logo-box")[0]
 }
@@ -119,6 +121,8 @@ var Enter = {
     scene3: function() {
         Scene3.image.style.opacity = 0;
         Scene3.content.style.opacity = 0;
+        Scene3.scroller.style.webkitTransform = "translateY(-300px)";
+        Scene3.scroller.style.transform = "translateY(-300px)";
         Scene3.div.style.display = "";
 
         animate({
@@ -136,7 +140,10 @@ var Enter = {
             delay: 2000,
             easing: "easeOutExpo",
             complete: function() {
+                Scene2.scroller.style.webkitTransform = "";
+                Scene2.scroller.style.transform = "";
                 Scene2.div.style.display = "none";
+
                 setTimeout(Enter.scene3b, 1000);
             }
         });
@@ -159,9 +166,17 @@ var Enter = {
         });
 
         animate({
+            el: Scene3.scroller,
+            translateY: ["-300px", "-150px"],
+            duration: 4000,
+            easing: "easeOutExpo"
+        });
+
+
+        animate({
             el: Scene3.image,
             translateX: ["-30%", "-30%"],
-            translateY: [0, "-110px"],
+            // translateY: [0, "-110px"],
             opacity: [1, 0.2],
             duration: 2000,
             easing: "easeOutExpo",
@@ -170,7 +185,7 @@ var Enter = {
 
         animate({
             el: Scene3.logo,
-            translateY: [0, "-50px"],
+            translateY: [0, "-100px"],
             scale: [0.5, 1],
             delay: 3000,
             begin: function() {
@@ -231,6 +246,13 @@ var Exit = {
         });
 
         animate({
+            el: Scene2.scroller,
+            translateY: [0, "-300px"],
+            duration: 3000,
+            easing: "easeOutExpo"
+        });
+
+        animate({
             el: Scene2.content,
             translateX: [0, "100%"],
             opacity: [1, 0],
@@ -243,16 +265,16 @@ var Exit = {
         animate({
             el: Scene3.image,
             translateX: ["-30%", "-30%"],
-            translateY: ["-110px", "-300px"],
+            translateY: ["0", "-300px"],
             opacity: [0.1, 0],
             duration: 2000,
             delay: 2000,
-            easing: "easeOutExpo"
+            easing: "easeOutExpo" 
         });
 
         animate({
             el: Scene3.logo,
-            translateY: ["-50px", "-300px"],
+            translateY: ["-100px", "-300px"],
             opacity: [1, 0],
             duration: 2000,
             delay: 2000,
@@ -271,7 +293,7 @@ var Exit = {
                 Scene3.footer.style.display = "none";
                 Scene3.logo.style.display = "none";
 
-                var elementsToReset = [Scene3.content, Scene3.image, Scene3.logo, Scene3.footer];
+                var elementsToReset = [Scene3.content, Scene3.scroller, Scene3.image, Scene3.logo, Scene3.footer];
                 for (i = 0; i < elementsToReset.length; i++) {
                     var element = elementsToReset[i];
                     element.style.transform = "";
@@ -285,5 +307,5 @@ var Exit = {
     }
 }
 
-// window.onload = Enter.scene1;
-// ReplayLink.onclick = Enter.scene1;
+window.onload = Enter.scene3;
+ReplayLink.onclick = Enter.scene1;

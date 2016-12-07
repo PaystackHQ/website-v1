@@ -1,13 +1,11 @@
 button,
 .button {
-    background-color: $light-blue;
-    border-color: $light-blue;
-    border-radius: $button-default-radius;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     display: inline-block;
+    font-size: 14px;
     font-weight: 500;
     height: $button-height;
     line-height: $button-height;
@@ -26,7 +24,7 @@ button,
     -ms-user-select: none;
     user-select: none;
     &:hover {
-        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+        box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
         -webkit-transform: translateY(-1px);
         transform: translateY(-1px);
     }
@@ -37,17 +35,16 @@ button,
     // Colors
     &--default,
     &--default-white {
-        background-color: transparent;
-        border-color: $light-blue;
         color: $light-blue;
         position: relative;
     }
     &--default-white {
-        border-color: rgba(255, 255, 255, 0.2);
+        background: rgba(255,255,255,0.05);
         color: rgba(255, 255, 255, 0.88);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
     &--green {
+        color: white;
         background-color: $green;
         border-color: $green;
     }
@@ -69,6 +66,7 @@ button,
         line-height: $button-height-sm;
     }
     &--large {
+        border-radius: 6px;
         height: $button-height-lg;
         line-height: $button-height-lg;
         padding-left: 2em;

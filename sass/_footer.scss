@@ -1,4 +1,37 @@
 .global-footer {
+    background: #F7F8F9;
+    &__grid {
+        padding: 50px 0;
+        border-top: solid 1px #efefef;
+    }
+    &__menu {
+        a {
+            line-height: 1.6;
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+    &__divider {
+        border-color: rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+    }
+    &__contact {
+        color: $light-blue;
+        display: block;
+        margin-top: 5px;
+    }
+    &__address {
+        line-height: 1.3;
+    }
+    &__copyright {
+        font-size: 1.3rem;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+.global-footer-alt {
     // border-top: solid 1px rgba(0,0,0,0.05);
     background: lighten($dark-blue, 2%);
     color: rgba(255, 255, 255, 0.6);

@@ -34,7 +34,7 @@
                                 <a href="product_dashboard.html">Dashboard</a>
                             </li>
                             <li class="global-dropdown-menu__item">
-                                <a href="product_dashboard.html">Developers</a>
+                                <a href="product_developers.html">Developers</a>
                             </li>
                             <li class="global-dropdown-menu__divider"></li>
                             <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
@@ -72,7 +72,10 @@
                 <div class="grid grid--with-gutters">
                     <div class="grid__column grid__column--8">
                         <div class="slide__image">
-                            <img src="images/landing/seller.jpg" alt="Seller" />
+                            <div class="slide__image-scroller">
+                                <div class="slide__image-mask"><img src="images/landing/seller.jpg" alt="Buyer" /></div>
+                                <div class="slide__image-mask"><img src="images/landing/buyer.jpg" alt="Seller" /></div>
+                            </div>
                         </div>
                     </div>
                     <div class="grid__column grid__column--4 slide__content">
@@ -129,7 +132,10 @@
                     </div>
                     <div class="grid__column grid__column--8">
                         <div class="slide__image slide__image--right">
-                            <img src="images/landing/seller.jpg" alt="Seller" />
+                            <div class="slide__image-scroller">
+                                <div class="slide__image-mask"><img src="images/landing/seller.jpg" alt="Buyer" /></div>
+                                <div class="slide__image-mask"><img src="images/landing/buyer.jpg" alt="Seller" /></div>
+                            </div>
                         </div>
                     </div>
                     <div class="slide__logo-box" style="display: none;"><img src="images/logo_icon.svg" alt="Logo"></div>
@@ -363,7 +369,7 @@
     </section>
     <footer class="global-footer">
         <div class="container">
-            <div class="grid">
+            <div class="global-footer__grid grid">
                 <div class="grid__column grid__column--3">
                     <div class="global-footer__menu-container">
                         <h4 class="global-footer__menu-header">Solutions</h4>

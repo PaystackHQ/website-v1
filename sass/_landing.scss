@@ -296,6 +296,10 @@
     &__image--right {
         float: right;
     }
+    &__image-mask {
+        height: 300px;
+        overflow: hidden;
+    }
     &__icon {
         margin: 0;
         margin-bottom: 20px;
