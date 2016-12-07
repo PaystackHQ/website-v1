@@ -134,11 +134,27 @@
         padding: 120px 0 90px;
         border-top: 1px solid whitesmoke;
     }
+    &__checkout-demo {
+        margin: 100px 100px 0;
+    }
     &__feature-items {
         margin: 50px 0;
     }
     &--intro {
         padding: 50px 0;
+        &:before {
+            background: url(../images/lines/right-corner.svg) no-repeat;
+            background-size: 100% auto;
+            content: "";
+            display: block;
+            opacity: 0.3;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40%;
+            height: 100%;
+            z-index: 0;
+        }
     }
     &__setup-steps {
         margin: 40px 0 100px;

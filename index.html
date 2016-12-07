@@ -80,7 +80,7 @@
                     </div>
                     <div class="grid__column grid__column--4 slide__content">
                         <figure class="slide__icon">
-                            <object type="image/svg+xml" data="images/icons/source/infrastructure.svg" class="icon"></object>
+                            <img src="images/icons/source/infrastructure.svg" class="icon" />
                         </figure>
                         <h2 class="slide__primary-title">Modern Payments Infrastructure</h2>
                         <h4 class="slide__secondary-title">We've built a product that is easy, secure and adaptable to your business case</h4>
@@ -91,7 +91,7 @@
                 <div class="grid grid--with-gutters">
                     <div class="grid__column grid__column--4 slide__content">
                         <figure class="slide__icon">
-                            <object type="image/svg+xml" data="images/icons/source/card.svg" class="icon"></object>
+                            <img src="images/icons/source/card.svg" class="icon" />
                         </figure>
                         <h2 class="slide__primary-title">Offering the best payment experience</h2>
                         <h4 class="slide__secondary-title">Clean and easy interfaces encourage your customers to keep paying.</h4>
@@ -155,8 +155,64 @@
                     </div>
                 </div>
                 <div class="grid__column grid__column--6">
-                    <div class="features-illustration">
-                        <img src="images/intro-image-v3.png" width="450px" style="margin-left: 100px;" alt="Intro Image">
+                    <div class="home-section__checkout-demo">
+                        <div class="checkout">
+                            <div class="checkout__overlay">
+                                <div class="checkout__trigger">
+                                    <img src="images/icons/source/play-small.svg" class="icon" /> Easy as this
+                                </div>
+                            </div>
+                            <div class="checkout__transaction">
+                                <div class="checkout__transaction__logo">Your Logo</div>
+                                <div class="checkout__transaction__box grid">
+                                    <div class="grid__column grid__column--6">
+                                        <p class="checkout__transaction__email">hello@you.com</p>
+                                    </div>
+                                    <div class="grid__column grid__column--6 global-u-text-right">
+                                        <p class="checkout__transaction__amount">NGN 100</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__form">
+                                <div class="grid grid--with-gutters">
+                                    <div class="grid__column grid__column--12">
+                                        <div class="checkout-input-group">
+                                            <div class="checkout-input-group__icon">
+                                                <img src="images/icons/source/card-small.svg" class="icon" />
+                                            </div>
+                                            <input class="checkout-input-group__field" type="text" placeholder="Card Number" id="dummy-cardnumber">
+                                        </div>
+                                    </div>
+                                    <div class="grid__column grid__column--6">
+                                        <div class="checkout-input-group">
+                                            <div class="checkout-input-group__icon">
+                                                <img src="images/icons/source/date-small.svg" class="icon" />
+                                            </div>
+                                            <input class="checkout-input-group__field" type="text" placeholder="MM/YY" id="dummy-expiry">
+                                        </div>
+                                    </div>
+                                    <div class="grid__column grid__column--6">
+                                        <div class="checkout-input-group">
+                                            <div class="checkout-input-group__icon">
+                                                <img src="images/icons/source/security-small.svg" class="icon" />
+                                            </div>
+                                            <input class="checkout-input-group__field" type="text" placeholder="CVV" id="dummy-cvv">
+                                        </div>
+                                    </div>
+                                    <div class="grid__column grid__column--12">
+                                        <div class="checkout-input-group">
+                                            <div class="button button--green button--large button--full">
+                                                Pay Securely
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__form__played" style="display: none">
+                                <!-- <img src="{{ siteUrl }}assets/website/img/success.png" alt="Payment Successful" class="animated fadeInLeft"> -->
+                                <h3>Payment Successful</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,7 +232,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/zero-setup.svg" class="icon"></object>
+                            <img src="images/icons/source/zero-setup.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Zero Setup Fees</h3>
                         <p class="feature-item__description">No fees necessary to create your account.</p>
@@ -185,7 +241,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/easy-integration.svg" class="icon"></object>
+                            <img src="images/icons/source/easy-integration.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Easy Integration</h3>
                         <p class="feature-item__description">It only takes minutes to get Paystack plugged in.</p>
@@ -194,7 +250,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/people.svg" class="icon"></object>
+                            <img src="images/icons/source/people.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Designed for people</h3>
                         <p class="feature-item__description">Your customers get the best payment experience.</p>
@@ -203,7 +259,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/multicurrency.svg" class="icon"></object>
+                            <img src="images/icons/source/multicurrency.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Multicurrency</h3>
                         <p class="feature-item__description">Charge for your products in multiple currencies.</p>
@@ -212,7 +268,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/security.svg" class="icon"></object>
+                            <img src="images/icons/source/security.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Security</h3>
                         <p class="feature-item__description">PCI-compliant, with fraud management built-in.</p>
@@ -221,7 +277,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/recurring.svg" class="icon"></object>
+                            <img src="images/icons/source/recurring.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Recurring Payments</h3>
                         <p class="feature-item__description">Conveniently run a subscription business.</p>
@@ -230,7 +286,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/next-day-payouts.svg" class="icon"></object>
+                            <img src="images/icons/source/next-day-payouts.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Next Day Payouts</h3>
                         <p class="feature-item__description">Automatic to your account the next day. No delays.</p>
@@ -239,7 +295,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="feature-item">
                         <div class="feature-item__icon">
-                            <object type="image/svg+xml" data="images/icons/source/reporting.svg" class="icon"></object>
+                            <img src="images/icons/source/reporting.svg" class="icon" />
                         </div>
                         <h3 class="feature-item__title">Reporting</h3>
                         <p class="feature-item__description">See your company growth and export at will.</p>

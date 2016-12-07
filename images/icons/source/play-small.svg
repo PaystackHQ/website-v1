@@ -1,0 +1,17 @@
+<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>play-small</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-70 120)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 70 -120L 82 -120L 82 -108L 70 -108L 70 -120Z" fill="#FFFFFF"/>
+</mask>
+<g id="play-small" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Polygon" style="mix-blend-mode:normal;" figma:type="regular-polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1.83697e-16 1 -1 -1.83697e-16 80.5 -120)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5.20759 1.02937C 5.6079 0.509358 6.3921 0.509358 6.79241 1.02937L 9.95678 5.14001C 10.463 5.79757 9.99421 6.75 9.16437 6.75L 2.83563 6.75C 2.00579 6.75 1.53702 5.79757 2.04322 5.14001L 5.20759 1.02937Z"/>
+</defs>
+</svg>

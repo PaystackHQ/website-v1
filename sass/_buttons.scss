@@ -32,6 +32,10 @@ button,
     &--rounded {
         border-radius: 100px;
     }
+    &--full {
+        text-align: center;
+        width: 100%;
+    }
     // Colors
     &--default,
     &--default-white {
