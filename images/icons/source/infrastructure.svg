@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>infrastructure</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(233 45)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -233 -45L -185 -45L -185 3L -233 3L -233 -45Z" fill="#FFFFFF"/>
+</mask>
+<g id="infrastructure" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-233 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(-233 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(-233 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(-233 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 6 9C 6 8.44772 6.44772 8 7 8L 21 8C 21.5523 8 22 8.44772 22 9C 22 9.55228 21.5523 10 21 10L 7 10C 6.44772 10 6 9.55228 6 9Z"/>
+<path id="path1_fill" d="M 6 24C 6 23.4477 6.44772 23 7 23L 21 23C 21.5523 23 22 23.4477 22 24C 22 24.5523 21.5523 25 21 25L 7 25C 6.44772 25 6 24.5523 6 24Z"/>
+<path id="path2_fill" d="M 6 39C 6 38.4477 6.44772 38 7 38L 21 38C 21.5523 38 22 38.4477 22 39C 22 39.5523 21.5523 40 21 40L 7 40C 6.44772 40 6 39.5523 6 39Z"/>
+<path id="path3_fill" d="M 1 0C 0.447715 0 0 0.447715 0 1L 0 46.9994C 0 47.5517 0.447715 47.9994 1 47.9994L 47 47.9994C 47.5523 47.9994 48 47.5517 48 46.9994L 48 1C 48 0.447715 47.5523 0 47 0L 1 0ZM 45 2C 45.5523 2 46 2.44772 46 3L 46 14.9695C 46 15.5215 45.5527 15.9691 45.0007 15.9695L 3.00071 15.9993C 2.44815 15.9997 2 15.5519 2 14.9993L 2 3C 2 2.44772 2.44772 2 3 2L 45 2ZM 44.9996 18.0004C 45.552 18.0002 46 18.448 46 19.0004L 46 29.9761C 46 30.5282 45.5526 30.9758 45.0006 30.9761L 3.00056 30.9994C 2.44805 30.9998 2 30.5519 2 29.9994L 2 19.0167C 2 18.4646 2.44748 18.0169 2.99961 18.0167L 44.9996 18.0004ZM 2.9996 45.9827C 2.44747 45.9825 2 45.5349 2 44.9827L 2 34.0233C 2 33.4712 2.44739 33.0236 2.99946 33.0233L 44.9995 33.0005C 45.552 33.0002 46 33.448 46 34.0005L 46 44.9996C 46 45.552 45.552 45.9998 44.9996 45.9996L 2.9996 45.9827Z"/>
+</defs>
+</svg>

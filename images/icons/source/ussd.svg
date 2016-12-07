@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>ussd</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-31 45)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 31 -45L 79 -45L 79 3L 31 3L 31 -45Z" fill="#FFFFFF"/>
+</mask>
+<g id="ussd" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(38 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(38 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(38 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(38 -45)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 12 40C 11.4477 40 11 40.4477 11 41C 11 41.5523 11.4477 42 12 42L 18 42C 18.5523 42 19 41.5523 19 41C 19 40.4477 18.5523 40 18 40L 12 40Z"/>
+<path id="path1_fill" d="M 26 14L 20 14C 19.4477 14 19 14.4477 19 15C 19 15.5523 19.4477 16 20 16L 26 16L 28 16L 30 16L 33 16C 33.5523 16 34 15.5523 34 15C 34 14.4477 33.5523 14 33 14L 30 14L 28 14L 26 14Z"/>
+<path id="path2_fill" d="M 28 20L 26 20L 20 20C 19.4477 20 19 20.4477 19 21C 19 21.5523 19.4477 22 20 22L 26 22L 28 22L 30 22L 33 22C 33.5523 22 34 21.5523 34 21C 34 20.4477 33.5523 20 33 20L 30 20L 28 20Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 30 27L 30 44C 30 46.2091 28.2091 48 26 48L 4 48C 1.79086 48 0 46.2091 0 44L 0 4C 0 1.79086 1.79086 0 4 0L 26 0C 28.2091 0 30 1.79086 30 4L 30 9L 36.763 9C 38.4199 9 39.763 10.3431 39.763 12L 39.763 24C 39.763 25.6569 38.4199 27 36.763 27L 30 27ZM 4 2L 26 2C 27.1046 2 28 2.89543 28 4L 28 9L 16.763 9C 15.1062 9 13.763 10.3431 13.763 12L 13.763 24C 13.763 25.6569 15.1062 27 16.763 27L 18 27L 18 33C 18 33.4407 18.2885 33.8294 18.7102 33.9571C 19.132 34.0848 19.5876 33.9214 19.8321 33.5547L 24.2019 27L 28 27L 28 44C 28 45.1046 27.1046 46 26 46L 4 46C 2.89543 46 2 45.1046 2 44L 2 4C 2 2.89543 2.89543 2 4 2ZM 33 11L 36.763 11C 37.3153 11 37.763 11.4477 37.763 12L 37.763 24C 37.763 24.5523 37.3153 25 36.763 25L 34 25L 30 25L 28 25L 26 25L 23.25 25L 23.1679 24.9453L 23.1315 25L 23 25L 23 25.1972L 20 29.6972L 20 27L 20 26L 20 25L 16.763 25C 16.2107 25 15.763 24.5523 15.763 24L 15.763 12C 15.763 11.4477 16.2107 11 16.763 11L 26 11L 28 11L 30 11L 33 11Z"/>
+</defs>
+</svg>

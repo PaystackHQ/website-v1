@@ -1,0 +1,29 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        zero-setup
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(321 205)" figma:type="canvas">
+        <mask id="a">
+            <path d="M-321-205h48v48h-48v-48z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <g style="mix-blend-mode:normal" figma:type="ellipse">
+                <mask id="c">
+                    <use xlink:href="#b" fill="#fff" transform="translate(-319 -203)"/>
+                </mask>
+                <g mask="url(#c)">
+                    <use xlink:href="#d" transform="translate(-319 -203)" fill="#3BB75E" style="mix-blend-mode:normal"/>
+                </g>
+            </g>
+            <use xlink:href="#e" transform="rotate(-45 -350.723 307.274)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector"/>
+        </g>
+    </g>
+    <defs>
+        <path id="b" d="M44 22c0 12.15-9.85 22-22 22S0 34.15 0 22 9.85 0 22 0s22 9.85 22 22z"/>
+        <path id="d" d="M42 22c0 11.046-8.954 20-20 20v4c13.255 0 24-10.745 24-24h-4zM22 42C10.954 42 2 33.046 2 22h-4c0 13.255 10.745 24 24 24v-4zM2 22C2 10.954 10.954 2 22 2v-4C8.745-2-2 8.745-2 22h4zM22 2c11.046 0 20 8.954 20 20h4C46 8.745 35.255-2 22-2v4z"/>
+        <path id="e" d="M0-1a1 1 0 1 0 0 2v-2zm65.054 2a1 1 0 1 0 0-2v2zM0 1h65.054v-2H0v2z"/>
+    </defs>
+</svg>

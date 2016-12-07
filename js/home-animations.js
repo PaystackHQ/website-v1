@@ -86,7 +86,6 @@ var Enter = {
         animate({
             el: ReplayLink,
             translateY: ["50px", 0],
-            opacity: [0, 1],
             duration: 1000
         });
     },
@@ -307,5 +306,5 @@ var Exit = {
     }
 }
 
-window.onload = Enter.scene3;
+window.onload = Enter.scene1;
 ReplayLink.onclick = Enter.scene1;
