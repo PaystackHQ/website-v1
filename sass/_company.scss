@@ -62,9 +62,6 @@
 	&--empty{
 		padding: 200px 0;
 	}
-	&--has-padding {
-	    padding: 100px 0;
-	}
 	&--team{
 		padding: 100px 0 100px;
 		position: relative;
@@ -101,10 +98,15 @@
         font-size: 1.8rem;
         font-weight: normal;
         line-height: 1.6;
-        width: 600px;
+        max-width: 600px;
         margin: 20px auto;
         .company-section--dark & {
             color: #c4f0ff;
+        }
+
+        .company-section--story &{
+        	// font-size: 1.6rem;
+        	color: $dark-blue;
         }
     }
 }
@@ -135,13 +137,6 @@
 	text-align: center;
 	width: 100%;
 	margin-top: 30px;
-	transition: color .3s;
-	// height: 3.2rem;
-	color: $dark-blue;
-
-	.team-member:hover &{
-		color: $dark-blue;
-	}
 }
 
 .team-member__image{
