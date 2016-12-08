@@ -326,6 +326,9 @@ $feature-nav-height: 60px;
 
 .breakdown-card {
     padding: 0 20px 0 0;
+    &--spaced {
+        padding: 0 20px 20px 0;
+    }
     &__icon {
         margin: 0;
     }
