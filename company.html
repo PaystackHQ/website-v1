@@ -56,15 +56,17 @@
     </nav>
 
     <section class="hero-section hero-section--company">
-        <div class="hero-section__background-wrapper">
-            <video class="hero-section__video" src="http://chulakov-fantasy.s3.amazonaws.com/pages/what-if.mp4" loop="" autoplay=""></video>
-            <div class="hero-section__background-overlay"></div>
-        </div>   
+        <div class="hero-section__background"></div>   
+        <div class="hero-section__video-wrap">
+            <video class="hero-section__video slide-in--with-fade" src="http://chulakov-fantasy.s3.amazonaws.com/pages/what-if.mp4" loop="" autoplay=""></video>
+
+            <div class="hero-section__logo-box fade-in fade-in--3s">
+                <img src="images/logo_icon.svg">
+            </div>
+        </div>
         
         <div class="hero-section__content">
-            <div class="slide slide--one global-u-text-center" id="slide--one">
-                <h1 class="hero-section__primary-title slide-in slide-in--from-bottom">
-                    <span class="hero-section__primary-text slide-in__element">Our Company</span></h1>
+            <div class="global-u-text-center">
                 <h2 class="hero-section__secondary-title fade-in fade-in--2s">We're a developer-founded company lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </h2>
             </div>
         </div>
@@ -73,7 +75,7 @@
     <section class="company-section company-section--story">
             <div class="container">
                 <div class="grid">
-                    <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--5">
                         <div class="company-section-header">
                             <h2 class="company-section-header__primary-title">Company Story</h2>
                             <div class="feature-section-header__secondary-title">

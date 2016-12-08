@@ -65,6 +65,24 @@
     }
 }
 
+@include keyframes(bottom-to-top--with-fade) {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in--with-fade{
+    -webkit-animation: bottom-to-top--with-fade 3s ease-in-out;
+    animation: bottom-to-top--with-fade 3s ease-in-out;
+}
+
 @-webkit-keyframes scroll-customers {
     0%,100% {
         transform: translateY(0);
