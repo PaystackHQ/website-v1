@@ -42,7 +42,6 @@
         margin-top: 40px;
     }
     &__icon {
-        border-radius: 50%;
         height: 72px;
         margin: 0 auto;
         margin-bottom: 30px;
@@ -96,6 +95,9 @@
         margin-top: 20px;
         small {
             color: $green;
+        }
+        a {
+            text-decoration: underline;
         }
     }
     &__description {

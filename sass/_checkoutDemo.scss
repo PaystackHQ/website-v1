@@ -7,9 +7,15 @@
     position: relative;
     width: 350px;
     z-index: 10;
+    &--bounce {
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: bounce;
+        transform-origin: center bottom;
+    }
     &__overlay {
         border-radius: 5px;
-        // background: rgba(255, 255, 255, 0.7);
         bottom: 0;
         left: 0;
         position: absolute;
@@ -71,7 +77,6 @@
 .checkout__transaction {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     position: relative;
-
     &__logo {
         font-family: $bold-font;
         font-size: 14px;
@@ -103,7 +108,6 @@
 
 .checkout-input-group {
     position: relative;
-    opacity: 0.3;
     &__field {
         background: #fff;
         border: 1px solid #e8e8e8;
