@@ -9,6 +9,19 @@
     }
     animation: fade-in 1s linear;
     -webkit-animation: fade-in 1s linear;
+    &--2s {
+        @include keyframes(fade-in-2s) {
+            0%,
+            85% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        -webkit-animation: fade-in-2s 2s linear;
+        animation: fade-in-2s 2s linear;
+    }
     &--3s {
         @include keyframes(fade-in-3s) {
             0%,

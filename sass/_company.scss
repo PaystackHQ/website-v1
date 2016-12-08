@@ -1,0 +1,159 @@
+.hero-section {
+    &--company {
+        height: 600px;
+        .hero-section__content {
+            bottom: 48%;            
+            width: 600px;
+            z-index: 3;
+        }
+
+        .hero-section__background-wrapper{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: $dark-blue;
+			background-size: cover;
+			background-position: center;
+        }
+
+        .hero-section__background-overlay{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: $dark-blue;
+			background-size: cover;
+			background-position: center;
+			background-blend-mode: multiply;
+			z-index: 2;
+			opacity: .6;
+			background-image: url(../images/landing/background.svg);
+        }
+
+        .hero-section__video{
+        	position: absolute;
+        	opacity: .4;
+        	left: 0;
+        	top: 0;
+        	height: 100%;
+        	width: 100%;
+        	object-fit: cover;
+        	z-index: 1;
+        }
+    }
+}
+
+.company-section{
+	&--light {
+	    background: #FAFAFA;
+	}
+	&--dark {
+	    background: $dark-blue;
+	    color: #c4f0ff;
+	}
+	&--empty{
+		padding: 200px 0;
+	}
+	&--has-padding {
+	    padding: 100px 0;
+	}
+	&--team{
+		padding: 100px 0 100px;
+		position: relative;
+		border-top: 1px solid whitesmoke;
+	}
+	&--story{
+		padding: 30px 0 60px;
+		position: relative;
+	}
+}
+
+.company-section-header {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    max-width: 100%;
+
+    &--centered {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__primary-title {
+        color: $dark-blue;
+        font-family: $bold-font;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 0;
+        .company-section--dark & {
+            color: white;
+        }
+    }
+    &__secondary-title {
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 1.6;
+        width: 600px;
+        margin: 20px auto;
+        .company-section--dark & {
+            color: #c4f0ff;
+        }
+    }
+}
+
+.team-members{
+	margin-top: 50px;
+}
+
+.team-member{
+	background-color: white;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 2px;
+	box-shadow: 0 3px 12px -2px rgba(0,0,0,0.08);
+	position: relative;
+	margin-bottom: 30px;
+
+	.company-section--dark &{
+	    background: lighten($dark-blue, 2%);
+	    .team-member__name {
+	        color: white;
+	    }
+	}
+}
+
+
+.team-member__name{
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+	transition: color .3s;
+	// height: 3.2rem;
+	color: $dark-blue;
+
+	.team-member:hover &{
+		color: $dark-blue;
+	}
+}
+
+.team-member__image{
+	height: 140px;
+	width: 140px;
+	margin: 0 auto;
+	background-size: 100%;
+	background-position: center;
+	display: block;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	border-radius: 1000px;
+	transition: all .3s;
+	cursor: pointer;
+
+	.team-member:hover &{
+		-webkit-filter: grayscale(0);
+		background-size: 105%;
+	}
+}
