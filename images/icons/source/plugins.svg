@@ -1,0 +1,39 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>plugins</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-31 -115)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 31 115L 79 115L 79 163L 31 163L 31 115Z" fill="#FFFFFF"/>
+</mask>
+<g id="plugins" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Line 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="matrix(0.715839 -0.698265 0.698265 0.715839 32.3209 161.966)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="matrix(0.715839 -0.698265 0.698265 0.715839 67.9165 126.414)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-2" y="-3" width="40" height="18" transform="matrix(0.707107 -0.707107 0.707107 0.707107 37.6759 148.505)"/>
+<use xlink:href="#path2_fill" fill="black" transform="matrix(0.707107 -0.707107 0.707107 0.707107 37.6759 148.505)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(0.707107 -0.707107 0.707107 0.707107 37.6759 148.505)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Line 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="matrix(0.715839 -0.698265 0.698265 0.715839 51.4208 138.703)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="matrix(0.715839 -0.698265 0.698265 0.715839 56.4208 143.703)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M -0.00173523 -0.97896C -0.554019 -0.978001 -1.00096 -0.52951 -0.999998 0.0227739C -0.99904 0.575058 -0.550549 1.022 0.00173523 1.02104L -0.00173523 -0.97896ZM 12.1261 0.999999C 12.6784 0.99904 13.1253 0.550549 13.1244 -0.00173518C 13.1234 -0.554019 12.6749 -1.00096 12.1226 -0.999998L 12.1261 0.999999ZM 0.00173523 1.02104L 12.1261 0.999999L 12.1226 -0.999998L -0.00173523 -0.97896L 0.00173523 1.02104Z"/>
+<path id="path1_stroke" d="M -0.00884967 -0.880407C -0.561113 -0.875519 -1.00485 -0.423859 -0.99996 0.128404C -0.995072 0.680667 -0.543412 1.1244 0.00885116 1.11951L -0.00884967 -0.880407ZM 13.5166 0.999961C 14.0689 0.995073 14.5126 0.543413 14.5077 -0.00885042C 14.5028 -0.561114 14.0512 -1.00485 13.4989 -0.999961L 13.5166 0.999961ZM 0.00885116 1.11951L 13.5166 0.999961L 13.4989 -0.999961L -0.00884967 -0.880407L 0.00885116 1.11951Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 12 0L 6.5 0C 2.91015 0 0 2.91016 0 6.5C 0 10.0898 2.91015 13 6.5 13L 12 13L 12 0ZM 24 13L 29.5 13C 33.0899 13 36 10.0898 36 6.5C 36 2.91016 33.0899 0 29.5 0L 24 0L 24 13Z"/>
+<path id="path3_stroke_2x" d="M 12 0L 14 0C 14 -1.10457 13.1046 -2 12 -2L 12 0ZM 12 13L 12 15C 13.1046 15 14 14.1046 14 13L 12 13ZM 24 13L 22 13C 22 14.1046 22.8954 15 24 15L 24 13ZM 24 0L 24 -2C 22.8954 -2 22 -1.10457 22 4.44089e-16L 24 0ZM 6.5 2L 12 2L 12 -2L 6.5 -2L 6.5 2ZM 2 6.5C 2 4.01472 4.01472 2 6.5 2L 6.5 -2C 1.80558 -2 -2 1.80559 -2 6.5L 2 6.5ZM 6.5 11C 4.01472 11 2 8.98528 2 6.5L -2 6.5C -2 11.1944 1.80558 15 6.5 15L 6.5 11ZM 12 11L 6.5 11L 6.5 15L 12 15L 12 11ZM 14 13L 14 0L 10 0L 10 13L 14 13ZM 29.5 11L 24 11L 24 15L 29.5 15L 29.5 11ZM 34 6.5C 34 8.98528 31.9853 11 29.5 11L 29.5 15C 34.1944 15 38 11.1944 38 6.5L 34 6.5ZM 29.5 2C 31.9853 2 34 4.01472 34 6.5L 38 6.5C 38 1.80559 34.1944 -2 29.5 -2L 29.5 2ZM 24 2L 29.5 2L 29.5 -2L 24 -2L 24 2ZM 22 0L 22 13L 26 13L 26 0L 22 0Z"/>
+<path id="path4_stroke" d="M -0.0239037 -0.88016C -0.576031 -0.866959 -1.01292 -0.408669 -0.999714 0.143458C -0.986512 0.695585 -0.528223 1.13247 0.0239042 1.11927L -0.0239037 -0.88016ZM 5.0239 0.999714C 5.57603 0.986512 6.01292 0.528223 5.99971 -0.0239039C 5.98651 -0.576031 5.52822 -1.01292 4.9761 -0.999714L 5.0239 0.999714ZM 0.0239042 1.11927L 5.0239 0.999714L 4.9761 -0.999714L -0.0239037 -0.88016L 0.0239042 1.11927Z"/>
+</defs>
+</svg>

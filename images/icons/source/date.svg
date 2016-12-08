@@ -1,0 +1,45 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>date</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(321 -115)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -321 115L -273 115L -273 163L -321 163L -321 115Z" fill="#FFFFFF"/>
+</mask>
+<g id="date" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path4_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path5_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path6_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path7_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path8_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path9_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path10_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path11_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path12_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path13_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path14_fill" transform="translate(-321 116.5)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 46 5L 2 5L 2 43L 46 43L 46 5ZM 2 3C 0.895431 3 0 3.89543 0 5L 0 43C 0 44.1046 0.895431 45 2 45L 46 45C 47.1046 45 48 44.1046 48 43L 48 5C 48 3.89543 47.1046 3 46 3L 2 3Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 10.5 0C 11.0523 -3.38177e-17 11.5 0.447715 11.5 1L 11.5 7C 11.5 7.55228 11.0523 8 10.5 8C 9.94772 8 9.5 7.55228 9.5 7L 9.5 1C 9.5 0.447715 9.94772 3.38177e-17 10.5 0Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 37.5 0C 38.0523 -3.38177e-17 38.5 0.447715 38.5 1L 38.5 7C 38.5 7.55228 38.0523 8 37.5 8C 36.9477 8 36.5 7.55228 36.5 7L 36.5 1C 36.5 0.447715 36.9477 3.38177e-17 37.5 0Z"/>
+<path id="path3_fill" d="M 9.5 17.2C 9.5 17.0895 9.58954 17 9.7 17L 11.3 17C 11.4105 17 11.5 17.0895 11.5 17.2L 11.5 18.8C 11.5 18.9105 11.4105 19 11.3 19L 9.7 19C 9.58954 19 9.5 18.9105 9.5 18.8L 9.5 17.2Z"/>
+<path id="path4_fill" d="M 18.5 17.2C 18.5 17.0895 18.5895 17 18.7 17L 20.3 17C 20.4105 17 20.5 17.0895 20.5 17.2L 20.5 18.8C 20.5 18.9105 20.4105 19 20.3 19L 18.7 19C 18.5895 19 18.5 18.9105 18.5 18.8L 18.5 17.2Z"/>
+<path id="path5_fill" d="M 27.5 17.2C 27.5 17.0895 27.5895 17 27.7 17L 29.3 17C 29.4105 17 29.5 17.0895 29.5 17.2L 29.5 18.8C 29.5 18.9105 29.4105 19 29.3 19L 27.7 19C 27.5895 19 27.5 18.9105 27.5 18.8L 27.5 17.2Z"/>
+<path id="path6_fill" d="M 36.5 17.2C 36.5 17.0895 36.5895 17 36.7 17L 38.3 17C 38.4105 17 38.5 17.0895 38.5 17.2L 38.5 18.8C 38.5 18.9105 38.4105 19 38.3 19L 36.7 19C 36.5895 19 36.5 18.9105 36.5 18.8L 36.5 17.2Z"/>
+<path id="path7_fill" d="M 9.5 24.2C 9.5 24.0895 9.58954 24 9.7 24L 11.3 24C 11.4105 24 11.5 24.0895 11.5 24.2L 11.5 25.8C 11.5 25.9105 11.4105 26 11.3 26L 9.7 26C 9.58954 26 9.5 25.9105 9.5 25.8L 9.5 24.2Z"/>
+<path id="path8_fill" d="M 18.5 24.2C 18.5 24.0895 18.5895 24 18.7 24L 20.3 24C 20.4105 24 20.5 24.0895 20.5 24.2L 20.5 25.8C 20.5 25.9105 20.4105 26 20.3 26L 18.7 26C 18.5895 26 18.5 25.9105 18.5 25.8L 18.5 24.2Z"/>
+<path id="path9_fill" d="M 27.5 24.2C 27.5 24.0895 27.5895 24 27.7 24L 29.3 24C 29.4105 24 29.5 24.0895 29.5 24.2L 29.5 25.8C 29.5 25.9105 29.4105 26 29.3 26L 27.7 26C 27.5895 26 27.5 25.9105 27.5 25.8L 27.5 24.2Z"/>
+<path id="path10_fill" d="M 36.5 24.2C 36.5 24.0895 36.5895 24 36.7 24L 38.3 24C 38.4105 24 38.5 24.0895 38.5 24.2L 38.5 25.8C 38.5 25.9105 38.4105 26 38.3 26L 36.7 26C 36.5895 26 36.5 25.9105 36.5 25.8L 36.5 24.2Z"/>
+<path id="path11_fill" d="M 9.5 31.2C 9.5 31.0895 9.58954 31 9.7 31L 11.3 31C 11.4105 31 11.5 31.0895 11.5 31.2L 11.5 32.8C 11.5 32.9105 11.4105 33 11.3 33L 9.7 33C 9.58954 33 9.5 32.9105 9.5 32.8L 9.5 31.2Z"/>
+<path id="path12_fill" d="M 18.5 31.2C 18.5 31.0895 18.5895 31 18.7 31L 20.3 31C 20.4105 31 20.5 31.0895 20.5 31.2L 20.5 32.8C 20.5 32.9105 20.4105 33 20.3 33L 18.7 33C 18.5895 33 18.5 32.9105 18.5 32.8L 18.5 31.2Z"/>
+<path id="path13_fill" d="M 27.5 31.2C 27.5 31.0895 27.5895 31 27.7 31L 29.3 31C 29.4105 31 29.5 31.0895 29.5 31.2L 29.5 32.8C 29.5 32.9105 29.4105 33 29.3 33L 27.7 33C 27.5895 33 27.5 32.9105 27.5 32.8L 27.5 31.2Z"/>
+<path id="path14_fill" d="M 36.5 31.2C 36.5 31.0895 36.5895 31 36.7 31L 38.3 31C 38.4105 31 38.5 31.0895 38.5 31.2L 38.5 32.8C 38.5 32.9105 38.4105 33 38.3 33L 36.7 33C 36.5895 33 36.5 32.9105 36.5 32.8L 36.5 31.2Z"/>
+</defs>
+</svg>

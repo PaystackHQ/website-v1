@@ -1,0 +1,21 @@
+<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>security-small</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-52 120)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 52 -120L 64 -120L 64 -108L 52 -108L 52 -120Z" fill="#FFFFFF"/>
+</mask>
+<g id="security-small" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(52.75 -120)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(52.75 -120)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(52.75 -120)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5.5 0L 5.25 0C 3.45507 0 2 1.45507 2 3.25L 2 5L 2.5 5L 2.5 3.25C 2.5 1.73122 3.73122 0.5 5.25 0.5L 5.5 0.5C 7.01878 0.5 8.25 1.73122 8.25 3.25L 8.25 5L 8.75 5L 8.75 3.25C 8.75 1.45507 7.29493 0 5.5 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 5.25 9.75C 5.94036 9.75 6.5 9.19036 6.5 8.5C 6.5 7.80964 5.94036 7.25 5.25 7.25C 4.55964 7.25 4 7.80964 4 8.5C 4 9.19036 4.55964 9.75 5.25 9.75ZM 6 8.5C 6 8.91421 5.66421 9.25 5.25 9.25C 4.83579 9.25 4.5 8.91421 4.5 8.5C 4.5 8.08579 4.83579 7.75 5.25 7.75C 5.66421 7.75 6 8.08579 6 8.5Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 9.5 5L 1 5C 0.447716 5 0 5.44772 0 6L 0 11C 0 11.5523 0.447716 12 1 12L 9.5 12C 10.0523 12 10.5 11.5523 10.5 11L 10.5 6C 10.5 5.44772 10.0523 5 9.5 5ZM 0.5 6C 0.5 5.72386 0.723858 5.5 1 5.5L 9.5 5.5C 9.77614 5.5 10 5.72386 10 6L 10 11C 10 11.2761 9.77614 11.5 9.5 11.5L 1 11.5C 0.723858 11.5 0.5 11.2761 0.5 11L 0.5 6Z"/>
+</defs>
+</svg>

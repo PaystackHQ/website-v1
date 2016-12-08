@@ -32,6 +32,10 @@ button,
     &--rounded {
         border-radius: 100px;
     }
+    &--full {
+        text-align: center;
+        width: 100%;
+    }
     // Colors
     &--default,
     &--default-white {
@@ -43,10 +47,15 @@ button,
         color: rgba(255, 255, 255, 0.88);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
+    &--light {
+        border: solid 1px whitesmoke;
+        color: $light-blue;
+    }
     &--green {
         color: white;
         background-color: $green;
         border-color: $green;
+        box-shadow: none;
     }
     &--text {
         background: none;
