@@ -1,26 +1,30 @@
-<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>libraries</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(57 -115)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M -57 115L -9 115L -9 163L -57 163L -57 115Z" fill="#FFFFFF"/>
-</mask>
-<g id="libraries" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-55 115)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path1_fill" transform="translate(-55 115)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path2_fill" transform="translate(-55 115)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-55 141)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path1_fill" transform="translate(-55 141)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path2_fill" transform="translate(-55 141)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 2 8L 2 20L 42 20L 42 8L 2 8ZM 1 6C 0.447715 6 0 6.44772 0 7L 0 21C 0 21.5523 0.447715 22 1 22L 43 22C 43.5523 22 44 21.5523 44 21L 44 7C 44 6.44772 43.5523 6 43 6L 1 6Z"/>
-<path id="path1_fill" fill-rule="evenodd" d="M 7 2L 7 6L 17 6L 17 2L 7 2ZM 6 0C 5.44772 0 5 0.447715 5 1L 5 7C 5 7.55228 5.44772 8 6 8L 18 8C 18.5523 8 19 7.55228 19 7L 19 1C 19 0.447715 18.5523 0 18 0L 6 0Z"/>
-<path id="path2_fill" fill-rule="evenodd" d="M 27 2L 27 6L 37 6L 37 2L 27 2ZM 26 0C 25.4477 0 25 0.447715 25 1L 25 7C 25 7.55228 25.4477 8 26 8L 38 8C 38.5523 8 39 7.55228 39 7L 39 1C 39 0.447715 38.5523 0 38 0L 26 0Z"/>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        libraries
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(57 -115)" figma:type="canvas">
+        <mask id="a">
+            <path d="M-57 115h48v48h-48v-48z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame" fill="#3BB75E">
+            <g style="mix-blend-mode:normal" figma:type="vector" transform="translate(-55 115)">
+                <use xlink:href="#b" style="mix-blend-mode:normal"/>
+                <use xlink:href="#c" style="mix-blend-mode:normal"/>
+                <use xlink:href="#d" style="mix-blend-mode:normal"/>
+            </g>
+            <g style="mix-blend-mode:normal" figma:type="vector" transform="translate(-55 141)">
+                <use xlink:href="#b" style="mix-blend-mode:normal"/>
+                <use xlink:href="#c" style="mix-blend-mode:normal"/>
+                <use xlink:href="#d" style="mix-blend-mode:normal"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M2 8v12h40V8H2zM1 6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H1z"/>
+        <path id="c" fill-rule="evenodd" d="M7 2v4h10V2H7zM6 0a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H6z"/>
+        <path id="d" fill-rule="evenodd" d="M27 2v4h10V2H27zm-1-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H26z"/>
+    </defs>
 </svg>

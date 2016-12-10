@@ -1,17 +1,19 @@
-<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>people</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(145 205)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M -145 -205L -97 -205L -97 -157L -145 -157L -145 -205Z" fill="#FFFFFF"/>
-</mask>
-<g id="people" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
-<use xlink:href="#path0_fill" transform="translate(-145 -200)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 27 10C 27 13.5971 25.2314 16.948 22.4477 18.7092C 24.7877 19.3977 26.924 20.5619 28.7445 22.0901C 29.7705 22.9513 31.0874 23.3969 32.4326 23.4681C 30.9192 22.1505 30 20.1303 30 18C 30 14.3374 32.7171 11 36.5 11C 40.2829 11 43 14.3374 43 18C 43 20.1785 42.0387 22.2419 40.4637 23.5564C 44.8418 25.0077 48 29.135 48 34L 48 36C 46.8954 36 46 35.1046 46 34C 46 29.0294 41.9706 25 37 25C 36.7325 25 36.4678 25.0117 36.2063 25.0345C 33.9815 25.2289 33.3916 27.8273 34.1 29.9452C 34.6838 31.6905 35 33.5583 35 35.5C 35 35.7784 34.7713 36 34.4929 36L 33.4922 36C 33.2186 36 33 35.7736 33 35.5C 33 26.9396 26.0604 20 17.5 20C 9.61302 20 3.1086 26.3151 2.13403 34.0036C 1.99507 35.0999 1.11208 36 0.00700378 36C 0.00234985 35.8339 0 35.6672 0 35.5C 0 27.2967 5.64436 20.4117 13.2613 18.5168C 10.6459 16.7111 9 13.4701 9 10C 9 4.73636 12.7869 0 18 0C 23.2131 0 27 4.73636 27 10ZM 25 10C 25 14.4183 21.866 18 18 18C 14.134 18 11 14.4183 11 10C 11 5.58173 14.134 2 18 2C 21.866 2 25 5.58173 25 10ZM 41 18C 41 20.7614 38.9853 23 36.5 23C 34.0147 23 32 20.7614 32 18C 32 15.2386 34.0147 13 36.5 13C 38.9853 13 41 15.2386 41 18Z"/>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        people
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(145 205)" figma:type="canvas">
+        <mask id="a">
+            <path d="M-145-205h48v48h-48v-48z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <use xlink:href="#b" transform="translate(-145 -200)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector-operation"/>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M27 10c0 3.597-1.769 6.948-4.552 8.71a17.46 17.46 0 0 1 6.296 3.38c1.026.861 2.343 1.307 3.689 1.378C30.919 22.151 30 20.13 30 18c0-3.663 2.717-7 6.5-7s6.5 3.337 6.5 7c0 2.178-.961 4.242-2.536 5.556C44.842 25.008 48 29.135 48 34v2a2 2 0 0 1-2-2 9 9 0 0 0-9.794-8.965c-2.225.194-2.814 2.792-2.106 4.91.584 1.745.9 3.613.9 5.555 0 .278-.229.5-.507.5h-1a.497.497 0 0 1-.493-.5C33 26.94 26.06 20 17.5 20 9.613 20 3.109 26.315 2.134 34.004 1.995 35.1 1.112 36 .007 36A17.853 17.853 0 0 1 0 35.5c0-8.203 5.644-15.088 13.261-16.983C10.646 16.71 9 13.47 9 10c0-5.264 3.787-10 9-10s9 4.736 9 10zm-2 0c0 4.418-3.134 8-7 8s-7-3.582-7-8 3.134-8 7-8 7 3.582 7 8zm16 8c0 2.761-2.015 5-4.5 5S32 20.761 32 18s2.015-5 4.5-5 4.5 2.239 4.5 5z"/>
+    </defs>
 </svg>

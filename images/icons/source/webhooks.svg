@@ -1,21 +1,21 @@
-<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>webhooks</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-31 -35)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M 31 35L 79 35L 79 83L 31 83L 31 35Z" fill="#FFFFFF"/>
-</mask>
-<g id="webhooks" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
-<use xlink:href="#path0_fill" transform="translate(31 44)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-<g id="Line 3" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path1_stroke" transform="matrix(0.754606 -0.656179 0.656179 0.754606 53.3478 58.4802)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 27 1C 27 1.55228 26.5523 2 26 2L 3 2C 2.44772 2 2 2.44772 2 3L 2 36C 2 36.5523 2.44772 37 3 37L 36 37C 36.5523 37 37 36.5523 37 36L 37 13C 37 12.4477 37.4477 12 38 12L 38 12C 38.5523 12 39 12.4477 39 13L 39 37L 39 37L 39 38C 39 38.5523 38.5523 39 38 39L 37 39L 37 39L 2 39L 2 39L 1 39C 0.447715 39 0 38.5523 0 38L 0 37L 0 37L 0 2L 0 2L 0 1C 0 0.447715 0.447715 0 1 0L 2 0L 2 0L 26 0C 26.5523 0 27 0.447716 27 1L 27 1Z"/>
-<path id="path1_stroke" d="M -0.0324458 0.0145856C -0.58444 0.0325049 -1.01739 0.494511 -0.999473 1.0465C -0.981554 1.5985 -0.519548 2.03145 0.0324458 2.01353L -0.0324458 0.0145856ZM 31.9672 0.683792C 32.3449 0.280802 32.3243 -0.352029 31.9213 -0.729677L 25.3542 -6.8838C 24.9512 -7.26145 24.3184 -7.24091 23.9408 -6.83792C 23.5631 -6.43493 23.5837 -5.8021 23.9866 -5.42445L 29.8241 0.0458852L 24.3537 5.8833C 23.9761 6.28629 23.9966 6.91912 24.3996 7.29677C 24.8026 7.67442 25.4354 7.65388 25.8131 7.25089L 31.9672 0.683792ZM 0.0324458 2.01353L 31.27 0.999473L 31.2051 -0.999473L -0.0324458 0.0145856L 0.0324458 2.01353Z"/>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        webhooks
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(-31 -35)" figma:type="canvas">
+        <mask id="a">
+            <path d="M31 35h48v48H31V35z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <use xlink:href="#b" transform="translate(31 44)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector-operation"/>
+            <use xlink:href="#c" transform="rotate(-41.009 104.861 -42.085)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector"/>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M27 1a1 1 0 0 1-1 1H3a1 1 0 0 0-1 1v33a1 1 0 0 0 1 1h33a1 1 0 0 0 1-1V13a1 1 0 1 1 2 0v25a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h25a1 1 0 0 1 1 1z"/>
+        <path id="c" d="M-.032.015a1 1 0 0 0 .064 1.999l-.064-2zm32 .669A1 1 0 0 0 31.92-.73l-6.567-6.154a1 1 0 1 0-1.367 1.46l5.837 5.47-5.47 5.837a1 1 0 0 0 1.46 1.368L31.966.684zM.031 2.014L31.27.999l-.065-1.998L-.032.015l.064 1.999z"/>
+    </defs>
 </svg>

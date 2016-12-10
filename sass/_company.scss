@@ -92,6 +92,21 @@
         padding: 200px 0;
         position: relative;
     }
+    &__copy {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    &__call-to-action {
+        margin-top: 30px;
+    }
+    &--job {
+        margin: 100px 0;
+    }
+    &__divider {
+        background: darken($lighter-gray, 5%);
+        height: 1px;
+        width: 100%;
+    }
 }
 
 .company-section-header {
@@ -129,10 +144,6 @@
         .company-section--story & {
             color: #003767;
         }
-    }
-    &__copy {
-        font-size: 1.8rem;
-        line-height: 1.5;
     }
 }
 

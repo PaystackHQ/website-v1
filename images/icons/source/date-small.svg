@@ -1,45 +1,49 @@
-<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>date-small</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-88 120)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M 88 -120L 100 -120L 100 -108L 88 -108L 88 -120Z" fill="#FFFFFF"/>
-</mask>
-<g id="date-small" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path1_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path2_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path3_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path4_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path5_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path6_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path7_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path8_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path9_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path10_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path11_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path12_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path13_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path14_fill" transform="translate(88 -119.125)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 11.5 1.22222L 0.5 1.22222L 0.5 10.5111L 11.5 10.5111L 11.5 1.22222ZM 0.5 0.733333C 0.223858 0.733333 0 0.952216 0 1.22222L 0 10.5111C 0 10.7811 0.223858 11 0.5 11L 11.5 11C 11.7761 11 12 10.7811 12 10.5111L 12 1.22222C 12 0.952216 11.7761 0.733333 11.5 0.733333L 0.5 0.733333Z"/>
-<path id="path1_fill" fill-rule="evenodd" d="M 2.625 0C 2.76307 -8.26655e-18 2.875 0.109442 2.875 0.244444L 2.875 1.71111C 2.875 1.84611 2.76307 1.95556 2.625 1.95556C 2.48693 1.95556 2.375 1.84611 2.375 1.71111L 2.375 0.244444C 2.375 0.109442 2.48693 8.26655e-18 2.625 0Z"/>
-<path id="path2_fill" fill-rule="evenodd" d="M 9.375 0C 9.51307 -8.26655e-18 9.625 0.109442 9.625 0.244444L 9.625 1.71111C 9.625 1.84611 9.51307 1.95556 9.375 1.95556C 9.23693 1.95556 9.125 1.84611 9.125 1.71111L 9.125 0.244444C 9.125 0.109442 9.23693 8.26655e-18 9.375 0Z"/>
-<path id="path3_fill" d="M 2.375 4.20444C 2.375 4.17744 2.39739 4.15556 2.425 4.15556L 2.825 4.15556C 2.85261 4.15556 2.875 4.17744 2.875 4.20444L 2.875 4.59556C 2.875 4.62256 2.85261 4.64444 2.825 4.64444L 2.425 4.64444C 2.39739 4.64444 2.375 4.62256 2.375 4.59556L 2.375 4.20444Z"/>
-<path id="path4_fill" d="M 4.625 4.20444C 4.625 4.17744 4.64739 4.15556 4.675 4.15556L 5.075 4.15556C 5.10261 4.15556 5.125 4.17744 5.125 4.20444L 5.125 4.59556C 5.125 4.62256 5.10261 4.64444 5.075 4.64444L 4.675 4.64444C 4.64739 4.64444 4.625 4.62256 4.625 4.59556L 4.625 4.20444Z"/>
-<path id="path5_fill" d="M 6.875 4.20444C 6.875 4.17744 6.89739 4.15556 6.925 4.15556L 7.325 4.15556C 7.35261 4.15556 7.375 4.17744 7.375 4.20444L 7.375 4.59556C 7.375 4.62256 7.35261 4.64444 7.325 4.64444L 6.925 4.64444C 6.89739 4.64444 6.875 4.62256 6.875 4.59556L 6.875 4.20444Z"/>
-<path id="path6_fill" d="M 9.125 4.20444C 9.125 4.17744 9.14739 4.15556 9.175 4.15556L 9.575 4.15556C 9.60261 4.15556 9.625 4.17744 9.625 4.20444L 9.625 4.59556C 9.625 4.62256 9.60261 4.64444 9.575 4.64444L 9.175 4.64444C 9.14739 4.64444 9.125 4.62256 9.125 4.59556L 9.125 4.20444Z"/>
-<path id="path7_fill" d="M 2.375 5.91556C 2.375 5.88856 2.39739 5.86667 2.425 5.86667L 2.825 5.86667C 2.85261 5.86667 2.875 5.88856 2.875 5.91556L 2.875 6.30667C 2.875 6.33367 2.85261 6.35556 2.825 6.35556L 2.425 6.35556C 2.39739 6.35556 2.375 6.33367 2.375 6.30667L 2.375 5.91556Z"/>
-<path id="path8_fill" d="M 4.625 5.91556C 4.625 5.88856 4.64739 5.86667 4.675 5.86667L 5.075 5.86667C 5.10261 5.86667 5.125 5.88856 5.125 5.91556L 5.125 6.30667C 5.125 6.33367 5.10261 6.35556 5.075 6.35556L 4.675 6.35556C 4.64739 6.35556 4.625 6.33367 4.625 6.30667L 4.625 5.91556Z"/>
-<path id="path9_fill" d="M 6.875 5.91556C 6.875 5.88856 6.89739 5.86667 6.925 5.86667L 7.325 5.86667C 7.35261 5.86667 7.375 5.88856 7.375 5.91556L 7.375 6.30667C 7.375 6.33367 7.35261 6.35556 7.325 6.35556L 6.925 6.35556C 6.89739 6.35556 6.875 6.33367 6.875 6.30667L 6.875 5.91556Z"/>
-<path id="path10_fill" d="M 9.125 5.91556C 9.125 5.88856 9.14739 5.86667 9.175 5.86667L 9.575 5.86667C 9.60261 5.86667 9.625 5.88856 9.625 5.91556L 9.625 6.30667C 9.625 6.33367 9.60261 6.35556 9.575 6.35556L 9.175 6.35556C 9.14739 6.35556 9.125 6.33367 9.125 6.30667L 9.125 5.91556Z"/>
-<path id="path11_fill" d="M 2.375 7.62667C 2.375 7.59967 2.39739 7.57778 2.425 7.57778L 2.825 7.57778C 2.85261 7.57778 2.875 7.59967 2.875 7.62667L 2.875 8.01778C 2.875 8.04478 2.85261 8.06667 2.825 8.06667L 2.425 8.06667C 2.39739 8.06667 2.375 8.04478 2.375 8.01778L 2.375 7.62667Z"/>
-<path id="path12_fill" d="M 4.625 7.62667C 4.625 7.59967 4.64739 7.57778 4.675 7.57778L 5.075 7.57778C 5.10261 7.57778 5.125 7.59967 5.125 7.62667L 5.125 8.01778C 5.125 8.04478 5.10261 8.06667 5.075 8.06667L 4.675 8.06667C 4.64739 8.06667 4.625 8.04478 4.625 8.01778L 4.625 7.62667Z"/>
-<path id="path13_fill" d="M 6.875 7.62667C 6.875 7.59967 6.89739 7.57778 6.925 7.57778L 7.325 7.57778C 7.35261 7.57778 7.375 7.59967 7.375 7.62667L 7.375 8.01778C 7.375 8.04478 7.35261 8.06667 7.325 8.06667L 6.925 8.06667C 6.89739 8.06667 6.875 8.04478 6.875 8.01778L 6.875 7.62667Z"/>
-<path id="path14_fill" d="M 9.125 7.62667C 9.125 7.59967 9.14739 7.57778 9.175 7.57778L 9.575 7.57778C 9.60261 7.57778 9.625 7.59967 9.625 7.62667L 9.625 8.01778C 9.625 8.04478 9.60261 8.06667 9.575 8.06667L 9.175 8.06667C 9.14739 8.06667 9.125 8.04478 9.125 8.01778L 9.125 7.62667Z"/>
-</defs>
+<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        date-small
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(-88 120)" figma:type="canvas">
+        <mask id="a">
+            <path d="M88-120h12v12H88v-12z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <g style="mix-blend-mode:normal" figma:type="vector" transform="translate(88 -119.125)" fill="#3BB75E">
+                <use xlink:href="#b" style="mix-blend-mode:normal"/>
+                <use xlink:href="#c" style="mix-blend-mode:normal"/>
+                <use xlink:href="#d" style="mix-blend-mode:normal"/>
+                <use xlink:href="#e" style="mix-blend-mode:normal"/>
+                <use xlink:href="#f" style="mix-blend-mode:normal"/>
+                <use xlink:href="#g" style="mix-blend-mode:normal"/>
+                <use xlink:href="#h" style="mix-blend-mode:normal"/>
+                <use xlink:href="#i" style="mix-blend-mode:normal"/>
+                <use xlink:href="#j" style="mix-blend-mode:normal"/>
+                <use xlink:href="#k" style="mix-blend-mode:normal"/>
+                <use xlink:href="#l" style="mix-blend-mode:normal"/>
+                <use xlink:href="#m" style="mix-blend-mode:normal"/>
+                <use xlink:href="#n" style="mix-blend-mode:normal"/>
+                <use xlink:href="#o" style="mix-blend-mode:normal"/>
+                <use xlink:href="#p" style="mix-blend-mode:normal"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M11.5 1.222H.5v9.29h11v-9.29zM.5.733c-.276 0-.5.22-.5.49v9.288c0 .27.224.489.5.489h11c.276 0 .5-.219.5-.489V1.222a.495.495 0 0 0-.5-.489H.5z"/>
+        <path id="c" fill-rule="evenodd" d="M2.625 0c.138 0 .25.11.25.244v1.467a.247.247 0 0 1-.25.245.247.247 0 0 1-.25-.245V.244c0-.135.112-.244.25-.244z"/>
+        <path id="d" fill-rule="evenodd" d="M9.375 0c.138 0 .25.11.25.244v1.467a.247.247 0 0 1-.25.245.247.247 0 0 1-.25-.245V.244c0-.135.112-.244.25-.244z"/>
+        <path id="e" d="M2.375 4.204a.05.05 0 0 1 .05-.048h.4a.05.05 0 0 1 .05.048v.392a.05.05 0 0 1-.05.048h-.4a.05.05 0 0 1-.05-.048v-.392z"/>
+        <path id="f" d="M4.625 4.204a.05.05 0 0 1 .05-.048h.4a.05.05 0 0 1 .05.048v.392a.05.05 0 0 1-.05.048h-.4a.05.05 0 0 1-.05-.048v-.392z"/>
+        <path id="g" d="M6.875 4.204a.05.05 0 0 1 .05-.048h.4a.05.05 0 0 1 .05.048v.392a.05.05 0 0 1-.05.048h-.4a.05.05 0 0 1-.05-.048v-.392z"/>
+        <path id="h" d="M9.125 4.204a.05.05 0 0 1 .05-.048h.4a.05.05 0 0 1 .05.048v.392a.05.05 0 0 1-.05.048h-.4a.05.05 0 0 1-.05-.048v-.392z"/>
+        <path id="i" d="M2.375 5.916a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="j" d="M4.625 5.916a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="k" d="M6.875 5.916a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="l" d="M9.125 5.916a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="m" d="M2.375 7.627a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="n" d="M4.625 7.627a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="o" d="M6.875 7.627a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+        <path id="p" d="M9.125 7.627a.05.05 0 0 1 .05-.05h.4a.05.05 0 0 1 .05.05v.39a.05.05 0 0 1-.05.05h-.4a.05.05 0 0 1-.05-.05v-.39z"/>
+    </defs>
 </svg>

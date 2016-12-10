@@ -1,23 +1,27 @@
-<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>multi-business</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(145 -115)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M -145 115L -97 115L -97 163L -145 163L -145 115Z" fill="#FFFFFF"/>
-</mask>
-<g id="multi-business" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-145 119)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path1_fill" transform="translate(-145 119)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path2_fill" transform="translate(-145 119)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path3_fill" transform="translate(-145 119)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 15 27.668L 2 27.668L 2 9.66805L 10.435 9.66805L 13.8491 12.608C 14.3191 12.9711 15.2136 13.3032 15.8067 13.3347L 31 13.3347L 31 20.6077L 33 20.6077L 33 12.3347C 33 11.7824 32.5523 11.3347 32 11.3347L 15.8067 11.3347C 15.5672 11.3347 15.3357 11.2488 15.1542 11.0925L 11.4587 7.91028C 11.2772 7.754 11.0457 7.66805 10.8062 7.66805L 1 7.66805C 0.447708 7.66805 0 8.11576 0 8.66805L 0 28.668C 0 29.2203 0.447708 29.668 1 29.668L 15 29.668L 15 27.668Z"/>
-<path id="path1_fill" fill-rule="evenodd" d="M 17 36.941L 46 36.941L 46 22.6076L 30.8067 22.6076C 30.2136 22.5761 29.3191 22.2441 28.8491 21.881L 25.435 18.941L 17 18.941L 17 36.941ZM 15 37.941L 15 17.941C 15 17.3887 15.4477 16.941 16 16.941L 25.8062 16.941C 26.0457 16.941 26.2772 17.0269 26.4587 17.1832L 30.1542 20.3654C 30.3357 20.5217 30.5672 20.6076 30.8067 20.6076L 47 20.6076C 47.5523 20.6076 48 21.0554 48 21.6076L 48 37.941C 48 38.4933 47.5523 38.941 47 38.941L 16 38.941C 15.4477 38.941 15 38.4933 15 37.941Z"/>
-<path id="path2_fill" fill-rule="evenodd" d="M 36.6035 3.08383C 33.688 1.30209 29.212 1.40141 25.2452 5.83484C 24.877 6.24643 24.2448 6.28155 23.8332 5.91329C 23.4216 5.54503 23.3865 4.91284 23.7548 4.50125C 28.288 -0.565316 33.812 -0.965997 37.6465 1.37726C 41.4428 3.69727 43.388 8.62814 40.8944 13.6153C 40.6474 14.1092 40.0468 14.3095 39.5528 14.0625C 39.0588 13.8155 38.8586 13.2148 39.1056 12.7208C 41.112 8.70795 39.5572 4.88883 36.6035 3.08383Z"/>
-<path id="path3_fill" fill-rule="evenodd" d="M 37.0528 8.77362C 37.5468 8.52663 38.1474 8.72685 38.3944 9.22083L 40.0357 12.5033L 43.2575 11.6979C 43.7933 11.564 44.3362 11.8897 44.4701 12.4255C 44.6041 12.9613 44.2783 13.5042 43.7425 13.6382L 39.7425 14.6382C 39.2878 14.7519 38.8152 14.5345 38.6056 14.1153L 36.6056 10.1153C 36.3586 9.62128 36.5588 9.02061 37.0528 8.77362Z"/>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        multi-business
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(145 -115)" figma:type="canvas">
+        <mask id="a">
+            <path d="M-145 115h48v48h-48v-48z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <g style="mix-blend-mode:normal" figma:type="vector" transform="translate(-145 119)" fill="#3BB75E">
+                <use xlink:href="#b" style="mix-blend-mode:normal"/>
+                <use xlink:href="#c" style="mix-blend-mode:normal"/>
+                <use xlink:href="#d" style="mix-blend-mode:normal"/>
+                <use xlink:href="#e" style="mix-blend-mode:normal"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M15 27.668H2v-18h8.435l3.414 2.94c.47.363 1.365.695 1.958.727H31v7.273h2v-8.273a1 1 0 0 0-1-1H15.807a1 1 0 0 1-.653-.243L11.46 7.91a1 1 0 0 0-.653-.242H1a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h14v-2z"/>
+        <path id="c" fill-rule="evenodd" d="M17 36.941h29V22.608H30.807c-.593-.032-1.488-.364-1.958-.727l-3.414-2.94H17v18zm-2 1v-20a1 1 0 0 1 1-1h9.806a1 1 0 0 1 .653.242l3.695 3.182a1 1 0 0 0 .653.243H47a1 1 0 0 1 1 1V37.94a1 1 0 0 1-1 1H16a1 1 0 0 1-1-1z"/>
+        <path id="d" fill-rule="evenodd" d="M36.603 3.084c-2.915-1.782-7.391-1.683-11.358 2.75a1 1 0 1 1-1.49-1.333C28.288-.565 33.812-.966 37.647 1.377c3.796 2.32 5.741 7.251 3.247 12.238a1 1 0 1 1-1.788-.894c2.006-4.013.451-7.832-2.503-9.637z"/>
+        <path id="e" fill-rule="evenodd" d="M37.053 8.774a1 1 0 0 1 1.341.447l1.642 3.282 3.221-.805a1 1 0 1 1 .486 1.94l-4 1a1 1 0 0 1-1.137-.523l-2-4a1 1 0 0 1 .447-1.341z"/>
+    </defs>
 </svg>

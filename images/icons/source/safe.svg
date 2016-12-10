@@ -1,29 +1,33 @@
-<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>safe</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(57 45)" figma:type="canvas">
-<mask id="mask0_alpha" mask-type="alpha">
-<path d="M -57 -45L -9 -45L -9 3L -57 3L -57 -45Z" fill="#FFFFFF"/>
-</mask>
-<g id="safe" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path1_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path2_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path3_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path4_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path5_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-<use xlink:href="#path6_fill" transform="translate(-55 -43)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 36 6L 9 6C 8.44772 6 8 6.44772 8 7L 8 34C 8 34.5523 8.44772 35 9 35L 36 35C 36.5523 35 37 34.5523 37 34L 37 7C 37 6.44772 36.5523 6 36 6ZM 9 4C 7.34315 4 6 5.34315 6 7L 6 34C 6 35.6569 7.34315 37 9 37L 36 37C 37.6569 37 39 35.6569 39 34L 39 7C 39 5.34315 37.6569 4 36 4L 9 4Z"/>
-<path id="path1_fill" fill-rule="evenodd" d="M 4 12C 4 11.4477 4.44772 11 5 11L 9 11C 9.55228 11 10 11.4477 10 12C 10 12.5523 9.55228 13 9 13L 5 13C 4.44772 13 4 12.5523 4 12Z"/>
-<path id="path2_fill" fill-rule="evenodd" d="M 4 30C 4 29.4477 4.44772 29 5 29L 9 29C 9.55228 29 10 29.4477 10 30C 10 30.5523 9.55228 31 9 31L 5 31C 4.44772 31 4 30.5523 4 30Z"/>
-<path id="path3_fill" fill-rule="evenodd" d="M 41 2L 3 2C 2.44772 2 2 2.44772 2 3L 2 38C 2 38.5523 2.44772 39 3 39L 41 39C 41.5523 39 42 38.5523 42 38L 42 3C 42 2.44772 41.5523 2 41 2ZM 3 0C 1.34315 0 0 1.34315 0 3L 0 38C 0 39.6569 1.34315 41 3 41L 41 41C 42.6569 41 44 39.6569 44 38L 44 3C 44 1.34315 42.6569 0 41 0L 3 0Z"/>
-<path id="path4_fill" fill-rule="evenodd" d="M 5 39C 5.55228 39 6 39.4477 6 40L 6 42L 10 42L 10 40C 10 39.4477 10.4477 39 11 39C 11.5523 39 12 39.4477 12 40L 12 43C 12 43.5523 11.5523 44 11 44L 5 44C 4.44772 44 4 43.5523 4 43L 4 40C 4 39.4477 4.44772 39 5 39Z"/>
-<path id="path5_fill" fill-rule="evenodd" d="M 33 39C 33.5523 39 34 39.4477 34 40L 34 42L 38 42L 38 40C 38 39.4477 38.4477 39 39 39C 39.5523 39 40 39.4477 40 40L 40 43C 40 43.5523 39.5523 44 39 44L 33 44C 32.4477 44 32 43.5523 32 43L 32 40C 32 39.4477 32.4477 39 33 39Z"/>
-<path id="path6_fill" d="M 30.3133 13.5421L 30.2215 13.4732L 30.1181 13.4273C 28.9455 12.7365 27.613 12.3632 26.2521 12.3443C 24.8913 12.3254 23.5489 12.6615 22.3575 13.3195C 21.1661 13.9774 20.1668 14.9345 19.458 16.0964C 18.7492 17.2583 18.3555 18.5849 18.3156 19.9453C 18.2758 21.3057 18.5912 22.653 19.2307 23.8544C 19.8702 25.0558 20.8118 26.0698 21.9627 26.7964C 23.1135 27.523 24.4338 27.9371 25.7935 27.9979C 27.1531 28.0587 28.5052 27.7641 29.7163 27.1432L 29.7794 27.1432L 29.8196 27.1432C 31.0356 26.5012 32.0607 25.5499 32.7917 24.3852C 33.5227 23.2206 33.9337 21.8838 33.9832 20.5096C 34.0327 19.1355 33.719 17.7726 33.0736 16.5584C 32.4283 15.3442 31.4742 14.3216 30.3076 13.5938L 30.3133 13.5421ZM 26.1567 14.1105C 26.9819 14.1104 27.7984 14.2784 28.5565 14.6042L 25.9615 18.8872C 25.7214 18.9221 25.4952 19.0213 25.307 19.1743L 20.3982 18.2098C 20.8081 17.0048 21.5837 15.9579 22.617 15.2148C 23.6503 14.4718 24.8897 14.0696 26.1624 14.0646L 26.1567 14.1105ZM 20.0537 20.1733C 20.0537 20.0642 20.0537 19.9551 20.0537 19.846L 24.9568 20.8105C 25.0501 20.9856 25.1807 21.1381 25.3395 21.2571C 25.4982 21.3762 25.6811 21.4589 25.8754 21.4995L 28.1719 25.9145C 27.2534 26.2372 26.2711 26.3352 25.307 26.2005C 24.3429 26.0658 23.4251 25.7022 22.6303 25.1401C 21.8356 24.578 21.1869 23.8338 20.7386 22.9697C 20.2904 22.1056 20.0555 21.1467 20.0537 20.1733ZM 29.722 25.1337L 27.4255 20.7072C 27.5507 20.3939 27.5507 20.0445 27.4255 19.7312L 30.0205 15.4539C 30.7466 16.047 31.3261 16.7995 31.7141 17.6529C 32.102 18.5064 32.2879 19.4378 32.2574 20.3748C 32.2269 21.3118 31.9807 22.2291 31.5379 23.0554C 31.0952 23.8818 30.4679 24.5949 29.7048 25.1395L 29.722 25.1337Z"/>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        safe
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(57 45)" figma:type="canvas">
+        <mask id="a">
+            <path d="M-57-45h48V3h-48v-48z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <g style="mix-blend-mode:normal" figma:type="vector" transform="translate(-55 -43)" fill="#3BB75E">
+                <use xlink:href="#b" style="mix-blend-mode:normal"/>
+                <use xlink:href="#c" style="mix-blend-mode:normal"/>
+                <use xlink:href="#d" style="mix-blend-mode:normal"/>
+                <use xlink:href="#e" style="mix-blend-mode:normal"/>
+                <use xlink:href="#f" style="mix-blend-mode:normal"/>
+                <use xlink:href="#g" style="mix-blend-mode:normal"/>
+                <use xlink:href="#h" style="mix-blend-mode:normal"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <path id="b" fill-rule="evenodd" d="M36 6H9a1 1 0 0 0-1 1v27a1 1 0 0 0 1 1h27a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zM9 4a3 3 0 0 0-3 3v27a3 3 0 0 0 3 3h27a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H9z"/>
+        <path id="c" fill-rule="evenodd" d="M4 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/>
+        <path id="d" fill-rule="evenodd" d="M4 30a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/>
+        <path id="e" fill-rule="evenodd" d="M41 2H3a1 1 0 0 0-1 1v35a1 1 0 0 0 1 1h38a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM3 0a3 3 0 0 0-3 3v35a3 3 0 0 0 3 3h38a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+        <path id="f" fill-rule="evenodd" d="M5 39a1 1 0 0 1 1 1v2h4v-2a1 1 0 1 1 2 0v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/>
+        <path id="g" fill-rule="evenodd" d="M33 39a1 1 0 0 1 1 1v2h4v-2a1 1 0 1 1 2 0v3a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/>
+        <path id="h" d="M30.313 13.542l-.091-.069-.104-.046a7.83 7.83 0 1 0-.402 13.716H29.82a7.819 7.819 0 0 0 .489-13.55l.005-.05zm-4.156.569c.825 0 1.641.167 2.4.493l-2.595 4.283c-.24.035-.467.134-.655.287l-4.909-.964a6.114 6.114 0 0 1 5.764-4.145l-.005.046zm-6.103 6.062v-.327l4.903.965a1.353 1.353 0 0 0 .918.689l2.297 4.415a6.097 6.097 0 0 1-8.118-5.742zm9.668 4.96l-2.297-4.426a1.315 1.315 0 0 0 0-.976l2.595-4.277a6.098 6.098 0 0 1-.315 9.686l.017-.006z"/>
+    </defs>
 </svg>
