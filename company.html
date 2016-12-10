@@ -44,7 +44,22 @@
                     </li>
                     <li class="global-nav__item"><a href="#">Pricing</a></li>
                     <li class="global-nav__item"><a href="#">Developers</a></li>
-                    <li class="global-nav__item"><a href="#">Company</a></li>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="#">
+                            Company
+                        </a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="company.html">About</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="https://blog.paystack.com">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="global-nav__item">
                         <a href="#" class="button button--default-white button--rounded">
                             Log In
@@ -54,116 +69,123 @@
             </div>
         </div>
     </nav>
-
     <section class="hero-section hero-section--company">
-        <div class="hero-section__background"></div>   
-        <div class="hero-section__video-wrap">
-            <video class="hero-section__video slide-in--with-fade" src="http://chulakov-fantasy.s3.amazonaws.com/pages/what-if.mp4" loop="" autoplay=""></video>
-
-            <div class="hero-section__logo-box fade-in fade-in--3s">
+        <div class="hero-section__background"></div>
+        <div class="hero-video">
+            <div class="hero-video__annotation">
+                <div class="hero-video__annotation__left">
+                    <h5>Paystack HQ</h5>
+                    <h6>6d ago</h6>
+                </div>
+                <div class="hero-video__annotation__right">
+                    <div id="hero-video__spinner" class="spinner" style="display: none;"><span></span></div>
+                </div>
+            </div>
+            <div class="hero-video__file-wrap">
+                <video class="hero-video__file" src="video/HQ.mp4" autoplay id="hero-video__file"></video>
+            </div>
+            <div class="hero-video__logo fade-in">
                 <img src="images/logo_icon.svg">
             </div>
         </div>
-        
         <div class="hero-section__content">
             <div class="global-u-text-center">
-                <h2 class="hero-section__secondary-title fade-in fade-in--2s">We're a developer-founded company lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </h2>
+                <h2 class="hero-section__secondary-title">We're a small group of people based in Lagos and San Francisco working hard to offer Nigeria (and Africa) a proper payments service.</h2>
             </div>
         </div>
     </section>
-
     <section class="company-section company-section--story">
-            <div class="container">
-                <div class="grid">
-                    <div class="grid__column grid__column--6">
-                        <div class="company-section-header">
-                            <h2 class="company-section-header__primary-title">Company Story</h2>
-                            <div class="company-section-header__secondary-title">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, pariatur beatae ratione cupiditate officiis, unde fugiat laboriosam enim laudantium sunt?</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, pariatur beatae ratione cupiditate officiis, unde fugiat laboriosam enim laudantium sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid__column grid__column--6">Image</div>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--4">
+                    <h2 class="company-section-header__heavy-title">Our <br> business</h2>
+                </div>
+                <div class="grid__column grid__column--8">
+                    <h4 class="company-section-header__secondary-title">
+                        We started out by building the technical infrastructure APIs that connect consumers, traditional financial institutions, and developers. Today, we add key insight to the data access we provide with our suite of analytics products.</p>
+                    </h4>
+                    <p class="company-section-header__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, pariatur beatae ratione cupiditate officiis, unde fugiat laboriosam enim laudantium sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
+        </div>
     </section>
-    
     <section class="company-section company-section--team company-section--light">
         <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column-- grid__column--centered">
                     <div class="company-section-header company-section-header--centered">
-                        <h2 class="company-section-header__primary-title">Team</h2>
-                        <h3 class="company-section-header__secondary-title">Paystack has all the important product features and software tools you need to run on the internet. And we'll keep adding.</h3>
+                        <h2 class="company-section-header__primary-title">The Team</h2>
+                        <h4 class="company-section-header__secondary-title">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</h4>
                     </div>
                 </div>
             </div>
-
             <div class="team-members grid">
-                <div class="grid__column grid__column--3">
+                <div class="grid__column grid__column--20">
                     <div class="team-member">
-                        <!-- <img src="images/team/shola.jpg" class="team-member__image"> -->
-                        <div class="team-member__image" style="background-image: url(images/team/shola.jpg)"></div>
-                        <div class="team-member__name">Shola Akinlade</div>
-                    </div>
-                </div>
-
-                <div class="grid__column grid__column--3">
-                    <div class="team-member">
-                        <!-- <img src="images/team/ezra.jpg" class="team-member__image"> -->
-                        <div class="team-member__image" style="background-image: url(images/team/ezra.jpg)"></div>
-                        <div class="team-member__name">Ezra Olubi</div>
-                    </div>
-                </div>
-
-                <div class="grid__column grid__column--3">
-                    <div class="team-member">
-                        <!-- <img src="images/team/opemipo.jpeg" class="team-member__image"> -->
-                        <div class="team-member__image" style="background-image: url(images/team/opemipo.jpeg)"></div>
-                        <div class="team-member__name">Opemipo Aikomo</div>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--3">
-                    <div class="team-member">
-                        <!-- <img src="images/team/ibrahim_lawal.jpg" class="team-member__image"> -->
                         <div class="team-member__image" style="background-image: url(images/team/ibrahim_lawal.jpg)"></div>
                         <div class="team-member__name">Ibrahim Lawal</div>
+                        <div class="team-member__role">Customer Success</div>
                     </div>
                 </div>
-                <div class="grid__column grid__column--3">
+                <div class="grid__column grid__column--20">
                     <div class="team-member">
-                        <!-- <img src="images/team/seun_odusanya.jpg" class="team-member__image"> -->
-                        <div class="team-member__image" style="background-image: url(images/team/seun_odusanya.jpg)"></div>
-                        <div class="team-member__name">Seun Odusanya</div>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--3">
-                    <div class="team-member">
-                        <!-- <img src="images/team/seun_runsewe.jpg" class="team-member__image"> -->
                         <div class="team-member__image" style="background-image: url(images/team/seun_runsewe.jpg)"></div>
                         <div class="team-member__name">Seun Runsewe</div>
+                        <div class="team-member__role">Role</div>
                     </div>
                 </div>
-                <div class="grid__column grid__column--3">
+                <div class="grid__column grid__column--20">
                     <div class="team-member">
-                        <!-- <img src="images/team/abiola_showemimo.jpg" class="team-member__image"> -->
+                        <div class="team-member__image" style="background-image: url(images/team/shola.jpg)"></div>
+                        <div class="team-member__name">Shola Akinlade</div>
+                        <div class="team-member__role">CEO, Cofounder</div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--20">
+                    <div class="team-member">
                         <div class="team-member__image" style="background-image: url(images/team/abiola_showemimo.jpg)"></div>
                         <div class="team-member__name">Abiola Showemimo</div>
+                        <div class="team-member__role">Customer Success</div>
                     </div>
                 </div>
-                <div class="grid__column grid__column--3">
+                <div class="grid__column grid__column--20">
                     <div class="team-member">
-                        <!-- <img src="images/team/douglas_kesi-ayeba_kendyson.jpg" class="team-member__image"> -->
+                        <div class="team-member__image" style="background-image: url(images/team/seun_odusanya.jpg)"></div>
+                        <div class="team-member__name">Seun Odusanya</div>
+                        <div class="team-member__role">Role</div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--20">
+                    <div class="team-member">
                         <div class="team-member__image" style="background-image: url(images/team/douglas_kesi-ayeba_kendyson.jpg)"></div>
                         <div class="team-member__name">Douglas Kendyson</div>
+                        <div class="team-member__role">Customer Success</div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--20">
+                    <div class="team-member">
+                        <div class="team-member__image" style="background-image: url(images/team/ezra.jpg)"></div>
+                        <div class="team-member__name">Ezra Olubi</div>
+                        <div class="team-member__role">CTO, Cofounder</div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--20">
+                    <div class="team-member">
+                        <div class="team-member__image" style="background-image: url(images/team/opemipo.jpeg)"></div>
+                        <div class="team-member__name">Opemipo Aikomo</div>
+                        <div class="team-member__role">Product Design</div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--20">
+                    <div class="team-member">
+                        <div class="team-member__image" style="background-image: url(images/team/ibrahim_lawal.jpg)"></div>
+                        <div class="team-member__name">Loknan Nanyak</div>
+                        <div class="team-member__role">Engineering</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="global-signup global-signup--dark">
         <div class="container">
             <div class="grid">
@@ -229,5 +251,22 @@
         </div>
     </footer>
 </body>
+<script>
+var heroVideo = document.getElementById("hero-video__file");
+
+heroVideo.oncanplay = function() {
+    document.getElementById("hero-video__spinner").style.display = "";
+}
+
+heroVideo.onplay = function() {
+    var oldSpinner = document.getElementById("hero-video__spinner");
+    var newSpinner = document.getElementById("hero-video__spinner").cloneNode(true);
+    oldSpinner.parentNode.replaceChild(newSpinner, oldSpinner);
+}
+
+heroVideo.addEventListener("ended", function() {
+    this.play();
+}, false);
+</script>
 
 </html>
