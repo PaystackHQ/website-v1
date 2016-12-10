@@ -1,83 +1,25 @@
-.global-dropdown-menu {
-    background: rgb(31, 54, 75);
-    border-radius: 3px;
-    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .05);
-    left: 0;
-    opacity: 0;
-    padding: 15px 20px;
-    position: absolute;
-    pointer-events: none;
-    top: 100%;
-    -webkit-transition: opacity .3s, transform .3s;
-    transition: opacity .3s, transform .3s;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
-    &:before {
-        border: solid transparent;
-        border-color: none;
-        border-bottom-color: rgb(31, 54, 75);
-        border-width: 6px;
-        bottom: 100%;
-        content: " ";
-        height: 0;
-        left: 50%;
-        margin-left: -6px;
-        pointer-events: none;
-        position: absolute;
-        width: 0;
-    }
-}
-
-.global-dropdown-menu__divider {
-    background-color: rgba(255,255,255,0.05);
-    height: 1px;
-    margin: 10px 0;
-    width: 100%;
-}
-
-.global-dropdown-menu__item {
-    color: white;
-    font-size: 1.5rem;
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0;
-    margin: 0;
-    -webkit-transition: color .3s;
-    transition: color .3s;
-    &--muted {
-        color: rgba(white, 0.5);
-        font-size: 1.3rem;
-    }
-    &:hover {
-        color: $light-blue;
-    }
-    &:first-child {
-        border-top-left-radius: $button-default-radius;
-        border-top-right-radius: $button-default-radius;
-    }
-    &:last-child {
-        border-bottom-left-radius: $button-default-radius;
-        border-bottom-right-radius: $button-default-radius;
-    }
-}
-
 .global-nav {
     font-size: 1.5rem;
     height: 65px;
     left: 0;
-    padding: 10px 0;
+    padding-top: 15px;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 0;
     z-index: 10;
     &__item {
         color: white;
         display: inline-block;
-        padding: 0 15px 15px;
         position: relative;
-        &:last-child {
-            padding-right: 0;
+        a {
+            display: inline-block;
+            padding: 15px;
         }
+    }
+    &__button {
+        display: inline-block;
+        padding-right: 0;
+        position: relative;
     }
     &__left {
         float: left;
@@ -104,12 +46,13 @@
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         border-top: 4px solid #7999B8;
-        transition: all .2s ease-in-out;
         cursor: pointer;
         display: inline-block;
         position: absolute;
-        top: 7.5px;
-        right: 4px;
+        right: 18px;
+        top: 22px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     &:hover {
         .global-dropdown-menu {
@@ -118,5 +61,72 @@
             -webkit-transform: translateY(0);
             transform: translateY(0);
         }
+    }
+}
+
+.global-dropdown-menu {
+    background: rgb(31, 54, 75);
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .05);
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    pointer-events: none;
+    top: 100%;
+    -webkit-transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    &:before {
+        border: solid transparent;
+        border-color: none;
+        border-bottom-color: rgb(31, 54, 75);
+        border-width: 6px;
+        bottom: 100%;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: -6px;
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+    }
+}
+
+.global-dropdown-menu__divider {
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 1px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.global-dropdown-menu__item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 2.5px 10px;
+    margin: 0;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    a {
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0;
+    }
+    &--muted {
+        color: rgba(white, 0.5);
+        font-size: 1.3rem;
+    }
+    &:hover {
+        color: $light-blue;
+    }
+    &:first-child {
+        border-top-left-radius: $button-default-radius;
+        border-top-right-radius: $button-default-radius;
+    }
+    &:last-child {
+        border-bottom-left-radius: $button-default-radius;
+        border-bottom-right-radius: $button-default-radius;
     }
 }
