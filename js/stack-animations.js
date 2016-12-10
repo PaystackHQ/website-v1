@@ -51,46 +51,41 @@ var runAnimation = {
     },
 
     subscriptions: function() {
-        var boxes = document.getElementById("stack-animation__subscriptions").querySelectorAll("div");
+        var staticBoxes = document.getElementById("stack-animation__subscriptions").getElementsByClassName("stack-animation__static");
+        var animatedBoxes = document.getElementById("stack-animation__subscriptions").getElementsByClassName("stack-animation__animated");
 
-        function animateThis() {
-            boxes[0].style.transform = "translateY(-180px)";
-            boxes[0].style.webkitTransform = "translateY(-180px)";
+        for (i = 0; i < staticBoxes.length; i++) {
+            var box = staticBoxes[i];
+            var offset = (staticBoxes.length - i) * 9;
 
-            for (i = 1; i < boxes.length; i++) {
-                boxes[i].style.transform = "translateY(0)";
-                boxes[i].style.webkitTransform = "translateY(0)";
-            }
-
-            animate({
-                el: boxes[0],
-                translateY: ["-180px", 0],
-                delay: 200,
-                duration: 300,
-                easing: "linear"
-            });
+            box.style.transform = "translateY(" + offset + "px)";
+            box.style.webkitTransform = "translateY(" + offset + "px)";
 
             animate({
-                el: boxes[boxes.length - 1],
-                translateY: [0, "200px"],
-                duration: 700,
+                el: box,
+                translateY: [offset + "px", 0],
                 delay: 1000,
-                easing: "linear"
+                duration: 300,
+                easing: "easeOutExpo"
             });
-
-            for (j = 0; j < boxes.length - 1; j++) {
-                animate({
-                    el: boxes[j],
-                    translateY: [0, "7px"],
-                    duration: 200,
-                    delay: 1100,
-                    easing: "linear"
-                });
-            }
         }
 
-        animateThis();
-        animationLoop = setInterval(animateThis, 2200);
+        for (i = 0; i < animatedBoxes.length; i++) {
+            var box = animatedBoxes[i];
+
+            box.style.opacity = 0;
+            box.style.transform = "translateX(50px)";
+            box.style.webkitTransform = "translateX(50px)";
+
+            animate({
+                el: box,
+                opacity: [0, 1],
+                translateX: ["50px", 0],
+                delay: 2000,
+                duration: 300,
+                easing: "easeOutExpo"
+            });
+        }
     },
 
     developers: function() {
@@ -101,12 +96,14 @@ var runAnimation = {
 
         divider.style.opacity = "0";
         for (i = 0; i < boxes.length; i++) {
+            boxes[i].style.opacity = 0;
             boxes[i].style.transform = "";
             boxes[i].style.webkitTransform = "";
         }
 
         animate({
             el: leftBoxes[0],
+            opacity: [0, 1],
             translateX: [0, "-10px"],
             translateY: [0, "-69px"],
             rotate: [0, "-45deg"],
@@ -117,6 +114,7 @@ var runAnimation = {
 
         animate({
             el: leftBoxes[1],
+            opacity: [0, 1],
             translateX: [0, "-10px"],
             translateY: [0, "-62px"],
             rotate: [0, "45deg"],
@@ -127,6 +125,7 @@ var runAnimation = {
 
         animate({
             el: rightBoxes[0],
+            opacity: [0, 1],
             translateX: [0, "10px"],
             translateY: [0, "-69px"],
             rotate: [0, "45deg"],
@@ -137,6 +136,7 @@ var runAnimation = {
 
         animate({
             el: rightBoxes[1],
+            opacity: [0, 1],
             translateX: [0, "10px"],
             translateY: [0, "-62px"],
             rotate: [0, "-45deg"],
