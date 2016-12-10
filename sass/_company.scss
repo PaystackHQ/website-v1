@@ -8,18 +8,19 @@
         }
         .hero-section__secondary-title {
             font-size: 2.1rem;
-            color: $green;
         }
     }
 }
 
 .hero-video {
-    position: absolute;
-    left: 50%;
-    top: 25%;
+    background: $dark-blue;
     height: 250px;
-    width: 450px;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    width: 450px;
     &:after {
         bottom: 0;
         content: "";

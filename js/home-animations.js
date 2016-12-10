@@ -266,8 +266,7 @@ var Exit = {
             translateX: ["-30%", "-30%"],
             translateY: ["0", "-300px"],
             opacity: [0.1, 0],
-            duration: 2000,
-            delay: 2000,
+            duration: 1000,
             easing: "easeOutExpo" 
         });
 
@@ -275,8 +274,7 @@ var Exit = {
             el: Scene3.logo,
             translateY: ["-100px", "-300px"],
             opacity: [1, 0],
-            duration: 2000,
-            delay: 2000,
+            duration: 1000,
             easing: "easeOutExpo"
         });
 
@@ -284,8 +282,7 @@ var Exit = {
             el: Scene3.footer,
             translateY: [0, "-300px"],
             opacity: [1, 0],
-            duration: 2000,
-            delay: 2000,
+            duration: 1000,
             easing: "easeOutExpo",
             complete: function() {
                 Scene3.div.style.display = "none";

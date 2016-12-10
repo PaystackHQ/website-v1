@@ -1,0 +1,51 @@
+.pages-animation {
+    position: relative;
+    &__form-group {
+        margin-bottom: 30px;
+        label {
+            color: $green;
+            font-size: 1.8rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            background: none;
+            border: solid 1px $green;
+            border-radius: 3px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            width: 300px;
+            &:disabled {
+                color: white;
+            }
+        }
+    }
+    &__success {
+        background: $dark-blue;
+        border: solid 1px $green;
+        border-radius: 3px;
+        height: 105%;
+        left: 0;
+        opacity: 0;
+        padding: 50px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 350px;
+        h3 {
+            font-size: 3rem;
+            font-weight: normal;
+            color: $green;
+        }
+        p {
+            color: white;
+            line-height: 1.3;
+        }
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+}

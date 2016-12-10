@@ -121,7 +121,7 @@
                             <div class="grid__column grid__column--4">
                                 <div class="breakdown-card">
                                     <figure class="breakdown-card__icon">
-                                        <img src="images/icons/source/cards.svg" class="icon"/>
+                                        <img src="images/icons/source/cards.svg" class="icon" />
                                     </figure>
                                     <h3 class="global-u-body-title">Card Payments</h3>
                                     <p class="global-u-body-text">Deploy a mobile-optimized flow that converts 85% better than alternatives</p>
@@ -130,7 +130,7 @@
                             <div class="grid__column grid__column--4">
                                 <div class="breakdown-card">
                                     <figure class="breakdown-card__icon">
-                                        <img src="images/icons/source/safe.svg" class="icon"/>
+                                        <img src="images/icons/source/safe.svg" class="icon" />
                                     </figure>
                                     <h3 class="global-u-body-title">Bank Accounts</h3>
                                     <p class="global-u-body-text">Deploy a mobile-optimized flow that converts 85% better than alternatives</p>
@@ -139,7 +139,7 @@
                             <div class="grid__column grid__column--4">
                                 <div class="breakdown-card">
                                     <figure class="breakdown-card__icon">
-                                        <img src="images/icons/source/ussd.svg" class="icon"/>
+                                        <img src="images/icons/source/ussd.svg" class="icon" />
                                     </figure>
                                     <h3 class="global-u-body-title">USSD (soon)</h3>
                                     <p class="global-u-body-text">Deploy a mobile-optimized flow that converts 85% better than alternatives</p>
@@ -155,7 +155,36 @@
         <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column--6">
-                    Image
+                    <div class="pages-animation" id="pages-animation" style="opacity: 0;">
+                        <div class="pages-animation__form" id="pages-animation__form">
+                            <div class="pages-animation__form-group">
+                                <label for="link">Choose your link</label>
+                                <input type="text" id="link" value="paystack.com/pay/my-link" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="price">Set the price</label>
+                                <input type="text" id="price" value="NGN 1,000" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="extras">Collect extra information</label>
+                                <input type="text" id="extras" value="Color, Staff Id" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="success">After successful payment</label>
+                                <input type="text" id="success" value="Say thank you" disabled>
+                            </div>
+                        </div>
+                        <div class="pages-animation__success" id="pages-animation__success">
+                            <figure class="pages-animation__icon">
+                                <img src="images/icons/source/cheers.svg" class="icon" />
+                            </figure>
+                            <h3>Congrats</h3>
+                            <p>Your customers can now pay for your product by visiting paystack.com/pay/my-link</p>
+                            <div class="pages-animation__call-to-action">
+                                <a href="https://paystack.com/pay/demo" target="_blank" class="button button--green">See an example</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__column grid__column--6">
                     <h4 class="feature-section-header__label">HOSTED PAYMENT PAGES</h4>
@@ -200,7 +229,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="breakdown-card breakdown-card--no-padding">
                         <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/people.svg" class="icon"/>
+                            <img src="images/icons/source/people.svg" class="icon" />
                         </figure>
                         <h3 class="global-u-body-title">Setup subaccounts</h3>
                         <p class="global-u-body-text">Setup seller accounts as subaccounts using the API or your Paystack dashboard.</p>
@@ -209,7 +238,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="breakdown-card breakdown-card--no-padding">
                         <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/calculator.svg" class="icon"/>
+                            <img src="images/icons/source/calculator.svg" class="icon" />
                         </figure>
                         <h3 class="global-u-body-title">Decide split</h3>
                         <p class="global-u-body-text">As you create the subaccount, you choose what percentage of the money they get.</p>
@@ -218,7 +247,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="breakdown-card breakdown-card--no-padding">
                         <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/split.svg" class="icon"/>
+                            <img src="images/icons/source/split.svg" class="icon" />
                         </figure>
                         <h3 class="global-u-body-title">Percentage or Fixed</h3>
                         <p class="global-u-body-text">You can also override the fixed percentage on every charge by passing a aplit amount.</p>
@@ -227,7 +256,7 @@
                 <div class="grid__column grid__column--3">
                     <div class="breakdown-card breakdown-card--no-padding">
                         <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/next-day-payouts.svg" class="icon"/>
+                            <img src="images/icons/source/next-day-payouts.svg" class="icon" />
                         </figure>
                         <h3 class="global-u-body-title">Automatic Payouts</h3>
                         <p class="global-u-body-text">Once payment is done, Paystack automatically pays both you and the other seler what is due.</p>
@@ -354,9 +383,25 @@
         </div>
     </footer>
     <script src="js/vendor/animate.min.js"></script>
+    <script src="js/vendor/waypoints.min.js"></script>
     <script src="js/stack-animations.js"></script>
+    <script src="js/pages-animations.js"></script>
     <script>
-    runAnimation.payments()
+    window.onload = function() {
+        runAnimation.payments();
+
+        var playedPageDemo;
+        var waypoint = new Waypoint({
+            element: document.getElementById('pages-animation'),
+            handler: function(direction) {
+                if (!playedPageDemo) {
+                    playedPageDemo = true;
+                    demoPaymentPages();
+                }
+            },
+            offset: '75%'
+        });
+    }
     </script>
 </body>
 
