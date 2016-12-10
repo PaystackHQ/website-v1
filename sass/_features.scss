@@ -1,5 +1,6 @@
 .hero-section {
-    &--features, &--careers {
+    &--features,
+    &--careers {
         height: 500px;
         .hero-section__content {
             bottom: auto;
@@ -11,27 +12,28 @@
 
 .features-list-section {
     background: lighten($light-gray, 40%);
-    padding-bottom: 100px;
+    margin-top: -50px;
+    padding-bottom: 50px;
 }
 
 $features: 4;
 .feature-card {
     background: white;
-    border-radius: 2px;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
     color: $dark-blue;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     overflow: hidden;
-    padding: 40px 50px;
     position: relative;
     -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.175);
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.175);
+    &__text {
+        padding: 150px 50px 25px;
+    }
     &__name {
-        font-size: 28px;
-        font-weight: normal;
+        font-family: $bold-font;
+        font-size: 4rem;
         margin: 0;
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
         -webkit-transition: all 300ms;
         transition: all 300ms;
     }
@@ -39,22 +41,20 @@ $features: 4;
         font-size: 18px;
         font-weight: normal;
         margin-top: 10px;
-        opacity: 0;
         -webkit-transition: all 300ms;
         transition: all 300ms;
     }
     &__animation {
         background: #FFFFFF;
-        border-radius: 50%;
         height: 150px;
         margin-top: -75px;
         mix-blend-mode: normal;
         opacity: 0;
         overflow: hidden;
         position: absolute;
-        right: 50px;
+        left: 20px;
         text-align: center;
-        top: 50%;
+        top: 40px;
         width: 150px;
         -webkit-transform: translateY(100px);
         transform: translateY(100px);
@@ -70,43 +70,24 @@ $features: 4;
         height: 100%;
         width: 70%;
     }
-    &:before {
-        background-image: url('../images/lines/slant-left.svg');
-        content: "";
-        height: 500px;
-        position: absolute;
-        right: -100px;
-        top: 0;
-        width: 500px;
-        z-index: 0;
-    }
-    @for $i from 1 through $features {
-        $subtract: 0.2% * ($features - $i);
-        &:nth-child(#{$i}) {
-            left: #{$subtract / 2};
-            margin-top: -100px;
-            width: #{100% - $subtract};
-            z-index: #{10 * $i};
+    &__call-to-action {
+        padding: 30px 50px;
+        background: #fcfcfc;
+        position: relative;
+        &:before {
+            background-image: url('../images/lines/slant-left.svg');
+            background-position: 0 0;
+            background-size: 100% auto;
+            content: "";
+            height: 500px;
+            position: absolute;
+            left: 20%;
+            top: 0;
+            width: 100%;
+            z-index: 0;
         }
-    }
-    &:nth-child(1) {
-        margin-top: -50px;
     }
     &:hover {
-        @for $i from 1 through ($features - 1) {
-            &:nth-child(#{$i}) {
-                -webkit-transform: translateY(-95px);
-                ;
-                transform: translateY(-95px);
-            }
-        }
-        .feature-card__name {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        .feature-card__description {
-            opacity: 1;
-        }
         .feature-card__animation {
             opacity: 1;
             -webkit-transform: translateY(0);

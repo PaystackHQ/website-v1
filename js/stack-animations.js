@@ -95,17 +95,18 @@ var runAnimation = {
         var divider = document.getElementById("stack-animation__developers-divider");
 
         divider.style.opacity = "0";
+
         for (i = 0; i < boxes.length; i++) {
             boxes[i].style.opacity = 0;
-            boxes[i].style.transform = "";
-            boxes[i].style.webkitTransform = "";
+            boxes[i].style.transform = "translateY(70px)";
+            boxes[i].style.webkitTransform = "translateY(70px)";
         }
 
         animate({
             el: leftBoxes[0],
             opacity: [0, 1],
             translateX: [0, "-10px"],
-            translateY: [0, "-69px"],
+            translateY: ["70px", 0],
             rotate: [0, "-45deg"],
             duration: 300,
             delay: 500,
@@ -116,7 +117,7 @@ var runAnimation = {
             el: leftBoxes[1],
             opacity: [0, 1],
             translateX: [0, "-10px"],
-            translateY: [0, "-62px"],
+            translateY: ["70px", "7px"],
             rotate: [0, "45deg"],
             duration: 300,
             delay: 600,
@@ -127,7 +128,7 @@ var runAnimation = {
             el: rightBoxes[0],
             opacity: [0, 1],
             translateX: [0, "10px"],
-            translateY: [0, "-69px"],
+            translateY: ["70px", 0],
             rotate: [0, "45deg"],
             duration: 300,
             delay: 700,
@@ -138,7 +139,7 @@ var runAnimation = {
             el: rightBoxes[1],
             opacity: [0, 1],
             translateX: [0, "10px"],
-            translateY: [0, "-62px"],
+            translateY: ["70px", "7px"],
             rotate: [0, "-45deg"],
             duration: 300,
             delay: 800,
@@ -160,10 +161,16 @@ var endAnimation = {
         var boxes = document.getElementById(id).querySelectorAll("div");
         animate.stop(boxes);
     },
-    payments: function() {},
-    dashboard: function() {},
-    subscriptions: function() {
-        window.clearInterval(animationLoop);
+    payments: function() {
+        this.stop('stack-animation__payments')
     },
-    developers: function() {},
+    dashboard: function() {
+        this.stop('stack-animation__dashboard')
+    },
+    subscriptions: function() {
+        this.stop('stack-animation__subscriptions')
+    },
+    developers: function() {
+        this.stop('stack-animation__developers')
+    },
 }

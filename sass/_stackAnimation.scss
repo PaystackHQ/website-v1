@@ -32,7 +32,7 @@
         @for $i from 1 through 8 {
             &:nth-child(#{$i}) {
                 left: #{10 * $i}px;
-                height: random(50) + 70 + px;
+                height: random(20) + 60 + px;
             }
         }
     }
@@ -52,23 +52,24 @@
 
 .stack-animation__developers {
     padding: 0 20px;
+    bottom: 20px;
     .stack-animation__divider {
         background: $green;
         border-radius: 3px;
-        bottom: 50px;
         height: 50px;
         left: 0;
         margin: 0 auto;
         opacity: 0;
         position: absolute;
         right: 0;
+        top: -14px;
         -webkit-transform: translateX(-2px) rotate(20deg);
         transform: translateX(-2px) rotate(20deg);
         width: 4px;
     }
     &.stack-animation--full-page {
         top: auto;
-        bottom: -120%;
+        bottom: 10px;
     }
 }
 

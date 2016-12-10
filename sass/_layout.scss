@@ -1,4 +1,4 @@
-.clear{
+.clear {
     clear: both;
 }
 
@@ -7,18 +7,19 @@
     max-width: 1040px;
     padding: 0 20px;
     width: 100%;
-
-    &--md {
-    	max-width: 960px;
+    &--sm {
+        max-width: 760px;
     }
-
-    &--lg{
+    &--md {
+        max-width: 960px;
+    }
+    &--lg {
         max-width: 1240px;
     }
 }
 
 .grid {
-	display: inline-block;
+    display: inline-block;
     position: relative;
     width: 100%;
     &--flex {
@@ -43,7 +44,7 @@
     &--8 {
         width: 100% * 2 / 3;
     }
-    &--7{
+    &--7 {
         width: 100% * 7 / 12;
     }
     &--6 {
@@ -78,13 +79,13 @@
     .grid--flex & {
         display: flex;
     }
-    &--offset-3{
+    &--offset-3 {
         margin-left: 25%;
     }
 }
 
 .setup-step-item {
-	&__number {
-		position: absolute;
-	}
+    &__number {
+        position: absolute;
+    }
 }
