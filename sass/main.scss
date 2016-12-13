@@ -1,28 +1,28 @@
 // Core
-@import 'reset';
-@import 'mixins';
-@import 'variables';
-@import 'layout';
-@import 'fonts';
-@import 'utils';
+@import 'core/reset';
+@import 'core/mixins';
+@import 'core/variables';
+@import 'core/layout';
+@import 'core/fonts';
 
 // Utilities
-@import 'animations';
-@import 'text';
+@import 'utilities/utils';
+@import 'utilities/text';
 
 // Components
-@import 'nav';
-@import 'buttons';
-@import 'footer';
-@import 'signup';
+@import 'components/nav';
+@import 'components/buttons';
+@import 'components/footer';
+@import 'components/signup';
 
 // Animations/Demos
-@import 'checkoutDemo';
-@import 'stackAnimation';
-@import 'pagesAnimation';
+@import 'animations/keyframes';
+@import 'animations/checkout';
+@import 'animations/stack';
+@import 'animations/pages';
 
 // Modules
-@import 'landing';
-@import 'features';
-@import 'company';
-@import 'pricing';
+@import 'modules/landing';
+@import 'modules/features';
+@import 'modules/company';
+@import 'modules/pricing';
