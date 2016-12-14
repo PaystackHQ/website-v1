@@ -203,7 +203,7 @@ $feature-nav-height: 60px;
             opacity: 1;
         }
     }
-    &--iroko {
+    &--background {
         position: absolute;
         overflow: hidden;
         top: -100px;
@@ -249,10 +249,17 @@ $feature-nav-height: 60px;
     }
 }
 
+.breakdown-card-group {
+    margin-top: 30px;
+}
+
 .breakdown-card {
     padding: 0 20px 0 0;
     &--spaced {
         padding: 0 20px 20px 0;
+    }
+    &--padded {
+        padding: 30px 50px 0;
     }
     &__icon {
         margin: 0;
