@@ -68,6 +68,9 @@
     &--1 {
         width: 100% * 1 / 12;
     }
+    &--relative {
+        position: relative;
+    }
     &--centered {
         float: none;
         margin: 0 auto;

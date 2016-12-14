@@ -107,9 +107,9 @@
                     </div>
                 </div>
             </div>
-            <div class="grid feature-section__content">
+            <div class="grid breakdown-card-group">
                 <div class="grid__column grid__column--6">
-                    <div class="breakdown-card breakdown-card--inline">
+                    <div class="breakdown-card breakdown-card--inline breakdown-card--padded">
                         <figure class="breakdown-card__icon">
                             <img src="images/icons/source/reporting.svg" class="icon" />
                         </figure>
@@ -118,7 +118,9 @@
                             <p class="global-u-body-text">Your dashboard home screen shows your trend of revenue. You can filter over a period of time to see how your business has been performing.</p>
                         </div>
                     </div>
-                    <div class="breakdown-card breakdown-card--inline">
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="breakdown-card breakdown-card--inline breakdown-card--padded">
                         <figure class="breakdown-card__icon">
                             <img src="images/icons/source/export.svg" class="icon" />
                         </figure>
@@ -127,7 +129,9 @@
                             <p class="global-u-body-text">Your customer, transactions, pages, plans, and settings are listed on your dashboard. Each section lets you view, manage and export the data in csv format.</p>
                         </div>
                     </div>
-                    <div class="breakdown-card breakdown-card--inline">
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="breakdown-card breakdown-card--inline breakdown-card--padded">
                         <figure class="breakdown-card__icon">
                             <img src="images/icons/source/multi-business.svg" class="icon" />
                         </figure>
@@ -136,7 +140,9 @@
                             <p class="global-u-body-text">Sometimes, jack of all trades. Use one Paystack account to create as many businesses as you need, and easily switch between them on your dashboard.</p>
                         </div>
                     </div>
-                    <div class="breakdown-card breakdown-card--inline">
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="breakdown-card breakdown-card--inline breakdown-card--padded">
                         <figure class="breakdown-card__icon">
                             <img src="images/icons/source/next-day-payouts.svg" class="icon" />
                         </figure>
@@ -146,9 +152,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__column grid__column--6">
-                    Laptop Image
-                </div>
             </div>
         </div>
     </section>
@@ -156,7 +159,26 @@
         <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column--7">
-                    Flow chart
+                    <div class="timeline-animation" id="timeline-animation">
+                        <div class="timeline-animation__header">
+                            <img src="images/subscriptions/timeline-header.png" class="illustration" />
+                        </div>
+                        <div class="timeline-animation__line"></div>
+                        <ul class="timeline-tree">
+                            <li class="timeline-tree__branch">
+                                <div class="timeline-tree__ticker">7s <span></span></div>
+                                <div class="timeline-tree__activity">Filled card fields</div>
+                            </li>
+                            <li class="timeline-tree__branch">
+                                <div class="timeline-tree__ticker">10s <span></span></div>
+                                <div class="timeline-tree__activity">Attempted payment and authorized</div>
+                            </li>
+                            <li class="timeline-tree__branch">
+                                <div class="timeline-tree__ticker">11s <span></span></div>
+                                <div class="timeline-tree__activity">Payment successful</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="grid__column grid__column--5">
                     <h4 class="feature-section-header__label">TRANSACTION TIMELINE</h4>
@@ -252,10 +274,25 @@
         </div>
     </footer>
     <script src="js/vendor/animate.min.js"></script>
+    <script src="js/vendor/waypoints.min.js"></script>
     <script src="js/stack-animations.js"></script>
+    <script src="js/timeline-animation.js"></script>
     <script>
-    runAnimation.dashboard();
+    window.onload = function() {
+        runAnimation.dashboard();
+
+        var playedTimelineDemo;
+        var waypoint = new Waypoint({
+            element: document.getElementById('timeline-animation'),
+            handler: function(direction) {
+                if (!playedTimelineDemo) {
+                    playedTimelineDemo = true;
+                    demoTimeline();
+                }
+            },
+            offset: '75%'
+        });
+    }
     </script>
 </body>
-
 </html>
