@@ -27,6 +27,11 @@ $breakpoint-med: 980px;
             @content;
         }
     }
+    @else if $size=='mid' {
+        @media screen and (min-width: $breakpoint-med-small) and (max-width: $breakpoint-med) {
+            @content;
+        }
+    }
     @else if $size=='large' {
         @media screen and (min-width: $breakpoint-med) {
             @content;

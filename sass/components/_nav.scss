@@ -142,3 +142,75 @@
         border-bottom-right-radius: $button-default-radius;
     }
 }
+
+.global-mobile-nav {
+    display: none;
+    float: right;
+    @include screen(small) {
+        display: block;
+    }
+    &__trigger {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        margin: 10px 5px;
+        &.is-active {
+            span {
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:first-child {
+                    top: 0.438em;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+                &:last-child {
+                    top: -0.313em;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        span {
+            background-color: white;
+            display: block;
+            height: 0.125em;
+            margin-bottom: .250em;
+            position: relative;
+            top: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            width: 1.25em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.global-mobile-nav-menu {
+    animation: fade-in 1s;
+    -webkit-animation: fade-in 1s;
+    background: rgb(31, 54, 75);
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .05);
+    display: none;
+    left: 20px;
+    padding: 10px 30px 30px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    &__item {
+        a {
+            color: white;
+            display: block;
+            font-size: 1.7rem;
+            line-height: 1.8;
+        }
+    }
+    &__label {
+        color: rgba(white, 0.5);
+        font-size: 1.3rem;
+        margin: 30px 0 10px;
+    }
+}

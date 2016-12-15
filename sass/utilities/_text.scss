@@ -41,6 +41,12 @@ h5 {
     text-align: center;
 }
 
+.global-u-text-center-s {
+    @include screen(small) {
+        text-align: center;
+    }
+}
+
 .global-u-text-left {
     text-align: left;
 }
@@ -65,7 +71,6 @@ h5 {
 
 .global-u-link-inverted {
     color: white;
-
     &:hover {
         text-decoration: underline;
     }

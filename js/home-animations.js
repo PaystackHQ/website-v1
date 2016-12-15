@@ -10,7 +10,7 @@ var Scene1 = {
 var Scene2 = {
     div: document.getElementById("slide--two"),
     image: document.getElementById("slide--two").getElementsByClassName("slide__image")[0],
-    content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0],    
+    content: document.getElementById("slide--two").getElementsByClassName("slide__content")[0],
     scroller: document.getElementById("slide--two").getElementsByClassName("slide__image-scroller")[0]
 }
 
@@ -25,7 +25,7 @@ var Scene3 = {
 
 var Enter = {
     scene1: function() {
-        Scene1.div.style.display = "";
+        Scene1.div.style.display = "block";
         Scene1.secondaryTitle.style.opacity = 0;
         Scene1.callToAction.style.display = "none";
         Scene1.callToAction.style.opacity = 0;
@@ -66,7 +66,7 @@ var Enter = {
         Scene1.callToAction.style.display = "";
         Scene1.callToAction.style.opacity = 1;
         Scene1.div.style.opacity = "0";
-        Scene1.div.style.display = "";
+        Scene1.div.style.display = "block";
         ReplayLink.style.display = "";
 
         for (i = 0; i < Scene1.primaryTitles.length; i++) {
@@ -267,7 +267,7 @@ var Exit = {
             translateY: ["0", "-300px"],
             opacity: [0.1, 0],
             duration: 1000,
-            easing: "easeOutExpo" 
+            easing: "easeOutExpo"
         });
 
         animate({
@@ -303,5 +303,15 @@ var Exit = {
     }
 }
 
-// window.onload = Enter.scene1;
-// ReplayLink.onclick = Enter.scene1;
+window.onload = function() {
+    var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        width = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    if (width > 750) {
+        Enter.scene1();
+        ReplayLink.onclick = Enter.scene1;
+    }
+};

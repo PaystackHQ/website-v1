@@ -25,14 +25,11 @@
     &__primary-title {
         color: white;
         font-family: $bold-font;
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin: 0;
         overflow: hidden;
         span {
             display: block;
-        }
-        @include screen(small) {
-            font-size: 3rem;
         }
     }
     &__secondary-title {
@@ -128,7 +125,6 @@
 .home-section {
     position: relative;
     &--customers {
-        // padding: 50px 0 100px;
         position: relative;
         background-color: $dark-blue;
     }
@@ -152,6 +148,9 @@
     }
     &__checkout-demo {
         margin: 100px 0 0 100px;
+        @include screen(mid) {
+            margin: 100px 0 0 30px;
+        }
         @include screen(small) {
             margin: 0;
         }
@@ -176,6 +175,9 @@
             width: 40%;
             height: 100%;
             z-index: 0;
+        }
+        @include screen(mid) {
+            padding: 50px 20px;
         }
     }
     &__setup-steps {
@@ -232,6 +234,9 @@
 
 .customers-section {
     padding: 45px 0 75px;
+    @include screen(mid) {
+        padding: 45px 20px 75px;
+    }
     @include screen(small) {
         padding: 60px 0;
     }
@@ -245,6 +250,10 @@
             position: relative;
             height: 300px;
             left: 0;
+        }
+        @include screen(mid) {
+            left: auto;
+            right: 0;
         }
         &:before,
         &:after {
@@ -327,7 +336,7 @@
     float: left;
     left: 0;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     position: absolute;
     right: 0;
     transform: translateY(-50%);
@@ -335,6 +344,17 @@
     &--one,
     &--four {
         width: 550px;
+    }
+    &--one {
+        display: none;
+    }
+    @include screen(med) {
+        &--one {
+            display: block;
+        }
+    }
+    @include screen(small) {
+        width: 280px;
     }
     &__image {
         background: #112E48;

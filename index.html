@@ -66,13 +66,56 @@
                         </a>
                     </li>
                 </ul>
+                <div class="global-mobile-nav">
+                    <div class="global-mobile-nav__trigger" id="mobile-nav-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="global-mobile-nav-menu" id="mobile-nav-menu">
+                        <div class="grid grid--with-gutters">
+                            <div class="grid__column grid__column--6 grid__column--6-s">
+                                <li class="global-mobile-nav-menu__label">PRODUCT</li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_payments.html">Payments</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_subscriptions.html">Subscriptions</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_dashboard.html">Dashboard</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_developers.html">Developers</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_subscriptions.html">Docs</a>
+                                </li>
+                            </div>
+                            <div class="grid__column grid__column--6 grid__column--6-s">
+                                <li class="global-mobile-nav-menu__label">BUSINESS</li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_payments.html">Pricing</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_payments.html">About</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_subscriptions.html">Careers</a>
+                                </li>
+                                <li class="global-mobile-nav-menu__item">
+                                    <a href="product_subscriptions.html">Blog</a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <section class="hero-section">
         <div class="hero-section__background"> </div>
         <div class="hero-section__slider">
-            <div class="slide slide--one global-u-text-center" style="display: none" id="slide--one">
+            <div class="slide slide--one global-u-text-center" id="slide--one">
                 <h1 class="hero-section__primary-title">
                     <span class="hero-section__primary-text">Building a business is hard.</span></h1>
                 <h1 class="hero-section__primary-title">
@@ -269,7 +312,7 @@
                         <p class="feature-item__description">Charge for your products in multiple currencies.</p>
                     </div>
                 </div>
-                <div class="grid__column grid__column--3">
+                <div class="grid__column grid__column--3 global-u-clear">
                     <div class="feature-item">
                         <div class="feature-item__icon">
                             <img src="images/icons/source/security.svg" class="icon" />
@@ -331,45 +374,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="customers-section__logos-wrapper grid__column grid__column--5">
-            <div class="customer-section__logos"></div> -->
-        <!-- <li class="customers-section__logo">
-                <img src="images/clients-w/hotels.svg" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/jobberman.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/payporte.svg" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/irokotv.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/printivo.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/gigalayer.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/supermart.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/afritickets.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/suregifts.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/gingerbox.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/spinlet.png" alt="" class="customers-section__logo-img">
-            </li>
-            <li class="customers-section__logo">
-                <img src="images/clients-w/pushcv.png" alt="" class="customers-section__logo-img">
-            </li> -->
-        <!-- </div> -->
     </section>
     <section class="global-signup">
         <div class="container">
@@ -440,6 +444,22 @@
     </footer>
     <script src="js/vendor/animate.min.js"></script>
     <script src="js/home-animations.js"></script>
+    <script>
+        var mobileMenuHidden = true;
+        var trigger = document.getElementById('mobile-nav-trigger');
+        var menu = document.getElementById('mobile-nav-menu');
+
+        trigger.addEventListener("click", function(){
+            if (mobileMenuHidden) {
+                trigger.classList.add("is-active");
+                menu.style.display = "block";
+            } else {
+                trigger.classList.remove("is-active");
+                menu.style.display = "none";
+            }
+            mobileMenuHidden = !mobileMenuHidden;
+        });
+    </script>
 </body>
 
 </html>
