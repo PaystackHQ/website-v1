@@ -303,5 +303,5 @@ var Exit = {
     }
 }
 
-window.onload = Enter.scene1;
-ReplayLink.onclick = Enter.scene1;
+// window.onload = Enter.scene1;
+// ReplayLink.onclick = Enter.scene1;

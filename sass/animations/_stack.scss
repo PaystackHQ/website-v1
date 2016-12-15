@@ -79,4 +79,7 @@
     left: auto;
     right: 0;
     transform: translateY(-50%);
+    @include screen(small) {
+        display: none
+    }
 }

@@ -25,6 +25,10 @@
     &--flex {
         display: flex;
     }
+    &--with-gutters {
+        margin-left: -8px;
+        width: calc(100% + 16px);
+    }
 }
 
 .grid__column {
@@ -84,6 +88,16 @@
     }
     &--offset-3 {
         margin-left: 25%;
+    }
+}
+
+.grid__column {
+    @include screen(small) {
+        width: 100%;
+
+        &--6-s {
+            width: 50%;
+        }
     }
 }
 

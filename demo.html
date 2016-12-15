@@ -67,90 +67,30 @@
             </div>
         </div>
     </nav>
-     <section class="feature-header">
-        <div class="container">
-            <h1 class="feature-header__primary-title">Subscriptions</h1>
-        </div>
-    </section>
-    <section class="feature-section feature-section--light feature-section--has-padding" id="subscriptions">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__column grid__column--6">
-                    <div class="feature-section-header">
-                        <h4 class="feature-section-header__label">RECURRING PAYMENTS</h4>
-                        <h2 class="feature-section-header__primary-title">Run your subscriptions business with a powerful product designed to handle recurring charges, subscription management and customer invoicing.</h2>
-                    </div>
-                    <ul class="setup-steps-container">
-                        <li class="setup-step setup-step--list">
-                            <div class="setup-step__number"><span></span><span></span></div>
-                            <p class="setup-step__title">Create plans that suit your product</p>
-                        </li>
-                        <li class="setup-step setup-step--list">
-                            <div class="setup-step__number"><span></span><span></span></div>
-                            <p class="setup-step__title">Optional subscription pages, no code required</p>
-                        </li>
-                        <li class="setup-step setup-step--list">
-                            <div class="setup-step__number"><span></span><span></span></div>
-                            <p class="setup-step__title">Reporting and customer invoicing before charges</p>
-                        </li>
-                    </ul>
+    <section class="hero-section hero-section--demo">
+        <div class="hero-section__background"></div>
+        <div class="hero-section__content">
+            <figure class="hero-section__icon">
+                <img src="images/icons/source/magic-hat.svg" class="icon" />
+            </figure>
+            <h1 class="hero-section__primary-title">Try a demo</h1>
+            <h2 class="hero-section__secondary-title">Show and tell. The easiest way to try Paystack is to make a quick payment</h2>
+            <form class="demo-form" id="demo-form">
+                <div class="demo-form__group">
+                    <input id="demo-email" type="email" placeholder="Your email address (optional)">
                 </div>
-                <div class="grid__column grid__column--6 grid__column--relative">
-                    <div class="feature-section-illustration feature-section-illustration--create-plan">
-                        <img src="images/subscriptions/create-plan.png" class="illustration" />
+                <div class="demo-form__submit">
+                    <div class="grid grid--with-gutters">
+                        <div class="grid__column grid__column--6 grid__column--6-s">
+                            <button class="button button--green button--full" onclick="pay(10000)">Pay <b>NGN 100</b></button>
+                        </div>
+                        <div class="grid__column grid__column--6 grid__column--6-s">
+                            <button class="button button--green button--full" onclick="pay(100000)">Pay <b>NGN 1000</b></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="feature-section feature-section--light feature-section--has-divider" id="subscriptions">
-        <div class="container">
-            <div class="feature-section__divider"></div>
-            <div class="grid">
-                <div class="grid__column grid__column--4">
-                    <div class="breakdown-card">
-                        <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/subscribe.svg" class="icon" />
-                        </figure>
-                        <h3 class="global-u-body-title">Subscription Pages</h3>
-                        <p class="global-u-body-text">Create automatic pages for your customers to subscribe to your products.</p>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="breakdown-card">
-                        <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/webhooks.svg" class="icon" />
-                        </figure>
-                        <h3 class="global-u-body-title">Web hooks</h3>
-                        <p class="global-u-body-text">Get notified when your subscriptions are created, cancelled or renewed.</p>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="breakdown-card">
-                        <figure class="breakdown-card__icon">
-                            <img src="images/icons/source/retry.svg" class="icon" />
-                        </figure>
-                        <h3 class="global-u-body-title">Multiple Retries (Soon)</h3>
-                        <p class="global-u-body-text">Payments will be continuously retried to ensure customer is charged.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="feature-section feature-section--dark feature-section--has-padding" id="payment-pages">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__column grid__column--4">
-                    <h4 class="feature-section-header__label">CASE STUDY</h4>
-                    <h2 class="feature-section-header__primary-title">IrokoTV tells african stories with Paystack</h2>
-                    <p class="global-u-body-excerpt"><a class="global-u-link-inverted" href="#">Iroko</a> is one of Nigeria’s largest internet and entertainment companies. With Paystack subscriptions, they showcase the very best of Nollywood to fans from every single corner of the earth.</p>
-                </div>
-                <div class="grid__column grid__column--6 global-u-text-right">
-                    <div class="feature-section-illustration feature-section-illustration--background">
-                        <img src="images/subscriptions/iroko.jpg" class="illustration" />
-                    </div>
-                </div>
-            </div>
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+            </form>
         </div>
     </section>
     <section class="global-signup">
@@ -220,6 +160,36 @@
             </div>
         </div>
     </footer>
+    <script src="js/vendor/animate.min.js"></script>
+    <script>
+    var emailField = document.getElementById('demo-email');
+
+    document.getElementById('demo-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    })
+
+    function pay(amount) {
+        var email = emailField.value;
+        if (!isValid(email)) email = "demo@paystack.com";
+        loadInline(email, amount)
+    }
+
+    function loadInline(email, amount) {
+        PaystackPop.setup({
+            key: 'pk_live_3223432j3328nmdsad233tIshFeQd4XMUh',
+            email: email,
+            amount: amount,
+            callback: function(response) {
+                console.log(response);
+            }
+        }).openIframe();
+    }
+
+    function isValid(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+    </script>
 </body>
 
 </html>

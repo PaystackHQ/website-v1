@@ -1,6 +1,10 @@
 .timeline-animation {
     position: relative;
     width: 400px;
+    max-width: 100%;
+    @include screen(small){
+        display: none;
+    }
     &__header {
         opacity: 0;
         img {

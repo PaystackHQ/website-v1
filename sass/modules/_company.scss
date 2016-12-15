@@ -10,6 +10,16 @@
             font-size: 2.1rem;
         }
     }
+    &--careers {
+        height: auto;
+        position: relative;
+        .hero-section__content {
+            float: none;
+            position: relative;
+            margin: 150px auto 100px;
+            width: 400px;
+        }
+    }
 }
 
 .hero-video {
@@ -21,6 +31,11 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 450px;
+    max-width: 100%;
+    @include screen(small){
+        height: 320px;
+        top: 70px;
+    }
     &:after {
         bottom: 0;
         content: "";
@@ -92,6 +107,9 @@
     &--story {
         padding: 200px 0;
         position: relative;
+        @include screen(small){
+            padding: 50px 0;
+        }
     }
     &__copy {
         font-size: 1.8rem;
@@ -102,11 +120,18 @@
     }
     &--job {
         margin: 100px 0;
+        @include screen(small){
+            margin: 50px 0;
+        }
     }
     &__divider {
         background: darken($lighter-gray, 5%);
         height: 1px;
+        margin-bottom: 100px;
         width: 100%;
+        @include screen(small) {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -159,6 +184,9 @@
     margin-bottom: 30px;
     margin: 10px 0;
     text-align: center;
+    @include screen(small){
+        padding: 0;
+    }
     .company-section--dark & {
         background: lighten($dark-blue, 2%);
         .team-member__name {
@@ -191,5 +219,19 @@
     cursor: pointer;
     .team-member:hover & {
         // -webkit-filter: grayscale(0);
+    }
+}
+
+.company-perks {
+    margin-top: 40px;
+    li {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11);
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        margin-right: 5px;
     }
 }

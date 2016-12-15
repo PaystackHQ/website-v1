@@ -1,14 +1,17 @@
 button,
 .button {
     background-color: white;
+    border: none;
     border-radius: 4px;
     box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     display: inline-block;
+    font-family: inherit;
     font-size: 14px;
     font-weight: 500;
     height: $button-height;
     line-height: $button-height;
+    outline: none;
     padding-left: 1.5em;
     padding-right: 1.5em;
     position: relative;
@@ -43,7 +46,7 @@ button,
         position: relative;
     }
     &--default-white {
-        background: rgba(255,255,255,0.05);
+        background: rgba(255, 255, 255, 0.05);
         color: rgba(255, 255, 255, 0.88);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }

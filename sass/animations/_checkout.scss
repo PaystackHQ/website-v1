@@ -4,6 +4,7 @@
     border: solid 1px whitesmoke;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
+    max-width: 100%;
     position: relative;
     width: 350px;
     z-index: 10;
@@ -92,7 +93,9 @@
     &__box {
         background: #fff;
         border-top: 1px solid #eee;
+        display: inline-block;
         padding: 20px 15px;
+        width: 100%;
     }
     &__email {
         color: #999;

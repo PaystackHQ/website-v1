@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+    <title>
+        laravel
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(-300 -35)" figma:type="canvas">
+        <mask id="a">
+            <path d="M300 35h48v48h-48V35z" fill="#FFF"/>
+        </mask>
+        <g style="mix-blend-mode:normal" mask="url(#a)" figma:type="frame">
+            <use xlink:href="#b" transform="translate(300.114 35)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector"/>
+            <use xlink:href="#c" transform="translate(300 40.679)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector"/>
+            <use xlink:href="#d" transform="translate(345.285 56.18)" fill="#3BB75E" style="mix-blend-mode:normal" figma:type="vector"/>
+        </g>
+    </g>
+    <defs>
+        <path id="b" d="M12.786 26.55l27.42-6.57c-1.521-2.154-8.418-11.931-9.084-12.861-.75-1.05.018-1.536 1.236-1.74 1.218-.21 11.706-1.971 12.606-2.1.756-.111 1.38-.354 2.424.615A6.364 6.364 0 0 0 41.52 0H6.252A6.361 6.361 0 0 0 0 5.166L12.786 26.55z"/>
+        <path id="c" d="M45.471.072c-.411.09-9.534 1.74-10.095 1.815-.561.075-.375.39-.15.714l8.028 11.01L48 12.441V2.172c-.66-.84-1.14-1.455-1.254-1.62-.51-.69-.864-.576-1.275-.48zM48 24.582a2142.357 2142.357 0 0 1-5.118-7.02c-.33-.48-.51-.57-1.296-.318l-26.73 6.96S23.061 38.4 23.691 39.31c.63.912 1.014.84 1.506.63.378-.162 15.606-5.31 22.8-7.749v-7.605l.003-.003zm0-4.7v-4.02l-2.502.668L48 19.881zm-16.41 22.44h10.044a6.363 6.363 0 0 0 6.345-5.875c-5.13 1.854-11.772 4.23-16.392 5.874M11.094 25.185c-2.982.78-7.269 1.902-11.094 2.892v7.878a6.366 6.366 0 0 0 6.366 6.366h14.4c-1.884-3.078-7.011-12.315-9.672-17.136m-2.244-4.14L0 5.77v18.21l8.661-2.07c.705-.165.54-.255.189-.864z"/>
+        <path id="d" d="M0 .735L2.715 0v1.26l-1.86.621L0 .735z"/>
+    </defs>
+</svg>

@@ -1,6 +1,5 @@
 .hero-section {
-    &--features,
-    &--careers {
+    &--features {
         height: 500px;
         .hero-section__content {
             bottom: auto;
@@ -29,6 +28,9 @@ $features: 4;
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.175);
     &__text {
         padding: 150px 50px 25px;
+        @include screen(small) {
+            padding: 40px 30px 10px;
+        }
     }
     &__name {
         font-family: $bold-font;
@@ -36,6 +38,9 @@ $features: 4;
         margin: 0;
         -webkit-transition: all 300ms;
         transition: all 300ms;
+        @include screen(small) {
+            font-size: 3rem;
+        }
     }
     &__description {
         font-size: 18px;
@@ -65,6 +70,9 @@ $features: 4;
             opacity: 0;
             transition: opacity 0.3s;
         }
+        @include screen(small) {
+            display: none;
+        }
     }
     &__icon {
         height: 100%;
@@ -74,6 +82,9 @@ $features: 4;
         padding: 30px 50px;
         background: #fcfcfc;
         position: relative;
+        @include screen(small) {
+            padding: 20px;
+        }
         &:before {
             background-image: url('../images/lines/slant-left.svg');
             background-position: 0 0;
@@ -113,6 +124,7 @@ Styles for a single feature page
     padding: 150px 0 50px;
     position: relative;
     overflow: hidden;
+    text-align: center;
     &__primary-title {
         color: $green;
         font-size: 4rem;
@@ -131,6 +143,7 @@ Styles for a single feature page
 $feature-nav-height: 60px;
 .feature-nav {
     box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
+    display: none;
     font-family: $bold-font;
     height: $feature-nav-height;
     position: relative;
@@ -166,11 +179,17 @@ $feature-nav-height: 60px;
     }
     &--has-padding {
         padding: 100px 0;
+        @include screen(small) {
+            padding: 50px 0;
+        }
     }
     &--has-divider {
         padding-bottom: 100px;
     }
     &__content {
+        margin-top: 3.5em;
+    }
+    &__call-to-action {
         margin-top: 3.5em;
     }
     &__divider {
@@ -182,6 +201,9 @@ $feature-nav-height: 60px;
 }
 
 .feature-section-illustration {
+    @include screen(small) {
+        display: none;
+    }
     &--multicurrency {
         position: absolute;
         right: 20px;
@@ -215,6 +237,9 @@ $feature-nav-height: 60px;
     position: relative;
     &--padded {
         padding-bottom: 100px;
+        @include screen(small){
+            padding-bottom: 50px;
+        }
     }
     &__label {
         font-family: $bold-font;
@@ -280,6 +305,13 @@ $feature-nav-height: 60px;
             p {
                 margin-top: 5px;
             }
+        }
+    }
+    @include screen(small){
+        padding: 20px 30px;
+        text-align: center;
+        &--inline {
+            text-align: left;
         }
     }
 }

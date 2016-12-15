@@ -1,5 +1,8 @@
 .pages-animation {
     position: relative;
+    @include screen(small) {
+        display: none
+    }
     &__form-group {
         margin-bottom: 30px;
         label {
