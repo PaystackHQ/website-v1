@@ -126,48 +126,31 @@
                     <a class="button button--large button--green" href="/">Create a free account</a>
                 </div>
             </div>
-            <div class="slide slide--two" id="slide--two" style="display: none">
-                <div class="grid grid--with-gutters">
-                    <div class="grid__column grid__column--8">
-                        <div class="slide__image">
-                            <div class="slide__image-scroller">
-                                <div class="slide__image-mask"><img src="images/landing/seller.jpg" alt="Buyer" /></div>
-                                <div class="slide__image-mask"><img src="images/landing/buyer.jpg" alt="Seller" /></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid__column grid__column--4 slide__content">
+            <div class="slide slide--two" id="slide--two" style="display: none;">
+                <div class="slide__box" id="slide__box">
+                    <div class="slide__box-content" id="slide__box-content-1">
                         <figure class="slide__icon">
                             <img src="images/icons/source/infrastructure.svg" class="icon" />
                         </figure>
-                        <h2 class="slide__primary-title">Modern Payments Infrastructure</h2>
-                        <h4 class="slide__secondary-title">We've built a product that is easy, secure and adaptable to your business case</h4>
+                        <h2 class="slide__primary-title">Paystack is a truly modern payments infrastructure</h2>
+                    </div>
+                    <div class="slide__box-content" id="slide__box-content-2">
+                        <figure class="slide__icon">
+                            <img src="images/icons/source/card.svg" class="icon">
+                        </figure>
+                        <h2 class="slide__primary-title">Paired with a smooth, intelligent checkout experience</h2>
+                    </div>
+                    <div class="slide__box-content slide__box-content--centered" id="slide__box-content-3">
+                        <div class="slide__logo-box"><img src="images/logo_icon.svg" alt="Logo"></div>
+                        <h2 class="slide__primary-title">And all the business and developers features for truly easy payments</h2>
                     </div>
                 </div>
             </div>
-            <div class="slide slide--three" id="slide--three" style="display: none">
-                <div class="grid grid--with-gutters">
-                    <div class="grid__column grid__column--4 slide__content">
-                        <figure class="slide__icon">
-                            <img src="images/icons/source/card.svg" class="icon" />
-                        </figure>
-                        <h2 class="slide__primary-title">Offering the best payment experience</h2>
-                        <h4 class="slide__secondary-title">Clean and easy interfaces encourage your customers to keep paying.</h4>
-                    </div>
-                    <div class="grid__column grid__column--8">
-                        <div class="slide__image slide__image--right">
-                            <div class="slide__image-scroller">
-                                <div class="slide__image-mask"><img src="images/landing/seller.jpg" alt="Buyer" /></div>
-                                <div class="slide__image-mask"><img src="images/landing/buyer.jpg" alt="Seller" /></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide__logo-box" style="display: none;"><img src="images/logo_icon.svg" alt="Logo"></div>
-                    <div class="slide__footer" style="display: none;">
-                        <h2 class="slide__primary-title">Truly easy payments</h2>
-                        <h4 class="slide__secondary-title">Paystack aims to make the payments process seamless for you and your customers.</h4>
-                    </div>
-                </div>
+            <div class="slide__lines" style="display: none">
+                <div class="slide__line slide__line--horizontal"></div>
+                <div class="slide__line slide__line--horizontal"></div>
+                <div class="slide__line slide__line--vertical"></div>
+                <div class="slide__line slide__line--vertical"></div>
             </div>
             <a href="#" class="hero-section__play-again" style="display: none;" id="hero-section__play-again">
                 <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
@@ -442,23 +425,30 @@
             </div>
         </div>
     </footer>
+    <noscript>
+        <style type="text/css">
+        .slide--one {
+            display: block;
+        }
+        </style>
+    </noscript>
     <script src="js/vendor/animate.min.js"></script>
-    <script src="js/home-animations.js"></script>
+    <script src="js/home-animation.js"></script>
     <script>
-        var mobileMenuHidden = true;
-        var trigger = document.getElementById('mobile-nav-trigger');
-        var menu = document.getElementById('mobile-nav-menu');
+    var mobileMenuHidden = true;
+    var trigger = document.getElementById('mobile-nav-trigger');
+    var menu = document.getElementById('mobile-nav-menu');
 
-        trigger.addEventListener("click", function(){
-            if (mobileMenuHidden) {
-                trigger.classList.add("is-active");
-                menu.style.display = "block";
-            } else {
-                trigger.classList.remove("is-active");
-                menu.style.display = "none";
-            }
-            mobileMenuHidden = !mobileMenuHidden;
-        });
+    trigger.addEventListener("click", function() {
+        if (mobileMenuHidden) {
+            trigger.classList.add("is-active");
+            menu.style.display = "block";
+        } else {
+            trigger.classList.remove("is-active");
+            menu.style.display = "none";
+        }
+        mobileMenuHidden = !mobileMenuHidden;
+    });
     </script>
 </body>
 
