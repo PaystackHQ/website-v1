@@ -243,7 +243,7 @@ window.onload = function() {
         width = w.innerWidth || e.clientWidth || g.clientWidth;
 
     if (width > 750) {
-        Enter.scene2();
+        Enter.scene1();
         ReplayLink.onclick = Enter.scene1;
     }
 };
