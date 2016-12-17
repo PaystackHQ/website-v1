@@ -2,9 +2,7 @@ var ReplayLink = document.getElementById("hero-section__play-again");
 
 var Slide1 = {
     div: document.getElementById("slide--one"),
-    primaryTitles: document.getElementById("slide--one").getElementsByClassName("hero-section__primary-text"),
-    secondaryTitle: document.getElementById("slide--one").getElementsByClassName("hero-section__secondary-title")[0],
-    callToAction: document.getElementById("slide--one").getElementsByClassName("hero-section__call-to-action")[0]
+    primaryTitles: document.getElementById("slide--one").getElementsByClassName("hero-section__primary-text")
 }
 
 var Slide2 = {
@@ -16,12 +14,14 @@ var Slide2 = {
     lines: document.getElementsByClassName("slide__lines")[0]
 }
 
+var Slide3 = {
+    div: document.getElementById("slide--three")
+}
+
 var Enter = {
     scene1: function() {
+        Slide3.div.style.display = "none";
         Slide1.div.style.display = "block";
-        Slide1.secondaryTitle.style.opacity = 0;
-        Slide1.callToAction.style.display = "none";
-        Slide1.callToAction.style.opacity = 0;
         ReplayLink.style.display = "none";
 
         for (i = 0; i < Slide1.primaryTitles.length; i++) {
@@ -40,18 +40,8 @@ var Enter = {
             });
         }
 
-        animate({
-            el: Slide1.secondaryTitle,
-            translateY: ["10px", 0],
-            opacity: [0, 1],
-            duration: 1000,
-            delay: 3000,
-            easing: "easeOutExpo",
-            complete: function() {
-                setTimeout(Enter.scene2, 2500);
-                setTimeout(Exit.slide1, 1500);
-            }
-        });
+        setTimeout(Enter.scene2, 4500);
+        setTimeout(Exit.slide1, 3500);
     },
 
     scene2: function() {
@@ -150,25 +140,13 @@ var Enter = {
     },
 
     scene5: function() {
-        Slide1.secondaryTitle.style.opacity = 1;
-        Slide1.callToAction.style.display = "";
-        Slide1.callToAction.style.opacity = 1;
-        Slide1.div.style.opacity = "0";
-        Slide1.div.style.display = "block";
+        Slide3.div.style.display = "block";
         ReplayLink.style.display = "";
 
-        for (i = 0; i < Slide1.primaryTitles.length; i++) {
-            var title = Slide1.primaryTitles[i];
-            title.style.opacity = 1;
-            title.style.transform = "";
-            title.style.webkitTransform = "";
-        }
-
         animate({
-            el: Slide1.div,
+            el: Slide3.div,
             opacity: [0, 1],
             duration: 1000,
-            delay: 1000,
             easing: "easeOutExpo"
         });
 
@@ -191,27 +169,26 @@ var Exit = {
                 opacity: [1, 0],
                 duration: 1000,
                 delay: (i * 400),
-                easing: "easeOutExpo"
+                easing: "easeOutExpo",
+                complete: function() {
+                    Slide1.div.style.display = "none";
+
+                    for (i = 0; i < Slide1.primaryTitles.length; i++) {
+                        var title = Slide1.primaryTitles[i];
+                        title.style.opacity = 1;
+                        title.style.transform = "";
+                        title.style.webkitTransform = "";
+                    }
+                }
             });
         }
-
-        animate({
-            el: Slide1.secondaryTitle,
-            opacity: [1, 0],
-            duration: 1000,
-            delay: 800,
-            easing: "easeOutExpo",
-            complete: function() {
-                Slide1.div.style.display = "none";
-            }
-        });
     },
 
     slide2: function() {
         animate({
             el: Slide2.boxCenter,
             opacity: [1, 0],
-            duration: 700,
+            duration: 2000,
             easing: "easeOutExpo"
         });
 
@@ -223,7 +200,7 @@ var Exit = {
             delay: 500,
             easing: "easeOutExpo",
             begin: function() {
-                Slide2.lines.style.display = "none";                
+                Slide2.lines.style.display = "none";
                 Enter.scene5();
             },
             complete: function() {

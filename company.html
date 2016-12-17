@@ -36,6 +36,9 @@
                             <li class="global-dropdown-menu__item">
                                 <a href="product_developers.html">Developers</a>
                             </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_fraud.html">Fraud</a>
+                            </li>
                             <li class="global-dropdown-menu__divider"></li>
                             <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
                                 <a href="product.html">Product Home</a>
@@ -70,7 +73,6 @@
         </div>
     </nav>
     <section class="hero-section hero-section--company">
-        <div class="hero-section__background"></div>
         <div class="hero-video">
             <div class="hero-video__annotation">
                 <div class="hero-video__annotation__left">
@@ -82,7 +84,9 @@
                 </div>
             </div>
             <div class="hero-video__file-wrap">
-                <video class="hero-video__file" src="video/HQ.mp4" autoplay id="hero-video__file"></video>
+                <video class="hero-video__file" autoplay id="hero-video__file" muted>
+                    <source src="video/HQ.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="hero-video__logo fade-in">
                 <img src="images/logo_icon.svg">
@@ -186,7 +190,6 @@
             </div>
         </div>
     </section>
-
     <section class="company-section company-section--team">
         <div class="container">
             <div class="grid">
@@ -197,14 +200,11 @@
                     </div>
                 </div>
             </div>
-
             <div class="investors grid">
                 <img src="images/investors.png">
             </div>
-            
         </div>
     </section>
-
     <section class="global-signup global-signup--dark">
         <div class="container">
             <div class="grid">

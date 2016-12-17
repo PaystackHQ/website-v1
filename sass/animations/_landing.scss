@@ -11,14 +11,14 @@
     width: 850px;
     z-index: 10;
     &--one,
-    &--four {
+    &--three {
         width: 550px;
     }
-    &--one {
+    &--three {
         display: none;
     }
     @include screen(med) {
-        &--one {
+        &--three {
             display: block;
         }
     }

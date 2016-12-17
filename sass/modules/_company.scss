@@ -1,9 +1,9 @@
 .hero-section {
     &--company {
-        height: 700px;
+        height: 800px;
         .hero-section__content {
-            bottom: 15%;
-            width: 500px;
+            bottom: 10%;
+            width: 400px;
             z-index: 3;
         }
         .hero-section__secondary-title {
@@ -24,7 +24,7 @@
 
 .hero-video {
     background: $dark-blue;
-    height: 250px;
+    height: 75%;
     left: 50%;
     position: absolute;
     top: 25%;
@@ -32,24 +32,34 @@
     transform: translateX(-50%);
     width: 450px;
     max-width: 100%;
-    @include screen(small){
+    @include screen(small) {
         height: 320px;
         top: 70px;
     }
-    &:after {
-        bottom: 0;
+    &:after,
+    &:before {
         content: "";
         left: 0;
         position: absolute;
         right: 0;
+    }
+    &:after {
         top: 0;
+        bottom: 35%;
+        background: linear-gradient(90deg, #011b33, rgba(1, 27, 51, 0.5), rgba(1, 27, 51, 0));
+        background: -webkit-linear-gradient(90deg, #011b33, rgba(1, 27, 51, 0.5), rgba(1, 27, 51, 0));
+    }
+    &:before {
+        top: 65%;
+        bottom: 0;
+        background: $dark-blue;
     }
     &__logo {
         height: 80px;
         width: 80px;
         z-index: 2;
         position: absolute;
-        bottom: 0;
+        bottom: 45%;
         left: 50%;
         background-color: $dark-blue;
         box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
@@ -74,8 +84,7 @@
         position: absolute;
         width: 100%;
         z-index: 10;
-        h5,
-        h6 {
+        h5, h6 {
             color: white;
             margin: 0 0 5px 0;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -107,7 +116,7 @@
     &--story {
         padding: 200px 0;
         position: relative;
-        @include screen(small){
+        @include screen(small) {
             padding: 50px 0;
         }
     }
@@ -120,7 +129,7 @@
     }
     &--job {
         margin: 100px 0;
-        @include screen(small){
+        @include screen(small) {
             margin: 50px 0;
         }
     }
@@ -142,8 +151,7 @@
         max-width: 600px;
         text-align: center;
     }
-    &__primary-title,
-    &__heavy-title {
+    &__primary-title, &__heavy-title {
         color: $dark-blue;
         font-family: $bold-font;
         font-weight: bold;
@@ -184,7 +192,7 @@
     margin-bottom: 30px;
     margin: 10px 0;
     text-align: center;
-    @include screen(small){
+    @include screen(small) {
         padding: 0;
     }
     .company-section--dark & {
@@ -222,8 +230,12 @@
     }
 }
 
-.investors{
+.investors {
     margin-top: 15px;
+    text-align: center;
+    img {
+        width: 500px;
+    }
 }
 
 .company-perks {
