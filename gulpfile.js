@@ -13,8 +13,6 @@ gulp.task('connect', function() {
     });
 });
 
-
-
 /* *************
     CSS
 ************* */
@@ -48,7 +46,7 @@ var postcssProcessors = [
             'last 2 Android versions',
             'last 2 BlackBerry versions'
         ]
-    })  
+    })
 ];
 
 var sassMainFile = 'sass/main.scss';
@@ -57,7 +55,7 @@ var sassFiles = 'sass/**/*.scss';
 gulp.task('css', function() {
     gulp.src(sassMainFile)
         .pipe(
-            postcss(postcssProcessors, {syntax: scss})
+            postcss(postcssProcessors, { syntax: scss })
         )
         .pipe(
             sass({ outputStyle: 'compressed' })
@@ -94,16 +92,15 @@ var htmlFiles = ['*.html'];
 //         .pipe(gulp.dest('public/views/directives'));
 // });
 
-gulp.task('html', function () {
-  gulp.src('*.html')
-    .pipe(connect.reload());
+gulp.task('html', function() {
+    gulp.src('*.html')
+        .pipe(connect.reload());
 });
 
-gulp.task('js', function () {
-  gulp.src('js/*.js')
-    .pipe(connect.reload());
+gulp.task('js', function() {
+    gulp.src('js/*.js')
+        .pipe(connect.reload());
 });
-
 
 
 
@@ -111,13 +108,12 @@ gulp.task('js', function () {
     WATCH
 ************* */
 
+
 gulp.task('watch', function() {
-    gulp.watch(sassFiles,['css']); 
-    gulp.watch('*.js', ['js']); 
-    gulp.watch(htmlFiles, ['html']); 
+    gulp.watch(sassFiles, ['css']);
+    gulp.watch('*.js', ['js']);
+    gulp.watch(htmlFiles, ['html']);
 });
-
-
 
 
 /* *************
@@ -125,3 +121,26 @@ gulp.task('watch', function() {
 ************* */
 
 gulp.task('default', ['connect', 'css', 'watch']);
+
+
+/* *************
+    SVG
+************* */
+
+
+var svgSprite = require('gulp-svg-sprite');
+var svgConfig = {
+    mode: {
+        css: {
+            render: {
+                css: true
+            }
+        }
+    }
+};
+
+gulp.task('svg', function() {
+    gulp.src('**/*.svg', { cwd: 'images/icons/source' })
+        .pipe(svgSprite(svgConfig))
+        .pipe(gulp.dest('images/icons'));
+});

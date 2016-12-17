@@ -278,14 +278,14 @@
         height: 500%;
         width: 100%;
         position: relative;
-        background-image: url(../images/clients/clients.png);
+        background-image: url(../images/landing/clients/clients.png);
         background-size: 100% auto;
         background-repeat: repeat-y;
         opacity: .24;
         animation: scroll-customers 250s infinite;
         -webkit-animation: scroll-customers 250s infinite;
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/clients/clients@2x.png);
+            background-image: url(../images/landing/clients/clients@2x.png);
         }
     }
 }

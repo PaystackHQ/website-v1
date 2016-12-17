@@ -1,13 +1,23 @@
 .hero-section {
     &--company {
         height: 800px;
+        @include screen(small) {
+            height: 500px;
+        }
         .hero-section__content {
             bottom: 10%;
             width: 400px;
+            max-width: 100%;
             z-index: 3;
+            @include screen(small) {
+                bottom: 20px;
+            }
         }
         .hero-section__secondary-title {
             font-size: 2.1rem;
+            @include screen(small) {
+                font-size: 1.8rem;
+            }
         }
     }
     &--careers {
@@ -33,8 +43,9 @@
     width: 450px;
     max-width: 100%;
     @include screen(small) {
-        height: 320px;
+        height: 500px;
         top: 70px;
+        width: 100%;
     }
     &:after,
     &:before {
@@ -50,7 +61,7 @@
         background: -webkit-linear-gradient(90deg, #011b33, rgba(1, 27, 51, 0.5), rgba(1, 27, 51, 0));
     }
     &:before {
-        top: 65%;
+        top: 64%;
         bottom: 0;
         background: $dark-blue;
     }
@@ -84,7 +95,8 @@
         position: absolute;
         width: 100%;
         z-index: 10;
-        h5, h6 {
+        h5,
+        h6 {
             color: white;
             margin: 0 0 5px 0;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -151,7 +163,8 @@
         max-width: 600px;
         text-align: center;
     }
-    &__primary-title, &__heavy-title {
+    &__primary-title,
+    &__heavy-title {
         color: $dark-blue;
         font-family: $bold-font;
         font-weight: bold;
@@ -166,6 +179,9 @@
         font-size: 4.5rem;
         line-height: 1;
         margin: 20px 0;
+        @include screen(small) {
+            font-size: 4rem;
+        }
     }
     &__secondary-title {
         font-size: 2rem;
@@ -234,6 +250,7 @@
     margin-top: 15px;
     text-align: center;
     img {
+        max-width: 100%;
         width: 500px;
     }
 }

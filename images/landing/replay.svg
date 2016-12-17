@@ -1,6 +1,0 @@
-<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-    <use xlink:href="#replay_a" fill="#FFF" style="mix-blend-mode:normal" figma:type="vector"/>
-    <defs>
-        <path id="replay_a" d="M6.02 0v1.138c2.672 0 4.846 2.181 4.846 4.862s-2.174 4.862-4.845 4.862c-2.672 0-4.846-2.18-4.846-4.862 0-.997.302-1.958.86-2.766l1.083 1.085L4.258.046 0 1.19l1.224 1.228A5.994 5.994 0 0 0 .04 6c0 3.309 2.683 6 5.98 6C9.318 12 12 9.309 12 6c0-3.308-2.682-6-5.98-6z"/>
-    </defs>
-</svg>
