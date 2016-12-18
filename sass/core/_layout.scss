@@ -94,9 +94,14 @@
 .grid__column {
     @include screen(small) {
         width: 100%;
-
+        &--5-s {
+            width: 100% * 7 / 12;
+        }
         &--6-s {
             width: 50%;
+        }
+        &--7-s {
+            width: 100% * 7 / 12;
         }
     }
 }
