@@ -24,6 +24,9 @@
     width: 100%;
     &--flex {
         display: flex;
+        @include screen(small) {
+            display: block;
+        }
     }
     &--with-gutters {
         margin-left: -8px;

@@ -181,8 +181,9 @@
     position: relative;
     &--centered {
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 100%;
         text-align: center;
+        width: 600px;
     }
     &__primary-title,
     &__heavy-title {
