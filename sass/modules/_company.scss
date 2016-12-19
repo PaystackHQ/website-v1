@@ -64,6 +64,7 @@
         top: 64%;
         bottom: 0;
         background: $dark-blue;
+        z-index: 2;
     }
     &__logo {
         height: 80px;
@@ -89,6 +90,22 @@
         object-fit: cover;
         z-index: 1;
         box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.08);
+        @include screen(small) {
+            display: none;
+        }
+    }
+    &__image-backup {
+        background: url('../images/company/sf.jpg');
+        background-size: cover;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include screen(small) {
+            display: block;
+        }
     }
     &__annotation {
         padding: 20px;
@@ -105,6 +122,9 @@
             position: absolute;
             right: 20px;
             top: 20px;
+        }
+        @include screen(small) {
+            display: none;
         }
     }
 }
