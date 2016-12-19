@@ -28,7 +28,7 @@ $breakpoint-med: 980px;
         }
     }
     @else if $size=='mid' {
-        @media screen and (min-width: $breakpoint-med-small) and (max-width: $breakpoint-med) {
+        @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-med) {
             @content;
         }
     }
