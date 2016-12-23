@@ -24,6 +24,9 @@
     width: 100%;
     &--flex {
         display: flex;
+        @include screen(small) {
+            display: block;
+        }
     }
     &--with-gutters {
         margin-left: -8px;
@@ -94,9 +97,14 @@
 .grid__column {
     @include screen(small) {
         width: 100%;
-
+        &--5-s {
+            width: 100% * 5 / 12;
+        }
         &--6-s {
             width: 50%;
+        }
+        &--7-s {
+            width: 100% * 7 / 12;
         }
     }
 }

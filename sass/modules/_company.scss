@@ -64,6 +64,7 @@
         top: 64%;
         bottom: 0;
         background: $dark-blue;
+        z-index: 2;
     }
     &__logo {
         height: 80px;
@@ -89,6 +90,22 @@
         object-fit: cover;
         z-index: 1;
         box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.08);
+        @include screen(small) {
+            display: none;
+        }
+    }
+    &__image-backup {
+        background: url('../images/company/sf.jpg');
+        background-size: cover;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include screen(small) {
+            display: block;
+        }
     }
     &__annotation {
         padding: 20px;
@@ -105,6 +122,9 @@
             position: absolute;
             right: 20px;
             top: 20px;
+        }
+        @include screen(small) {
+            display: none;
         }
     }
 }
@@ -126,7 +146,7 @@
         border-top: 1px solid whitesmoke;
     }
     &--story {
-        padding: 200px 0;
+        padding: 100px 0 100px;
         position: relative;
         @include screen(small) {
             padding: 50px 0;
@@ -135,6 +155,7 @@
     &__copy {
         font-size: 1.8rem;
         line-height: 1.5;
+        margin-bottom: 0;
     }
     &__call-to-action {
         margin-top: 30px;
@@ -160,8 +181,9 @@
     position: relative;
     &--centered {
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 100%;
         text-align: center;
+        width: 600px;
     }
     &__primary-title,
     &__heavy-title {
@@ -248,7 +270,9 @@
 
 .investors {
     margin-top: 15px;
-    text-align: center;
+    text-align: center;    
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     img {
         max-width: 100%;
         width: 500px;
