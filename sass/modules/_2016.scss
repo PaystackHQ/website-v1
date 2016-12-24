@@ -17,12 +17,20 @@
         img {
             height: 40px;
         }
+        @include screen(small) {
+            img {
+                height: 30px
+            }
+        }
     }
     &__primary-title {
         color: $green;
         font-family: $bold-font;
         font-size: 30rem;
         margin: 0;
+        @include screen(small) {
+            font-size: 10rem;
+        }
     }
     &__secondary-title {
         color: white;
@@ -48,6 +56,11 @@
             margin-left: 20px;
             right: 0;
         }
+        @include screen(small) {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 0;
+        }
     }
     &__content {
         left: 0;
@@ -57,6 +70,14 @@
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
+        width: 100%;
+    }
+    &__content--relative {
+        @include screen(small) {
+            position: relative;
+            transform: none;
+            -webkit-transform: none;
+        }
     }
     &__image {
         border-radius: 3px;
@@ -65,6 +86,9 @@
         overflow: hidden;
         img {
             width: 100%;
+        }
+        @include screen(small) {
+            max-height: 300px;
         }
     }
     &__video {
@@ -89,16 +113,37 @@
     }
 }
 
+.year-in-review--jan {
+    padding: 200px 0;
+    .year-in-review__content {
+        position: relative;
+    }
+    .year-in-review__image {
+        margin-top: 50px;
+    }
+    @include screen(small) {
+        padding: 50px 0;
+    }
+}
+
 .year-in-review--mar {
     overflow: hidden;
 }
 
 .year-in-review--jun {
-    padding-bottom: 200px;
+    padding: 200px 0;
     z-index: 10;
     .year-in-review__content {
-        margin-top: -200px;
         position: relative;
+    }
+    @include screen(small) {
+        padding: 50px 0;
+    }
+}
+
+.year-in-review--july {
+    .review-month {
+        margin-top: 30px;
     }
 }
 
@@ -109,9 +154,11 @@
     line-height: 30rem;
     position: absolute;
     z-index: -1;
-
     &--light {
         color: #eee;
+    }
+    @include screen(small) {
+        font-size: 10rem;
     }
 }
 
@@ -119,21 +166,31 @@
     &__primary-title {
         font-size: 10rem;
         margin: 0;
+        @include screen(small) {
+            font-size: 5rem;
+        }
     }
     &__secondary-title {
         font-size: 7rem;
         margin: 0;
+        @include screen(small) {
+            font-size: 3.5rem;
+        }
     }
     &__copy {
         font-size: 2rem;
         line-height: 1.5;
+        a {
+            color: white;
+        }
     }
     &__fine-print {
         font-size: 1.5rem;
         opacity: 0.5;
     }
     &--dark {
-        .review-month__primary-title, .review-month__secondary-title {
+        .review-month__primary-title,
+        .review-month__secondary-title {
             color: $light-blue;
         }
     }
@@ -141,6 +198,14 @@
 
 .review-caption {
     padding: 150px 0 0 100px;
+    
+    @include screen(small) {
+        padding: 0;
+    }
+}
+
+.review-stats {
+    margin-top: 20px;
 }
 
 .review-stat {
@@ -165,7 +230,8 @@
         font-size: 3rem;
     }
     &--dark {
-        .review-stat__label, .review-stat__helper {
+        .review-stat__label,
+        .review-stat__helper {
             color: white;
         }
     }
