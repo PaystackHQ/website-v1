@@ -20,7 +20,9 @@
             <div class="global-nav__right">
                 <ul class="global-nav__menu">
                     <li class="global-nav__item global-nav__item--has-dropdown">
-                        <a href="product.html">Product</a>
+                        <a href="product.html">
+                            Product
+                        </a>
                         <ul class="global-dropdown-menu">
                             <li class="global-dropdown-menu__item">
                                 <a href="product_payments.html">Payments</a>
@@ -73,50 +75,63 @@
             </div>
         </div>
     </nav>
-    <section class="hero-section hero-section--demo">
-        <div class="hero-section__background"></div>
-        <div class="hero-section__content">
-            <figure class="hero-section__icon">
-                <img src="images/icons/source/magic-hat.svg" class="icon" />
-            </figure>
-            <h1 class="hero-section__primary-title">Try a demo</h1>
-            <h2 class="hero-section__secondary-title">Show and tell. The easiest way to try Paystack is to make a quick payment</h2>
-            <form class="demo-form" id="demo-form">
-                <div class="demo-form__group">
-                    <input id="demo-email" type="email" placeholder="Your email address (optional)">
+    <section class="feature-header">
+        <div class="container">
+            <h1 class="feature-header__primary-title">Brand Assets</h1>
+        </div>
+    </section>
+    <section class="company-section company-section--assets company-section--light">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--4">
+                    <h2 class="company-section-header__heavy-title">Badges</h2>
                 </div>
-                <div class="demo-form__submit">
-                    <div class="grid grid--with-gutters">
-                        <div class="grid__column grid__column--6 grid__column--6-s">
-                            <button class="button button--green button--full" onclick="pay(10000)">Pay <b>NGN 100</b></button>
+                <div class="grid__column grid__column--8">
+                    <div class="brand">
+                        <h4 class="company-section-header__secondary-title">
+                            Choose the ideal Paystack badge to display on your site or app.</p>
+                        </h4>
+                        <div class="brand-image">
+                            <img src="/images/brand/badges/blue.png" alt="">
+                            <a href="/images/brand/badges/blue.png" download class="brand-image__label">Download</a>
                         </div>
-                        <div class="grid__column grid__column--6 grid__column--6-s">
-                            <button class="button button--green button--full" onclick="pay(100000)">Pay <b>NGN 1000</b></button>
+                        <div class="brand-image">
+                            <img src="/images/brand/badges/white.png" alt="">
+                            <a href="/images/brand/badges/white.png" download class="brand-image__label">Download</a>
+                        </div>
+                        <div class="brand-image brand-image--horizontal">
+                            <img src="/images/brand/badges/cards.png" alt="">
+                            <a href="/images/brand/badges/cards.png" download class="brand-image__label">Download</a>
                         </div>
                     </div>
                 </div>
-                <script src="https://js.paystack.co/v1/inline.js"></script>
-            </form>
+            </div>
         </div>
     </section>
-    <section class="global-signup">
+    <section class="company-section company-section--assets">
         <div class="container">
             <div class="grid">
-                <div class="grid__column grid__column--6 grid__column--centered">
-                    <h2 class="global-signup__primary-title">
-                        Sign Up. Go Live. Get Paid.
-                    </h2>
-                    <h3 class="global-signup__secondary-title">
-                        Paystack is an easy to setup, complete payments solution for your business. Ready to try it out?
-                    </h3>
-                    <ul class="global-signup__call-to-action">
-                        <li class="global-signup__button">
-                            <a class="button button--green" href="/">Create Account</a>
-                        </li>
-                        <li class="global-signup__button">
-                            <a class="button button--default" href="/">Try a demo</a>
-                        </li>
-                    </ul>
+                <div class="grid__column grid__column--4">
+                    <h2 class="company-section-header__heavy-title">Logo</h2>
+                </div>
+                <div class="grid__column grid__column--8">
+                    <div class="brand">
+                        <h4 class="company-section-header__secondary-title">
+                            Choose the ideal Paystack logo to display on your site or app.</p>
+                        </h4>
+                        <div class="brand-image">
+                            <img src="/images/brand/logo/two-toned.png" alt="">
+                            <a href="/images/brand/logo/two-toned.png" download class="brand-image__label">Download</a>
+                        </div>
+                        <div class="brand-image">
+                            <img src="/images/brand/logo/one-toned.png" alt="">
+                            <a href="/images/brand/logo/one-toned.png" download class="brand-image__label">Download</a>
+                        </div>
+                        <div class="brand-image">
+                            <img src="/images/brand/logo/mark.png" alt="">
+                            <a href="/images/brand/logo/mark.png" download class="brand-image__label">Download</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +156,7 @@
                         <li><a href="">Demo</a></li>
                         <li><a href="">Slack</a></li>
                         <li><a href="">API Documentation</a></li>
-                        <li><a href="">Privacy & Terms</a></li>
+                        <li><a href="">Privacy &amp; Terms</a></li>
                     </ul>
                 </div>
                 <div class="grid__column grid__column--6">
@@ -166,36 +181,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/vendor/animate.min.js"></script>
-    <script>
-    var emailField = document.getElementById('demo-email');
-
-    document.getElementById('demo-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    })
-
-    function pay(amount) {
-        var email = emailField.value;
-        if (!isValid(email)) email = "demo@paystack.com";
-        loadInline(email, amount)
-    }
-
-    function loadInline(email, amount) {
-        PaystackPop.setup({
-            key: 'pk_live_3223432j3328nmdsad233tIshFeQd4XMUh',
-            email: email,
-            amount: amount,
-            callback: function(response) {
-                console.log(response);
-            }
-        }).openIframe();
-    }
-
-    function isValid(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        return re.test(email);
-    }
-    </script>
 </body>
 
 </html>

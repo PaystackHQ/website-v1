@@ -72,6 +72,15 @@ button,
             text-decoration: underline;
         }
     }
+    &--has-svg {
+        svg {
+            display: inline-block;
+            height: 16px;
+            margin-right: 10px;
+            vertical-align: middle;
+            width: 16px;
+        }
+    }
     //Sizes
     &--small {
         height: $button-height-sm;

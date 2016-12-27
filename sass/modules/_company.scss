@@ -166,6 +166,12 @@
             margin: 50px 0;
         }
     }
+    &--assets {
+        padding: 100px 0;
+        @include screen(small) {
+            padding: 50px 0;
+        }
+    }
     &__divider {
         background: darken($lighter-gray, 5%);
         height: 1px;
@@ -224,12 +230,12 @@
 }
 
 .team-member {
-    padding: 30px 0;
     border-radius: 2px;
     position: relative;
     margin-bottom: 30px;
     margin: 10px 0;
     text-align: center;
+    padding: 30px 0;
     @include screen(small) {
         padding: 0;
     }
@@ -253,16 +259,20 @@
 }
 
 .team-member__image {
-    height: 140px;
-    width: 140px;
-    margin: 0 auto;
-    background-size: 100%;
     background-position: center;
+    background-size: 100%;
+    border-radius: 1000px;
+    cursor: pointer;
     display: block;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    border-radius: 1000px;
-    cursor: pointer;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    @include screen(small) {
+        height: 100px;
+        width: 100px;
+    }
     .team-member:hover & {
         // -webkit-filter: grayscale(0);
     }
@@ -270,7 +280,7 @@
 
 .investors {
     margin-top: 15px;
-    text-align: center;    
+    text-align: center;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     img {
@@ -290,5 +300,25 @@
         padding: 15px 20px;
         margin-bottom: 10px;
         margin-right: 5px;
+    }
+}
+
+.brand {
+    max-width: 500px;
+}
+
+.brand-image {
+    padding: 20px 0;
+    img {
+        max-height: 30px;
+    }
+    &__label {
+        float: right;
+    }
+    &--horizontal {
+        img {
+            max-height: 100%;
+            max-width: 200px;
+        }
     }
 }

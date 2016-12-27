@@ -1,0 +1,246 @@
+.year-in-review {
+    background: white;
+    display: inline-block;
+    float: left;
+    min-height: 100vh;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    &--dark {
+        background: $dark-blue;
+    }
+    &--light {
+        background: whitesmoke;
+    }
+    &__label {
+        img {
+            height: 40px;
+        }
+        @include screen(small) {
+            img {
+                height: 30px
+            }
+        }
+    }
+    &__primary-title {
+        color: $green;
+        font-family: $bold-font;
+        font-size: 30rem;
+        margin: 0;
+        @include screen(small) {
+            font-size: 10rem;
+        }
+    }
+    &__secondary-title {
+        color: white;
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1;
+        margin: -5rem 0 0;
+        position: relative;
+        &:before,
+        &:after {
+            background: $green;
+            content: "";
+            display: inline-block;
+            height: 2px;
+            vertical-align: middle;
+            width: 7%;
+        }
+        &:before {
+            left: 0;
+            margin-right: 20px;
+        }
+        &:after {
+            margin-left: 20px;
+            right: 0;
+        }
+        @include screen(small) {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 0;
+        }
+    }
+    &__content {
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        width: 100%;
+    }
+    &__content--relative {
+        @include screen(small) {
+            position: relative;
+            transform: none;
+            -webkit-transform: none;
+        }
+    }
+    &__image {
+        border-radius: 3px;
+        margin-bottom: 50px;
+        max-height: 500px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        @include screen(small) {
+            max-height: 300px;
+        }
+    }
+    &__video {
+        height: 0;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        position: relative;
+        iframe {
+            left: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+.year-in-review--intro {
+    text-align: center;
+    .year-in-review__content {
+        max-width: 800px;
+    }
+}
+
+.year-in-review--jan {
+    padding: 200px 0;
+    .year-in-review__content {
+        position: relative;
+    }
+    .year-in-review__image {
+        margin-top: 50px;
+    }
+    @include screen(small) {
+        padding: 50px 0;
+    }
+}
+
+.year-in-review--mar {
+    overflow: hidden;
+}
+
+.year-in-review--jun {
+    padding: 200px 0;
+    z-index: 10;
+    .year-in-review__content {
+        position: relative;
+    }
+    @include screen(small) {
+        padding: 50px 0;
+    }
+}
+
+.year-in-review--july {
+    .review-month {
+        margin-top: 30px;
+    }
+}
+
+.review-month-number {
+    color: #f7f7f7;
+    font-size: 50rem;
+    font-family: $bold-font;
+    line-height: 30rem;
+    position: absolute;
+    z-index: -1;
+    &--light {
+        color: #eee;
+    }
+    @include screen(small) {
+        font-size: 10rem;
+    }
+}
+
+.review-month {
+    &__primary-title {
+        font-size: 10rem;
+        margin: 0;
+        @include screen(small) {
+            font-size: 5rem;
+        }
+    }
+    &__secondary-title {
+        font-size: 7rem;
+        margin: 0;
+        @include screen(small) {
+            font-size: 3.5rem;
+        }
+    }
+    &__copy {
+        font-size: 2rem;
+        line-height: 1.5;
+        a {
+            color: white;
+        }
+    }
+    &__fine-print {
+        font-size: 1.5rem;
+        opacity: 0.5;
+    }
+    &--dark {
+        .review-month__primary-title,
+        .review-month__secondary-title {
+            color: $light-blue;
+        }
+    }
+}
+
+.review-caption {
+    padding: 150px 0 0 100px;
+    
+    @include screen(small) {
+        padding: 0;
+    }
+}
+
+.review-stats {
+    margin-top: 20px;
+}
+
+.review-stat {
+    margin-bottom: 30px;
+    &__label {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0 0 10px;
+    }
+    &__helper {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin: 10px 0 0;
+        opacity: 0.5;
+    }
+    &__figure {
+        color: $green;
+        font-size: 4rem;
+        margin: 0;
+    }
+    &__figure--small {
+        font-size: 3rem;
+    }
+    &--dark {
+        .review-stat__label,
+        .review-stat__helper {
+            color: white;
+        }
+    }
+}
+
+.review-share {
+    margin-top: 40px;
+    li {
+        float: left;
+        margin-right: 10px;
+    }
+}
