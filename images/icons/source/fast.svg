@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>fast</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(321 -185)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -321 185L -273 185L -273 233L -321 233L -321 185Z" fill="#FFFFFF"/>
+</mask>
+<g id="fast" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path4_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path5_fill" transform="translate(-321 196)" fill="#3BB75E" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 45 2L 15 2C 14.4477 2 14 2.44772 14 3L 14 23C 14 23.5523 14.4477 24 15 24L 45 24C 45.5523 24 46 23.5523 46 23L 46 3C 46 2.44772 45.5523 2 45 2ZM 15 0C 13.3431 0 12 1.34315 12 3L 12 23C 12 24.6569 13.3431 26 15 26L 45 26C 46.6569 26 48 24.6569 48 23L 48 3C 48 1.34315 46.6569 0 45 0L 15 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 12.4545 8.95454C 12.4545 8.40226 12.9022 7.95454 13.4545 7.95454L 46.937 7.95454C 47.4893 7.95454 47.937 8.40226 47.937 8.95454C 47.937 9.50683 47.4893 9.95454 46.937 9.95454L 13.4545 9.95454C 12.9022 9.95454 12.4545 9.50683 12.4545 8.95454Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 16 5C 16 4.44772 16.4477 4 17 4L 21 4C 21.5523 4 22 4.44772 22 5C 22 5.55228 21.5523 6 21 6L 17 6C 16.4477 6 16 5.55228 16 5Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 3 5C 3 4.44772 3.44772 4 4 4L 10 4C 10.5523 4 11 4.44772 11 5C 11 5.55228 10.5523 6 10 6L 4 6C 3.44772 6 3 5.55228 3 5Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 0 13C 0 12.4477 0.447715 12 1 12L 7 12C 7.55228 12 8 12.4477 8 13C 8 13.5523 7.55228 14 7 14L 1 14C 0.447715 14 0 13.5523 0 13Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 4 21C 4 20.4477 4.44772 20 5 20L 8 20C 8.55228 20 9 20.4477 9 21C 9 21.5523 8.55228 22 8 22L 5 22C 4.44772 22 4 21.5523 4 21Z"/>
+</defs>
+</svg>
