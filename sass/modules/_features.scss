@@ -189,6 +189,13 @@ $feature-nav-height: 60px;
             width: 500px;
         }
     }
+    &--new-transfer {
+        opacity: 0.8;
+        margin-top: -20px;
+        img {
+            width: 70%;
+        }
+    }
     &--whitelist {
         left: 30%;
         position: absolute;
