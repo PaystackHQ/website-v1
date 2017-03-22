@@ -419,7 +419,17 @@ window.onload = function() {
                         var prevLink = getNavLinkItem(this.previous());
                         prevLink.classList.remove('faqs-nav__item--is-active');
                     }
-                } else {
+                } 
+            },
+            group: 'sectionsDown',
+            offset: '64'
+        });
+
+        new Waypoint({
+            element: sections[i],
+            handler: function(direction) {
+                var navLink = getNavLinkItem(this);
+                if (direction == 'up') {
                     navLink.classList.add('faqs-nav__item--is-active');
                     if (this.next()) {
                         var nextLink = getNavLinkItem(this.next());
@@ -427,7 +437,8 @@ window.onload = function() {
                     }
                 }
             },
-            group: 'sections'
+            group: 'sectionsUp',
+            offset: '-64'
         })
     }
 
