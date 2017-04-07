@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Paystack</title>
+    <meta content="Accept payments online with Paystack" name="description">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="global-nav global-nav--transparent">
+        <div class="container">
+            <div class="global-nav__left">
+                <a class="global-nav__logo"><img alt="Paystack" src="images/logo.svg"></a>
+            </div>
+            <div class="global-nav__right">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="product.html">Product</a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_payments.html">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_developers.html">Developers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_fraud.html">Fraud</a>
+                            </li>
+                            <li class="global-dropdown-menu__divider"></li>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__item">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="global-nav__item">
+                        <a href="https://developers.paystack.co" target="_blank">Docs</a>
+                    </li>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="#">Company</a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="company.html">About</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="brand.html">Brand</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="https://blog.paystack.com">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__button">
+                        <a class="button button--default-white button--rounded" href="#">Log In</a>
+                    </li>
+                </ul>
+                <div class="global-mobile-nav">
+                    <div class="global-mobile-nav__trigger" id="mobile-nav-trigger">
+                        <span></span> <span></span> <span></span>
+                    </div>
+                    <div class="global-mobile-nav-menu" id="mobile-nav-menu" style="margin-left: 2em">
+                        <div class="grid grid--with-gutters">
+                            <div class="grid__column grid__column--6 grid__column--6-s">
+                                <ul>
+                                    <li class="global-mobile-nav-menu__label">PRODUCT</li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_payments.html">Payments</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_subscriptions.html">Subscriptions</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_dashboard.html">Dashboard</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_developers.html">Developers</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_subscriptions.html">Docs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid__column grid__column--6 grid__column--6-s">
+                                <ul>
+                                    <li class="global-mobile-nav-menu__label">BUSINESS</li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_payments.html">Pricing</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_payments.html">About</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_subscriptions.html">Careers</a>
+                                    </li>
+                                    <li class="global-mobile-nav-menu__item">
+                                        <a href="product_subscriptions.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="feature-header">
+        <div class="container">
+            <h1 class="feature-header__primary-title">Frequently Asked Questions</h1>
+        </div>
+    </section>
+    <section class="faqs-section">
+        <div class="container">
+            <div class="grid grid--flex">
+                <div class="grid__column grid__column--relative grid__column--3">
+                    <div class="faqs-nav-container">
+                        <ul class="faqs-nav" id="faqs-nav">
+                            <li><a class="faqs-nav__item faqs-nav__item--is-active" href="#general">General</a></li>
+                            <li><a class="faqs-nav__item" href="#account">Account Usage</a></li>
+                            <li><a class="faqs-nav__item" href="#charges">Transaction Charges</a></li>
+                            <li><a class="faqs-nav__item" href="#payouts">Payouts</a></li>
+                            <li><a class="faqs-nav__item" href="#integration">Integration</a></li>
+                            <li><a class="faqs-nav__item" href="#international">International Transactions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--9">
+                    <div class="faqs">
+                        <div class="faqs__group" id="general">
+                            <h2 class="faqs__group-label">General</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">What are the requirements for using Paystack?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>You'll need a Certificate of Incorporation and a Corporate account with matching names. If you have one of the two and would like to go live, kindly contact our support team on <a class="faqs-item__link" href="tel:+2349085662909">+234 908 566 2909</a>.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Is there a cost for integrating Paystack?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Integration is absolutely free.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__group" id="account">
+                            <h2 class="faqs__group-label">Account Usage</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How do I create a Paystack account?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>You can create a free account by following <a href="https://dashboard.paystack.co/#/signup" class="faqs-item__link">this link</a>.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How do I take my Paystack account live?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>You need to send a Go-Live request from your dashboard. <a href="https://dashboard.paystack.co/#/settings/request-go-live" class="faqs-item__link">This link</a> will help you out.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Can I use one account for multiple websites?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes. However, since multiple websites would imply multiple businesses. Our recommendation would be to create multiple accounts. One for each business. Note that for every account, you need to send a fresh Go-Live request.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Can I use the same bank account number and CAC for multiple accounts?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, you can.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Can I have a Paystack account for each of my businesses?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, you can manage all your businesses with your Paystack dashboard. All you have to do is create an account for each business. Do note that for every account, you need to send a fresh Go-Live request.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">I forgot my password, can I do a reset?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, you can by clicking forgot password on the <a href="https://dashboard.paystack.com/#/login" class="faqs-item__link">login page</a>.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Can I change my account email and password?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, this can be done on your dashboard. Follow <a href="https://dashboard.paystack.co/#/settings/general" class="faqs-item__link">this link</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__group" id="charges">
+                            <h2 class="faqs__group-label">Transaction Charges</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How much does Paystack charge per transaction?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>For local cards (cards issued by Nigerian banks), the charge per transaction is 1.5% + NGN100 and the NGN 100 is waived for transactions below NGN 2,500. This means that for transactions below NGN 2,500 the charge will be 1.5% only.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How do I pass the transaction charge to my customers?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>You can do that by calculating how much needs to be presented to your customer to get the desired amount. E.g: For a transaction of NGN10,000, the transaction charge is NGN250. If you’d like to make the customer pay for the transaction charge, simply pass NGN10,250 to Paystack, so that when Paystack calculates 1.5% + NGN100 from that amount, you should get roughly NGN10,000.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__group" id="payouts">
+                            <h2 class="faqs__group-label">Payouts</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">When and how do I get my Payout?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Payout is automatic, and you get paid the following day.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How much does Paystack charge for sending Payouts to my bank account?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>It’s Free! We don’t charge for Payouts.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How do I keep track of my Payouts?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>The <a href="https://dashboard.paystack.com/#/income" class="faqs-item__link">Income section</a> of the Paystack dashboard shows a full breakdown of all your payouts including Total payouts and Pending payouts.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">I don’t want a next day Payout, is there any other option for my business?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, you can request to be paid manually from your dashboard. Simply update your payout schedule to manual <a href="https://dashboard.paystack.co/#/settings/preferences" class="faqs-item__link">here</a> and the funds will be automatically added to your Paystack balance. Whenever you need the funds, you can use our transfers  to send it to your bank account.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">How do I change my settlement account?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Kindly send a mail with your new corporate account details to <a href="mailto:support@paystack.com" class="faqs-item__link">support@paystack.com</a> and we will make the change.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__group" id="integration">
+                            <h2 class="faqs__group-label">Integration</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">I would like to integrate Paystack to my website, how do I access the API?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>You can access our API documentation by following <a href="https://developers.paystack.co/docs" class="faqs-item__link">this link</a>.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">I do not know how to go about integration, can I get help?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, you can. We are available to walk you through integration. You can send an email to <a href="mailto:support@paystack.com" class="faqs-item__link">support@paystack.com</a> or call <a href="tel:+2349085662909" class="faqs-item__link">+234 908 566 2909</a> to speak with one of our technical support representatives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__group" id="international">
+                            <h2 class="faqs__group-label">International Transactions</h2>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Does Paystack process International transactions?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, we do. We process International transactions in Naira and remit to merchants in Naira as well.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">What will be the exchange rate for International transactions in Naira? </h3>
+                                <div class="faqs-item__answer">
+                                    <p>Your customer's bank determines the exchange rate. We can guarantee that the exact amount of your product in Naira will be charged from the foreign cards and remitted to you less our transaction charges.</p>
+                                </div>
+                            </div>
+                            <div class="faqs-item">
+                                <h3 class="faqs-item__question">Does Paystack plan to process International transactions in USD and other currencies?</h3>
+                                <div class="faqs-item__answer">
+                                    <p>Yes, we are working towards achieving this and this product is currently in beta stage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <section class="global-signup">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--6 grid__column--centered">
+                    <h2 class="global-signup__primary-title">
+                        Sign Up. Go Live. Get Paid.
+                    </h2>
+                    <h3 class="global-signup__secondary-title">
+                        Paystack is an easy to setup, complete payments solution for your business. Ready to try it out?
+                    </h3>
+                    <ul class="global-signup__call-to-action">
+                        <li class="global-signup__button">
+                            <a class="button button--green" href="/">Create Account</a>
+                        </li>
+                        <li class="global-signup__button">
+                            <a class="button button--default" href="/">Try a demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="global-footer">
+        <div class="container">
+            <div class="global-footer__grid grid">
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <div class="global-footer__menu-container">
+                        <h4 class="global-footer__menu-header">Solutions</h4>
+                        <ul class="global-footer__menu">
+                            <li>
+                                <a href="">Payments</a>
+                            </li>
+                            <li>
+                                <a href="">Subscriptions</a>
+                            </li>
+                            <li>
+                                <a href="">Business Tools</a>
+                            </li>
+                            <li>
+                                <a href="">Developer Tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <h4 class="global-footer__menu-header">Resources</h4>
+                    <ul class="global-footer__menu">
+                        <li>
+                            <a href="">Demo</a>
+                        </li>
+                        <li>
+                            <a href="">Slack</a>
+                        </li>
+                        <li>
+                            <a href="">API Documentation</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy & Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">San Francisco</h4>
+                        <p class="global-footer__address">1281 Lawrence Station Road, Sunnyvale, California.</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">Lagos</h4>
+                        <p class="global-footer__address">22A, Olatunbosun Str, Shonibare Estate, Ikeja. Lagos</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a class="global-footer__contact" href="">hello@paystack.com</a>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a class="global-footer__contact" href="">+234 908 566 2909</a>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--12">
+                    <div class="global-footer__copyright">
+                        © 2016, Paystack Payments Limited
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/vendor/waypoints.min.js"></script>
+<script>
+window.onload = function() {
+    var nav = document.getElementById('faqs-nav');
+    var offset = nav.clientHeight + 150;
+    var sections = document.querySelectorAll('.faqs__group');
+    // fix for weird width change that occurs when #faqs-nav fixed
+    document.getElementById('faqs-nav').style.width = document.getElementById('faqs-nav').clientWidth + 'px';
+
+    var fixTop = new Waypoint({
+        element: nav,
+        handler: function(direction) {
+            if (direction == "down") {
+                nav.classList.add("faqs-nav--is-fixed");
+            } else {
+                nav.classList.remove("faqs-nav--is-fixed");
+            }
+        },
+        offset: "0"
+    });
+
+    var unfixTop = new Waypoint({
+        element: document.querySelector('.global-signup'),
+        handler: function(direction) {
+            if (direction == "down") {
+                nav.classList.add("faqs-nav--is-hidden");
+            } else {
+                nav.classList.remove("faqs-nav--is-hidden");
+            }
+        },
+        offset: offset
+    });
+
+    for (var i = 0; i < sections.length; i++) {
+        new Waypoint({
+            element: sections[i],
+            handler: function(direction) {
+                var navLink = getNavLinkItem(this);
+                if (direction == 'down') {
+                    navLink.classList.add('faqs-nav__item--is-active');
+                    if (this.previous()) {
+                        var prevLink = getNavLinkItem(this.previous());
+                        prevLink.classList.remove('faqs-nav__item--is-active');
+                    }
+                } 
+            },
+            group: 'sectionsDown',
+            offset: '64'
+        });
+
+        new Waypoint({
+            element: sections[i],
+            handler: function(direction) {
+                var navLink = getNavLinkItem(this);
+                if (direction == 'up') {
+                    navLink.classList.add('faqs-nav__item--is-active');
+                    if (this.next()) {
+                        var nextLink = getNavLinkItem(this.next());
+                        nextLink.classList.remove('faqs-nav__item--is-active');
+                    }
+                }
+            },
+            group: 'sectionsUp',
+            offset: '-64'
+        })
+    }
+
+    function getNavLinkItem(wayPointObj) {
+        return document.querySelector("a[href='#" + wayPointObj.element.getAttribute('id') + "']");
+    }
+}
+</script>
+
+</html>
