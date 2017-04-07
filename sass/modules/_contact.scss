@@ -1,0 +1,93 @@
+.contact-section {
+    background: #e8e8e8;
+    margin-top: -50px;
+    padding-bottom: 50px;
+    @include screen(small) {
+        padding: 45px 0;
+    }
+}
+
+.contact-hero {
+	background: $dark-blue;
+    background-image: url(../images/landing/background.svg);
+    background-size: cover;
+    padding: 150px 0 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    &__header {
+        width: 400px;
+        margin: auto;
+    }
+
+    &__form {
+    	width: 540px;
+    	margin: auto;
+    	background-color: white;
+    	border-radius: 3px;
+    	box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+    }
+}
+
+.contact-form {
+	z-index: 1;
+    border-radius: 3px;
+    padding: 60px;
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+    @include screen(small) {
+        padding: 0 20px;
+        border: 0;
+    }
+    &:before {
+    	position: absolute;
+	    content: "";
+	    width: 100%;
+	    height: 140%;
+	    // background-image: url(../images/lines/left-corner.svg);
+	    top: -10%;
+	    left: 0%;
+	    background-size: cover;
+	    z-index: -1;
+	    opacity: 0.15;
+    }
+    .form__group{
+    	margin-bottom: 15px;
+    	z-index: 1;
+    }
+    &__group {
+        label {
+            color: $green;
+            font-size: 1.6rem;
+            display: block;
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            background-color: white;
+            border: solid 1px #ccc;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            font-family: inherit;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+            width: 100%;
+            &:disabled {
+                color: white;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        textarea {
+			height: auto;
+			line-height: 1.4;
+			padding: 15px 20px;
+        }
+    }
+    &__submit {
+        // margin-top: 20px;
+    }
+}

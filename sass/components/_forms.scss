@@ -1,0 +1,83 @@
+// input, select, textarea {
+// 	font-family: inherit;
+// }
+
+// .form {
+// 	background: white;
+//     border-radius: 3px;
+//     box-shadow: 0 2px 5px rgba(0,0,0,0.14);
+//     color: #011b33;
+//     margin: 0 auto 20px;
+//     overflow: hidden;
+//     position: relative;
+//     -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+//     transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+//     z-index: 2;
+//     padding: 60px;
+
+// 	&__input {
+// 		width: 100%;
+// 		padding: 16px;
+// 		border: 1px solid #e6e6e6;
+// 		// border: none;
+// 		// background-color: #F7F8F9;
+// 		border-radius: 5px;
+// 		outline: none;
+// 		transition: border-color 300ms;
+// 		font-size: 1.6rem;
+// 		color: $dark-blue;
+
+// 		&:focus {
+// 			border-color: #ccc;
+// 		}
+// 	}
+
+// 	&__select {
+// 		position: relative;
+// 		appearance: none;
+// 		-webkit-appearance: none;
+// 		background-color: transparent;
+// 		width: 100%;
+// 		padding: 18px 15px;
+// 		border: 1px solid #e6e6e6;
+// 		// border: none;
+// 		// background-color: #F7F8F9;
+// 		border-radius: 3px;
+// 		outline: none;
+// 		transition: border-color 300ms;
+// 		font-size: 1.6rem;
+// 		color: #aaa;
+// 		&:focus {
+// 			border-color: #ccc;
+// 		}
+
+// 		option:checked {
+// 			color: red;
+// 		}
+// 	}
+
+// 	&__group {
+// 		margin-bottom: 15px;
+// 		position: relative;
+// 		&--has-select:before {
+// 			content: "";
+// 		    width: 0;
+// 		    height: 0;
+// 		    border-left: 6px solid transparent;
+// 		    border-right: 6px solid transparent;
+// 		    border-top: 6px solid #bbb;
+// 		    cursor: pointer;
+// 		    display: inline-block;
+// 		    position: absolute;
+// 		    right: 18px;
+// 		    top: 25px;
+// 		}
+// 	}
+
+// 	&__title {
+// 		font-size: 1.6rem;
+// 		margin-bottom: 25px;
+// 	}
+// }
+
+

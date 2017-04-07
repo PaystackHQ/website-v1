@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paystack</title>
+    <meta name="description" content="Accept payments online with Paystack">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <nav class="global-nav global-nav--transparent">
+        <div class="container">
+            <div class="global-nav__left">
+                <a href="index.html" class="global-nav__logo">
+                    <img src="images/logo.svg" alt="Paystack">
+                </a>
+            </div>
+            <div class="global-nav__right">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="product.html">Product</a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_payments.html">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_developers.html">Developers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_fraud.html">Fraud</a>
+                            </li>
+                            <li class="global-dropdown-menu__divider"></li>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__item"><a href="pricing.html">Pricing</a></li>
+                    <li class="global-nav__item"><a href="https://developers.paystack.co" target="_blank">Docs</a></li>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="#">
+                            Company
+                        </a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="company.html">About</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="brand.html">Brand</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="https://blog.paystack.com">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__button">
+                        <a href="#" class="button button--default-white button--rounded">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="contact-hero">
+        <div class="contact-hero__header">
+            <figure class="hero-section__icon">
+                <img src="images/icons/source/magic-hat.svg" class="icon" />
+            </figure>
+            <!-- <h1 class="hero-section__primary-title">Contact us</h1> -->
+            <h2 class="hero-section__secondary-title">Can't find what you need in our FAQs section? Leave us a message.</h2>
+        </div>
+        <div class="contact-hero__form">
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <div class="form__group">
+                        <input type="email" placeholder="Full name">
+                    </div>
+                    <div class="form__group">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <div class="form__group">
+                        <input type="email" placeholder="Subject">
+                    </div>
+                    <div class="form__group">
+                        <textarea rows="2" type="email" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="contact-form__submit">
+                    <div class="grid grid--with-gutters">
+                        <div class="grid__column">
+                            <button class="button button--green button--larg button--full" onclick="pay(10000)">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="global-signup">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--6 grid__column--centered">
+                    <h2 class="global-signup__primary-title">
+                        Sign Up. Go Live. Get Paid.
+                    </h2>
+                    <h3 class="global-signup__secondary-title">
+                        Paystack is an easy to setup, complete payments solution for your business. Ready to try it out?
+                    </h3>
+                    <ul class="global-signup__call-to-action">
+                        <li class="global-signup__button">
+                            <a class="button button--green" href="/">Create Account</a>
+                        </li>
+                        <li class="global-signup__button">
+                            <a class="button button--default" href="/">Try a demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="global-footer">
+        <div class="container">
+            <div class="global-footer__grid grid">
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <div class="global-footer__menu-container">
+                        <h4 class="global-footer__menu-header">Solutions</h4>
+                        <ul class="global-footer__menu">
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Subscriptions</a></li>
+                            <li><a href="">Business Tools</a></li>
+                            <li><a href="">Developer Tools</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <h4 class="global-footer__menu-header">Resources</h4>
+                    <ul class="global-footer__menu">
+                        <li><a href="">Demo</a></li>
+                        <li><a href="">Slack</a></li>
+                        <li><a href="">API Documentation</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">San Francisco</h4>
+                        <p class="global-footer__address">1281 Lawrence Station Road, Sunnyvale, California.</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">Lagos</h4>
+                        <p class="global-footer__address">22A, Olatunbosun Str, Shonibare Estate, Ikeja. Lagos</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a href="" class="global-footer__contact">hello@paystack.com</a>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a href="" class="global-footer__contact">+234 908 566 2909</a>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--12">
+                    <div class="global-footer__copyright">© 2016, Paystack Payments Limited</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/animate.min.js"></script>
+    <script>
+    var emailField = document.getElementById('demo-email');
+
+    document.getElementById('demo-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    })
+
+    function pay(amount) {
+        var email = emailField.value;
+        if (!isValid(email)) email = "demo@paystack.com";
+        loadInline(email, amount)
+    }
+
+    function loadInline(email, amount) {
+        PaystackPop.setup({
+            key: 'pk_live_3223432j3328nmdsad233tIshFeQd4XMUh',
+            email: email,
+            amount: amount,
+            callback: function(response) {
+                console.log(response);
+            }
+        }).openIframe();
+    }
+
+    function isValid(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+    </script>
+</body>
+
+</html>
