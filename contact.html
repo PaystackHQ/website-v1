@@ -76,33 +76,37 @@
     <section class="contact-hero">
         <div class="contact-hero__header">
             <figure class="hero-section__icon">
-                <img src="images/icons/source/magic-hat.svg" class="icon" />
+                <img src="images/icons/source/chat.svg" class="icon" />
             </figure>
-            <!-- <h1 class="hero-section__primary-title">Contact us</h1> -->
-            <h2 class="hero-section__secondary-title">Can't find what you need in our FAQs section? Leave us a message.</h2>
+            <h1 class="contact-hero__primary-title sr-only">Contact us</h1>
+            <h2 class="contact-hero__secondary-title">
+                <span>Can't find what you need in our <a href="#">FAQs</a>?</span>
+                <span>Send us a message and we'll get back to you within 24 hours.</span>
+            </h2>
         </div>
-        <div class="contact-hero__form">
+        <div class="contact-hero__content">
             <form class="contact-form">
                 <div class="contact-form__group">
-                    <div class="form__group">
-                        <input type="email" placeholder="Full name">
-                    </div>
-                    <div class="form__group">
-                        <input type="email" placeholder="Email address">
-                    </div>
-                    <div class="form__group">
-                        <input type="email" placeholder="Subject">
-                    </div>
-                    <div class="form__group">
-                        <textarea rows="2" type="email" placeholder="Message"></textarea>
-                    </div>
+                    <input class="contact-form__input" type="email" placeholder="Full name">
+                </div>
+                <div class="contact-form__group">
+                    <input class="contact-form__input" type="email" placeholder="Email address">
+                </div>
+                <div class="contact-form__group contact-form__group--has-dropdown">
+                    <select class="contact-form__select">
+                        <option selected disabled>Subject</option>
+                        <option>General Enquiries</option>
+                        <option>Technical Support</option>
+                        <option>Plugin Request</option>
+                        <option>Odd Account Debit</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="contact-form__group">
+                    <textarea class="contact-form__input contact-form__input--lg" rows="5" type="email" placeholder="Message"></textarea>
                 </div>
                 <div class="contact-form__submit">
-                    <div class="grid grid--with-gutters">
-                        <div class="grid__column">
-                            <button class="button button--green button--larg button--full" onclick="pay(10000)">Send message</button>
-                        </div>
-                    </div>
+                    <button class="button button--green button--large button--full">Send message</button>
                 </div>
             </form>
         </div>
@@ -174,36 +178,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/vendor/animate.min.js"></script>
-    <script>
-    var emailField = document.getElementById('demo-email');
-
-    document.getElementById('demo-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    })
-
-    function pay(amount) {
-        var email = emailField.value;
-        if (!isValid(email)) email = "demo@paystack.com";
-        loadInline(email, amount)
-    }
-
-    function loadInline(email, amount) {
-        PaystackPop.setup({
-            key: 'pk_live_3223432j3328nmdsad233tIshFeQd4XMUh',
-            email: email,
-            amount: amount,
-            callback: function(response) {
-                console.log(response);
-            }
-        }).openIframe();
-    }
-
-    function isValid(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        return re.test(email);
-    }
-    </script>
-</body>
 
 </html>

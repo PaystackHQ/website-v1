@@ -1,93 +1,127 @@
-.contact-section {
-    background: #e8e8e8;
-    margin-top: -50px;
-    padding-bottom: 50px;
-    @include screen(small) {
-        padding: 45px 0;
-    }
-}
-
 .contact-hero {
-	background: $dark-blue;
-    background-image: url(../images/landing/background.svg);
+    background: $dark-blue;
     background-size: cover;
-    padding: 150px 0 50px;
+    padding: 150px 0 90px;
     position: relative;
     overflow: hidden;
     text-align: center;
-
     &__header {
-        width: 400px;
-        margin: auto;
+        width: 90%;
+        max-width: 450px;
+        margin: 0 auto;
     }
-
-    &__form {
-    	width: 540px;
-    	margin: auto;
-    	background-color: white;
-    	border-radius: 3px;
-    	box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+    &__secondary-title {
+        color: white;
+        line-height: 1.6;
+        font-size: 2.2rem;
+        font-weight: normal;
+        margin-bottom: 45px;
+        a {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 0;
+            z-index: 1;
+            padding: 0 2px;
+            transition: color 300ms;
+            &:hover {
+                color: $green;
+                &:before {
+                    background-color: $green;
+                }
+            }
+            &:before {
+                content: '';
+                bottom: 3px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                opacity: 0.25;
+                z-index: -1;
+                transition: background-color 300ms;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 3px;
     }
 }
 
 .contact-form {
-	z-index: 1;
+    z-index: 1;
     border-radius: 3px;
     padding: 60px;
-    margin: 50px 0;
-    position: relative;
-    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
     @include screen(small) {
-        padding: 0 20px;
+        padding: 30px 20px;
         border: 0;
-    }
-    &:before {
-    	position: absolute;
-	    content: "";
-	    width: 100%;
-	    height: 140%;
-	    // background-image: url(../images/lines/left-corner.svg);
-	    top: -10%;
-	    left: 0%;
-	    background-size: cover;
-	    z-index: -1;
-	    opacity: 0.15;
-    }
-    .form__group{
-    	margin-bottom: 15px;
-    	z-index: 1;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
     }
     &__group {
-        label {
-            color: $green;
-            font-size: 1.6rem;
-            display: block;
-            margin-bottom: 20px;
-        }
-        input, textarea {
-            background-color: white;
-            border: solid 1px #ccc;
-            border-radius: 3px;
-            font-size: 1.4rem;
-            font-family: inherit;
-            height: 45px;
-            line-height: 45px;
-            padding: 0 20px;
-            width: 100%;
-            &:disabled {
-                color: white;
+        margin-bottom: 15px;
+        position: relative;
+        &--has-dropdown:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid $gray;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            right: 18px;
+            top: 22px;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            @include screen(small) {
+                border-top-color: $green;
             }
-            &:focus {
-                outline: none;
-            }
-        }
-        textarea {
-			height: auto;
-			line-height: 1.4;
-			padding: 15px 20px;
         }
     }
-    &__submit {
-        // margin-top: 20px;
+    &__input,
+    &__select {
+        background-color: #fcfcfc;
+        border: 1px solid #e4e4e4;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+        border-radius: 3px;
+        font-size: 1.6rem;
+        font-family: inherit;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 12px;
+        width: 100%;
+        transition: all 300ms;
+        &--lg {
+            height: auto;
+            line-height: 1.4;
+            padding: 15px 12px
+        }
+        &:focus {
+            outline: none;
+            border-color: $green;
+            background-color: white;
+            box-shadow: none;
+        }
+        @include screen(small) {
+            background-color: transparent;
+            border-color: $green;
+            color: white;
+            box-shadow: none;
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+    &__select {
+        appearance: none;
+        -webkit-appearance: none;
     }
 }
