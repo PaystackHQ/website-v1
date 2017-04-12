@@ -1,0 +1,69 @@
+.countries li {
+    -webkit-background-size: contain;
+    background-size: contain;
+    -ms-background-position: center;
+    background-position: center;
+    border-radius: 4px;
+    color: #003767;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.12);
+    border: solid 1px whitesmoke;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.notification-form {
+    max-width: 470px;
+    width: 100%;
+    float: right;
+    padding: 40px;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 4px;
+
+    @include screen(small) {
+        padding: 0;
+        border: none;
+        margin-top: 45px;
+    }
+    &__group {
+        margin-bottom: 20px;
+        position: relative;
+
+        &--has-select:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $green;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            right: 18px;
+            top: 22px;
+        }
+    }
+    &__label {
+        display: none;
+    }
+    &__input,
+    &__select {
+        background-color: transparent;
+        border: 1px solid $green;
+        padding: 15px;
+        border-radius: 4px;
+        color: white;
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        font-size: 1.4rem;
+        font-family: $regular-font;
+        height: 50px;
+        &:focus {
+            outline: none;
+        }
+    }
+}

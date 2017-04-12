@@ -1,0 +1,56 @@
+.flag {
+    border-radius: 3px;
+    height: 16px;
+    width: 24px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    border: 1px solid #fafafa;
+    &-img {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &--cameroon {
+            background-image: url(../images/countries/flags/CM.png);
+        }
+        &--egypt {
+            background-image: url(../images/countries/flags/EG.png);
+        }
+        &--ghana {
+            background-image: url(../images/countries/flags/GH.png);
+        }
+        &--kenya {
+            background-image: url(../images/countries/flags/KE.png);
+        }
+        &--morocco {
+            background-image: url(../images/countries/flags/MA.png);
+        }
+        &--nigeria {
+            background-image: url(../images/countries/flags/NG.png);
+        }
+        &--south-africa {
+            background-image: url(../images/countries/flags/ZA.png);
+        }
+        &--tanzania {
+            background-image: url(../images/countries/flags/TZ.png);
+        }
+        &--mauritius {
+            background-image: url(../images/countries/flags/MU.png);
+        }
+        &--benin {
+            background-image: url(../images/countries/flags/BJ.png);
+        }
+        &--ivory-coast {
+            background-image: url(../images/countries/flags/CI.png);
+        }
+        &--senegal {
+            background-image: url(../images/countries/flags/SN.png);
+        }
+        &--uganda {
+            background-image: url(../images/countries/flags/UG.png);
+        }
+        &--mozambique {
+            background-image: url(../images/countries/flags/MZ.png);
+        }
+    }
+}

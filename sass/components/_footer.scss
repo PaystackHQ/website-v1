@@ -26,8 +26,46 @@
     }
     &__copyright {
         font-size: 1.3rem;
-        margin-top: 40px;
-        text-align: center;
+        margin-top: 3px;
+    }
+    &__bottom {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    &__country {
+        position: relative;
+        text-align: left;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 4px;
+        color: white;
+        letter-spacing: 0.5px;
+        font-family: 'Boing';
+        color: #003767;
+        padding-right: 20px;
+        transition: color 300ms;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #7999B8;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 6px;
+            transition: border-color 300ms;
+        }
+        &:hover {
+            color: $light-blue;
+            &:before {
+                border-top-color: $light-blue;
+            }
+        }
     }
 }
 
@@ -49,13 +87,13 @@
         margin-bottom: 20px;
     }
     &__contact {
-        border-top: solid 1px rgba(255,255,255,0.2);
+        border-top: solid 1px rgba(255, 255, 255, 0.2);
         color: $light-blue;
         display: block;
         padding-top: 15px;
         margin-top: 5px;
         &:hover {
-            background: rgba(255,255,255,0.02);
+            background: rgba(255, 255, 255, 0.02);
         }
     }
     &__menu-header {
