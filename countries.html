@@ -173,72 +173,83 @@
                     </ul>
                 </div>
                 <div class="grid__column grid__column--7">
-                    <form class="notification-form">
+                    <form class="notification-form" id="notification-form">
                         <div class="notification-form__group">
                             <label class="notification-form__label sr-only">Email</label>
-                            <input class="notification-form__input" type="text" name="email" placeholder="Email address">
+                            <input class="notification-form__input" type="text" id="email" name="email" placeholder="Email address">
                         </div>
                         <div class="notification-form__group notification-form__group--has-select">
                             <label class="notification-form__label sr-only">Country</label>
-                            <select class="notification-form__select">
-                                <option selected="" disabled="">Your country</option>
-                                <option>Algeria</option>
-                                <option>Angola</option>
-                                <option>Benin Republic</option>
-                                <option>Botswana</option>
-                                <option>Burkina Faso</option>
-                                <option>Burundi</option>
-                                <option>Cabo Verde</option>
-                                <option>Cameroon</option>
-                                <option>Central African Republic (CAR)</option>
-                                <option>Chad</option>
-                                <option>Comoros</option>
-                                <option>Democratic Republic of the Congo</option>
-                                <option>Republic of the Congo</option>
-                                <option>Cote d'Ivoire</option>
-                                <option>Djibouti</option>
-                                <option>Egypt</option>
-                                <option>Equatorial Guinea</option>
-                                <option>Eritrea</option>
-                                <option>Ethiopia</option>
-                                <option>Gabon</option>
-                                <option>Gambia</option>
-                                <option>Ghana</option>
-                                <option>Guinea</option>
-                                <option>Guinea-Bissau</option>
-                                <option>Kenya</option>
-                                <option>Lesotho</option>
-                                <option>Liberia</option>
-                                <option>Libya</option>
-                                <option>Madagascar</option>
-                                <option>Malawi</option>
-                                <option>Mali</option>
-                                <option>Mauritania</option>
-                                <option>Mauritius</option>
-                                <option>Morocco</option>
-                                <option>Mozambique</option>
-                                <option>Namibia</option>
-                                <option>Niger</option>
-                                <option>Nigeria</option>
-                                <option>Rwanda</option>
-                                <option>Sao Tome and Principe</option>
-                                <option>Senegal</option>
-                                <option>Seychelles</option>
-                                <option>Sierra Leone</option>
-                                <option>Somalia</option>
-                                <option>South Africa</option>
-                                <option>South Sudan</option>
-                                <option>Sudan</option>
-                                <option>Swaziland</option>
-                                <option>Tanzania</option>
-                                <option>Togo</option>
-                                <option>Tunisia</option>
-                                <option>Uganda</option>
-                                <option>Zambia</option>
-                                <option>Zimbabwe</option>
+                            <select class="notification-form__select" name="country" id="country">
+                                <option selected="" disabled="" value="">Your country</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Benin Republic">Benin Republic</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Central African Republic (CAR)">Central African Republic (CAR)</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                                <option value="Republic of the Congo">Republic of the Congo</option>
+                                <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
                             </select>
                         </div>
-                        <button class="button button--green button--full button--large">Notify me</button>
+                        <button class="button button--green button--full button--large" onclick="send()">Notify me</button>
+
+                        <div class="notification-form-overlay notification-form-overlay--loading" id="loading-overlay">
+                            <div class="loading-icon">
+                                <img src="images/forms/spinner.svg">
+                            </div>
+                        </div>
+                        <div class="notification-form-overlay notification-form-overlay--success" id="success-overlay">
+                            <div class="success-icon">
+                                <img src="images/forms/success.svg">
+                            </div>
+                            <!-- <div class="success-text">Thanks. We'll be in touch.</div> -->
+                        </div>
                     </form>
                 </div>
             </div>
@@ -320,6 +331,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/vendor/promise.min.js"></script>
+    <script src="js/vendor/fetch.js"></script>
+    <script src="js/countries-form.js"></script>
 </body>
 
 </html>
