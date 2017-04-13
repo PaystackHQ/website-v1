@@ -75,7 +75,7 @@
     </nav>
     <section class="contact-hero">
         <div class="contact-hero__header">
-            <figure class="hero-section__icon"> 
+            <figure class="hero-section__icon">
                 <div class="svg svg--large svg--chat"></div>
             </figure>
             <h1 class="contact-hero__primary-title sr-only">Contact us</h1>
@@ -85,30 +85,35 @@
             </h2>
         </div>
         <div class="contact-hero__content">
-            <form class="contact-form">
+            <div class="contact-form">
                 <div class="contact-form__group">
-                    <input class="contact-form__input" type="email" placeholder="Full name">
+                    <input class="contact-form__input" id="name" name="name" type="email" placeholder="Full name">
                 </div>
                 <div class="contact-form__group">
-                    <input class="contact-form__input" type="email" placeholder="Email address">
-                </div>
-                <div class="contact-form__group contact-form__group--has-dropdown">
-                    <select class="contact-form__select">
-                        <option selected disabled>Subject</option>
-                        <option>General Enquiries</option>
-                        <option>Technical Support</option>
-                        <option>Plugin Request</option>
-                        <option>Odd Account Debit</option>
-                        <option>Others</option>
-                    </select>
+                    <input class="contact-form__input" id="email" name="email" type="email" placeholder="Email address">
                 </div>
                 <div class="contact-form__group">
-                    <textarea class="contact-form__input contact-form__input--lg" rows="5" type="email" placeholder="Message"></textarea>
+                    <input class="contact-form__input" id="phone" name="phone" type="phone" placeholder="Phone number">
+                </div>
+                <div class="contact-form__group">
+                    <textarea id="message" name="Message" class="contact-form__input contact-form__input--lg" rows="5" placeholder="Message"></textarea>
                 </div>
                 <div class="contact-form__submit">
-                    <button class="button button--green button--large button--full">Send message</button>
+                    <button class="button button--green button--large button--full" onclick="submit()">Send message</button>
                 </div>
-            </form>
+                <div class="contact-form__error" id="error"></div>
+            </div>
+            <div class="contact-form-overlay contact-form-overlay--loading" id="loading-div">
+                <div class="loading-icon">
+                    <img src="images/contact/spinner.svg">
+                </div>
+            </div>
+            <div class="contact-form-overlay contact-form-overlay--success" id="success-div">
+                <div class="success-icon">
+                    <img src="images/contact/success.svg">
+                </div>
+                <div class="success-text">Your message has been sent. We'll get back to you shortly.</div>
+            </div>
         </div>
     </section>
     <section class="global-signup">
@@ -178,5 +183,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/vendor/promise.min.js"></script>
+    <script src="js/vendor/fetch.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
 
 </html>

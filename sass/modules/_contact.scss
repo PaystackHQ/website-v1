@@ -48,11 +48,12 @@
         max-width: 600px;
         margin: 0 auto;
         border-radius: 3px;
+        position: relative;
+        overflow: hidden;
     }
 }
 
 .contact-form {
-    z-index: 1;
     border-radius: 3px;
     padding: 60px;
     background-color: white;
@@ -123,5 +124,80 @@
     &__select {
         appearance: none;
         -webkit-appearance: none;
+    }
+    &__input--has-error {
+        border-color: #d85555;
+        -webkit-animation: shake 1s linear;
+        -moz-animation: shake 1s linear;
+        animation: shake 1s linear;
+    }
+    &__error {
+        padding: 15px;
+        background-color: #F1F2F3;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        margin-top: 20px;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1.4;
+        color: #d85555;
+        display: none;
+    }
+    &-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 300ms;
+        z-index: 1;
+        border-radius: 3px;
+        pointer-events: none;
+        opacity: 0;
+        &--is-showing {
+            opacity: 1;
+            pointer-events: auto;
+            height: 100%;
+            width: 100%;
+        }
+        &--loading {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            .loading-icon {
+                height: 30px;
+                width: 30px;
+                -webkit-animation: spin 1s linear infinite;
+                -moz-animation: spin 1s linear infinite;
+                animation: spin 1s linear infinite;
+            }
+            img {
+                fill: white;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &--success {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .success-icon {
+                height: 120px;
+                width: 120px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .success-text {
+                line-height: 1.5;
+                color: #657B8A;
+                width: 280px;
+                margin-top: 30px;
+            }
+        }
     }
 }
