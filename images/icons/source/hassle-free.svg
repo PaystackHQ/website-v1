@@ -1,0 +1,19 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>hassle-free</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(232 -442)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -232 442L -184 442L -184 490L -232 490L -232 442Z" fill="#FFFFFF"/>
+</mask>
+<g id="hassle-free" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-232 442)" fill="#3BB75E"/>
+<use xlink:href="#path1_fill" transform="translate(-232 442)" fill="#3BB75E"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 34.6309 16.0566L 20.2931 30.3943L 13.9406 24.0417C 13.4943 23.5954 12.7703 23.5954 12.3246 24.0417C 11.8783 24.488 11.8783 25.2114 12.3246 25.6577L 19.4851 32.8189C 19.6994 33.0331 19.9903 33.1531 20.2931 33.1531C 20.596 33.1531 20.8869 33.0331 21.1011 32.8189L 36.2474 17.6726C 36.6937 17.2263 36.6937 16.5029 36.2474 16.0566C 35.8011 15.6103 35.0771 15.6097 34.6309 16.0566Z"/>
+<path id="path1_fill" d="M 24 0C 10.9909 0 0 10.9903 0 24C 0 37.0097 10.9909 48 24 48C 37.0091 48 48 37.0097 48 24C 48 10.9903 37.0091 0 24 0ZM 24 45.7143C 12.2297 45.7143 2.28571 35.7703 2.28571 24C 2.28571 12.2297 12.2297 2.28571 24 2.28571C 35.7703 2.28571 45.7143 12.2297 45.7143 24C 45.7143 35.7703 35.7703 45.7143 24 45.7143Z"/>
+</defs>
+</svg>

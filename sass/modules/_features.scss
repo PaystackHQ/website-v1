@@ -154,6 +154,9 @@ $feature-nav-height: 60px;
     &--has-divider {
         padding-bottom: 100px;
     }
+    &--small {
+        max-height: 450px;
+    }
     &__content {
         margin-top: 3.5em;
     }
@@ -211,6 +214,11 @@ $feature-nav-height: 60px;
         overflow: hidden;
         top: -100px;
         bottom: -100px;
+    }
+    &--invoicing {
+        .illustration {
+            width: 100%;
+        }
     }
 }
 

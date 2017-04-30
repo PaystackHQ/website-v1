@@ -132,8 +132,11 @@ var svgSprite = require('gulp-svg-sprite');
 var svgConfig = {
     mode: {
         css: {
+            prefix: ".svg--%s",
+            bust: false,
+            sprite: "sprite.svg",
             render: {
-                css: true
+                scss: true
             }
         }
     }
